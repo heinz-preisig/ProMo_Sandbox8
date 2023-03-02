@@ -119,7 +119,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "10": {
-      "IRI": "promo:X-Coordinate",
+      "IRI": "promo:XCoordinate",
       "aliases": "{'global_ID': ' V_10', 'python': 'r_x', 'cpp': 'r_x', 'matlab': 'r_x', 'latex': '{r_x}', 'internal_code': 'r_x'}",
       "doc": "x-coordinate",
       "equations": "{}",
@@ -132,7 +132,7 @@
       "units": "[0, 1, 0, 0, 0, 0, 0, 0]"
     },
     "11": {
-      "IRI": "promo:Y-Coordinate",
+      "IRI": "promo:YCoordinate",
       "aliases": "{'global_ID': ' V_11', 'python': 'r_y', 'cpp': 'r_y', 'matlab': 'r_y', 'latex': '{r_y}', 'internal_code': 'r_y'}",
       "doc": "y-coordinate",
       "equations": "{}",
@@ -145,7 +145,7 @@
       "units": "[0, 1, 0, 0, 0, 0, 0, 0]"
     },
     "12": {
-      "IRI": "promo:Z-Coordinate",
+      "IRI": "promo:ZCoordinate",
       "aliases": "{'global_ID': ' V_12', 'python': 'r_z', 'cpp': 'r_z', 'matlab': 'r_z', 'latex': '{r_z}', 'internal_code': 'r_z'}",
       "doc": "z_coordinate",
       "equations": "{}",
@@ -444,7 +444,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "38": {
-      "IRI": "promo:ArrheniusFrequencyFactor",
+      "IRI": "promo:Ko",
       "aliases": "{'global_ID': ' V_38', 'python': 'Ko', 'cpp': 'Ko', 'matlab': 'Ko', 'latex': '{K^o}', 'internal_code': 'Ko'}",
       "doc": "Arrhenius frequency factor",
       "equations": "{}",
@@ -717,7 +717,7 @@
       "units": "[0, -3, 0, 1, 0, 0, 0, 0]"
     },
     "60": {
-      "IRI": "promo:ReactionTemperature",
+      "IRI": "promo:T_NK",
       "aliases": "{'global_ID': ' V_60', 'python': 'T_NK', 'cpp': 'T_NK', 'matlab': 'T_NK', 'latex': 'T', 'internal_code': 'T_NK'}",
       "doc": "temperature of the reactive system",
       "equations": "{39: {'rhs': ' V_35  O_5  I_1 O_5  V_18', 'type': 'generic', 'doc': 'temperature of the reactive system', 'network': 'reactions', 'incidence_list': ['18', '35']}}",
@@ -730,7 +730,7 @@
       "units": "[0, 0, 0, 0, 1, 0, 0, 0]"
     },
     "62": {
-      "IRI": "promo:ActivationEnergy",
+      "IRI": "promo:Ea",
       "aliases": "{'global_ID': ' V_62', 'python': 'Ea', 'cpp': 'Ea', 'matlab': 'Ea', 'latex': '{E^a}', 'internal_code': 'Ea'}",
       "doc": "Arrhenius activation energy",
       "equations": "{41: {'rhs': ' O_11 D_0 V_157 O_4 V_60 D_7 V_1 D_1', 'type': 'instantiate', 'doc': 'Arrhenius activation energy', 'network': 'reactions', 'incidence_list': ['1', '157', '60']}}",
@@ -743,7 +743,7 @@
       "units": "[-2, 2, -1, 1, 0, 0, 0, 0]"
     },
     "63": {
-      "IRI": "promo:ReactionConstant",
+      "IRI": "promo:K_NK",
       "aliases": "{'global_ID': ' V_63', 'python': 'K_NK', 'cpp': 'K_NK', 'matlab': 'K_NK', 'latex': 'K', 'internal_code': 'K_NK'}",
       "doc": "Arrhenius reaction 'constant'",
       "equations": "{42: {'rhs': ' V_38 O_3 F_0 D_0 F_11 D_0 V_62 D_1 O_4 F_15 D_0 V_157 O_4 V_60 D_1 D_1', 'type': 'generic', 'doc': \"Arrhenius reaction 'constant'\", 'network': 'reactions', 'incidence_list': ['157', '38', '60', '62']}}",
@@ -808,7 +808,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "71": {
-      "IRI": "promo:AreaYZ",
+      "IRI": "promo:Ayz",
       "aliases": "{'global_ID': ' V_71', 'python': 'Ayz', 'cpp': 'Ayz', 'matlab': 'Ayz', 'latex': '{A_{yz}}', 'internal_code': 'Ayz'}",
       "doc": "cross sectional area yz",
       "equations": "{48: {'rhs': ' V_11 O_4 V_12', 'type': 'generic', 'doc': 'cross sectional area yz', 'network': 'macroscopic', 'incidence_list': ['11', '12']}}",
@@ -821,7 +821,7 @@
       "units": "[0, 2, 0, 0, 0, 0, 0, 0]"
     },
     "72": {
-      "IRI": "promo:AreaXZ",
+      "IRI": "promo:Axz",
       "aliases": "{'global_ID': ' V_72', 'python': 'Axz', 'cpp': 'Axz', 'matlab': 'Axz', 'latex': '{A_{xz}}', 'internal_code': 'Axz'}",
       "doc": "cross sectional area xz",
       "equations": "{49: {'rhs': ' V_10 O_4 V_12', 'type': 'generic', 'doc': 'cross sectional area xz', 'network': 'macroscopic', 'incidence_list': ['10', '12']}}",
@@ -834,7 +834,7 @@
       "units": "[0, 2, 0, 0, 0, 0, 0, 0]"
     },
     "73": {
-      "IRI": "promo:AreaXY",
+      "IRI": "promo:Axy",
       "aliases": "{'global_ID': ' V_73', 'python': 'Axy', 'cpp': 'Axy', 'matlab': 'Axy', 'latex': '{A_{xy}}', 'internal_code': 'Axy'}",
       "doc": "cross sectional area xy",
       "equations": "{50: {'rhs': ' V_10 O_4 V_11', 'type': 'generic', 'doc': 'cross sectional area xy', 'network': 'macroscopic', 'incidence_list': ['10', '11']}}",
@@ -1081,7 +1081,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "92": {
-      "IRI": "qudt:VolumeFlowRate",
+      "IRI": "promo:fV",
       "aliases": "{'global_ID': ' V_92', 'python': 'fV', 'cpp': 'fV', 'matlab': 'fV', 'latex': '\\\\hat{V}', 'internal_code': 'fV'}",
       "doc": "volumetric flow",
       "equations": "{67: {'rhs': ' F_15 D_0 V_74 D_1 O_4 V_81 O_4 V_71 O_4 V_90  O_5  I_1 O_5  V_17', 'type': 'generic', 'doc': 'volumetric flow', 'network': 'macroscopic', 'incidence_list': ['17', '71', '74', '81', '90']}}",
@@ -1094,7 +1094,7 @@
       "units": "[-1, 3, 0, 0, 0, 0, 0, 0]"
     },
     "93": {
-      "IRI": "promo:EnthalpyFlowDiffusionPerStream",
+      "IRI": "promo:fnd_AS",
       "aliases": "{'global_ID': ' V_93', 'python': 'fnd_AS', 'cpp': 'fnd_AS', 'matlab': 'fnd_AS', 'latex': '{\\\\hat{n}^{d}}', 'internal_code': 'fnd_AS'}",
       "doc": "diffusional mass flow in a given stream",
       "equations": "{68: {'rhs': ' V_71 O_3 F_11 D_0 V_86 D_1 O_4 V_91  O_5  I_5 O_5  V_19', 'type': 'generic', 'doc': 'diffusional mass flow in a given stream', 'network': 'macroscopic', 'incidence_list': ['19', '71', '86', '91']}}",
@@ -1107,7 +1107,7 @@
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
     },
     "94": {
-      "IRI": "promo:NetDiffusionalAmountOfMaterialFlow",
+      "IRI": "promo:fnd",
       "aliases": "{'global_ID': ' V_94', 'python': 'fnd', 'cpp': 'fnd', 'matlab': 'fnd', 'latex': '{\\\\hat{n}^{d}}', 'internal_code': 'fnd'}",
       "doc": "net diffusional mass flow",
       "equations": "{69: {'rhs': ' V_70  O_5  I_6 O_5  V_93', 'type': 'generic', 'doc': 'net diffusional mass flow', 'network': 'macroscopic', 'incidence_list': ['70', '93']}}",
@@ -1120,7 +1120,7 @@
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
     },
     "95": {
-      "IRI": "promo:EnthalpyFlowDiffusion",
+      "IRI": "promo:fHd_A",
       "aliases": "{'global_ID': ' V_95', 'python': 'fHd_A', 'cpp': 'fHd_A', 'matlab': 'fHd_A', 'latex': '{\\\\hat{H}^d}', 'internal_code': 'fHd_A'}",
       "doc": "enthalpy flow per diffusional mass stream",
       "equations": "{70: {'rhs': ' D_0 V_70  O_5  I_5 O_5  V_75 D_1 O_5 I_3 O_14 I_6 O_5 V_93', 'type': 'generic', 'doc': 'enthalpy flow per diffusional mass stream', 'network': 'macroscopic', 'incidence_list': ['70', '75', '93']}}",
@@ -1133,7 +1133,7 @@
       "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
     },
     "96": {
-      "IRI": "promo:NetEnthalpyFlowDiffusion",
+      "IRI": "promo:fHd",
       "aliases": "{'global_ID': ' V_96', 'python': 'fHd', 'cpp': 'fHd', 'matlab': 'fHd', 'latex': '{\\\\hat{H}^d}', 'internal_code': 'fHd'}",
       "doc": "net enthaply stream due to diffusion",
       "equations": "{71: {'rhs': ' V_8  O_5  I_2 O_5  V_95', 'type': 'generic', 'doc': 'net enthaply stream due to diffusion', 'network': 'macroscopic', 'incidence_list': ['8', '95']}}",
@@ -1146,7 +1146,7 @@
       "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
     },
     "97": {
-      "IRI": "promo:FlowDirection",
+      "IRI": "promo:d",
       "aliases": "{'global_ID': ' V_97', 'python': 'd', 'cpp': 'd', 'matlab': 'd', 'latex': 'd', 'internal_code': 'd'}",
       "doc": "flow direction of convectional flow",
       "equations": "{72: {'rhs': ' F_16 D_0 V_8  O_5  I_1 O_5  V_17 D_1', 'type': 'generic', 'doc': 'flow direction of convectional flow', 'network': 'macroscopic', 'incidence_list': ['17', '8']}}",
@@ -1211,7 +1211,7 @@
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
     },
     "102": {
-      "IRI": "promo:EnthalpyFlowConvection",
+      "IRI": "promo:fHc_A",
       "aliases": "{'global_ID': ' V_102', 'python': 'fHc_A', 'cpp': 'fHc_A', 'matlab': 'fHc_A', 'latex': '{\\\\hat{H}^c}', 'internal_code': 'fHc_A'}",
       "doc": "convective enthalpy flow for given stream",
       "equations": "{77: {'rhs': ' D_0 V_70  O_5  I_5 O_5  V_75 D_1 O_5 I_3 O_14 I_6 O_5 V_99', 'type': 'generic', 'doc': 'convective enthalpy flow for given stream', 'network': 'macroscopic', 'incidence_list': ['70', '75', '99']}}",
@@ -1224,7 +1224,7 @@
       "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
     },
     "103": {
-      "IRI": "promo:NetEnthalpyFlowConvection",
+      "IRI": "promo:fHc",
       "aliases": "{'global_ID': ' V_103', 'python': 'fHc', 'cpp': 'fHc', 'matlab': 'fHc', 'latex': '{\\\\hat{H}^c}', 'internal_code': 'fHc'}",
       "doc": "net convectional enthalpy stream",
       "equations": "{78: {'rhs': ' V_8  O_5  I_2 O_5  V_102', 'type': 'generic', 'doc': 'net convectional enthalpy stream', 'network': 'macroscopic', 'incidence_list': ['102', '8']}}",
@@ -1237,7 +1237,7 @@
       "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
     },
     "104": {
-      "IRI": "promo:WorkFlow",
+      "IRI": "promo:fw_A",
       "aliases": "{'global_ID': ' V_104', 'python': 'fw_A', 'cpp': 'fw_A', 'matlab': 'fw_A', 'latex': '{\\\\hat{w}}', 'internal_code': 'fw_A'}",
       "doc": "sample work stream",
       "equations": "{79: {'rhs': ' O_11 D_0 V_102 D_7 V_1 D_1', 'type': 'instantiate', 'doc': 'sample work stream', 'network': 'macroscopic', 'incidence_list': ['1', '102']}}",
@@ -1250,7 +1250,7 @@
       "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
     },
     "105": {
-      "IRI": "promo:NetWorkFlow",
+      "IRI": "promo:fw",
       "aliases": "{'global_ID': ' V_105', 'python': 'fw', 'cpp': 'fw', 'matlab': 'fw', 'latex': '{\\\\hat{w}}', 'internal_code': 'fw'}",
       "doc": "net work stream",
       "equations": "{80: {'rhs': ' V_8  O_5  I_2 O_5  V_104', 'type': 'generic', 'doc': 'net work stream', 'network': 'macroscopic', 'incidence_list': ['104', '8']}}",
@@ -1263,7 +1263,7 @@
       "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
     },
     "106": {
-      "IRI": "promo:HeatFlowXDirection",
+      "IRI": "promo:fq_A_x",
       "aliases": "{'global_ID': ' V_106', 'python': 'fq_A_x', 'cpp': 'fq_A_x', 'matlab': 'fq_A_x', 'latex': '{\\\\hat{q}_{x}}', 'internal_code': 'fq_A_x'}",
       "doc": "heat flow in x-direction for given stream",
       "equations": "{81: {'rhs': ' V_71 O_4 V_76 O_4 V_90  O_5  I_1 O_5  V_18', 'type': 'generic', 'doc': 'heat flow in x-direction for given stream', 'network': 'macroscopic', 'incidence_list': ['18', '71', '76', '90']}}",
@@ -1276,7 +1276,7 @@
       "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
     },
     "107": {
-      "IRI": "qudt:HeatFlowRate",
+      "IRI": "promo:fq",
       "aliases": "{'global_ID': ' V_107', 'python': 'fq', 'cpp': 'fq', 'matlab': 'fq', 'latex': '{\\\\hat{q}}', 'internal_code': 'fq'}",
       "doc": "net heat flow",
       "equations": "{82: {'rhs': ' V_8  O_5  I_2 O_5  V_106', 'type': 'generic', 'doc': 'net heat flow', 'network': 'macroscopic', 'incidence_list': ['106', '8']}}",
@@ -1341,7 +1341,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "113": {
-      "IRI": "qudt:TotalCurrent",
+      "IRI": "promo:i",
       "aliases": "{'global_ID': ' V_113', 'python': 'i', 'cpp': 'i', 'matlab': 'i', 'latex': 'I', 'internal_code': 'i'}",
       "doc": "electrical current definition",
       "equations": "{89: {'rhs': ' O_8 D_0 V_23 D_7 V_5 D_1', 'type': 'generic', 'doc': 'electrical current definition', 'network': 'macroscopic', 'incidence_list': ['23', '5']}}",
@@ -1744,7 +1744,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "151": {
-      "IRI": "promo:ConcentrationMatrixRPerNodeSpeciesPerReaction",
+      "IRI": "promo:c",
       "aliases": "{'global_ID': ' V_151', 'python': 'c', 'cpp': 'c', 'matlab': 'c', 'latex': 'c', 'internal_code': 'c'}",
       "doc": "concentration matrix reaction per node and species per reaction",
       "equations": "{123: {'rhs': ' V_147 O_4 D_0 V_36  O_5  I_5 O_5  V_67 D_1', 'type': 'generic', 'doc': 'var doc : ', 'network': 'reactions', 'incidence_list': ['147', '36', '67']}}",
@@ -1757,7 +1757,7 @@
       "units": "[0, -3, 1, 0, 0, 0, 0, 0]"
     },
     "152": {
-      "IRI": "promo:NormingConcentration",
+      "IRI": "promo:co",
       "aliases": "{'global_ID': ' V_152', 'python': 'co', 'cpp': 'co', 'matlab': 'co', 'latex': '{c^o}', 'internal_code': 'co'}",
       "doc": "norming concentration",
       "equations": "{124: {'rhs': ' O_11 D_0 V_151 D_7 V_1 D_1', 'type': 'instantiate', 'doc': 'norming concentration', 'network': 'reactions', 'incidence_list': ['1', '151']}}",
@@ -1770,7 +1770,7 @@
       "units": "[0, -3, 1, 0, 0, 0, 0, 0]"
     },
     "153": {
-      "IRI": "qudt:MoleFraction",
+      "IRI": "promo:x",
       "aliases": "{'global_ID': ' V_153', 'python': 'x', 'cpp': 'x', 'matlab': 'x', 'latex': 'x', 'internal_code': 'x'}",
       "doc": "matrix of normed, dimensionless mole fractions ",
       "equations": "{125: {'rhs': ' F_15 D_0 V_152 D_1 O_4 V_151', 'type': 'generic', 'doc': 'matrix of normed, dimensionless mole fractions ', 'network': 'reactions', 'incidence_list': ['151', '152']}}",
@@ -1822,7 +1822,7 @@
       "units": "[-2, 2, -1, 1, -1, 0, 0, 0]"
     },
     "158": {
-      "IRI": "promo:StoichiometrixMatrixKKS",
+      "IRI": "promo:N_K_KS",
       "aliases": "{'global_ID': ' V_158', 'python': 'N_K_KS', 'cpp': 'N_K_KS', 'matlab': 'N_K_KS', 'latex': 'N', 'internal_code': 'N_K_KS'}",
       "doc": "stoichiometry",
       "equations": "{}",
@@ -1835,7 +1835,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "159": {
-      "IRI": "promo:StoichiometricMatrixNKKS",
+      "IRI": "promo:N_NK_KS",
       "aliases": "{'global_ID': ' V_159', 'python': 'N_NK_KS', 'cpp': 'N_NK_KS', 'matlab': 'N_NK_KS', 'latex': 'N', 'internal_code': 'N_NK_KS'}",
       "doc": "extended stoichiometrix matrix",
       "equations": "{128: {'rhs': ' V_33  O_5  I_4 O_5  V_158', 'type': 'generic', 'doc': 'extended stoichiometrix matrix', 'network': 'reactions', 'incidence_list': ['158', '33']}}",
@@ -1848,7 +1848,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "160": {
-      "IRI": "promo:KineticProbability",
+      "IRI": "promo:phi",
       "aliases": "{'global_ID': ' V_160', 'python': 'phi', 'cpp': 'phi', 'matlab': 'phi', 'latex': '\\\\phi', 'internal_code': 'phi'}",
       "doc": "probability function for reactions",
       "equations": "{129: {'rhs': ' O_10 D_0 V_153 O_2 D_0 V_159 D_1 D_7 I_8 D_1', 'type': 'generic', 'doc': 'probability function for reactions', 'network': 'reactions', 'incidence_list': ['153', '159']}}",
@@ -1874,7 +1874,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "163": {
-      "IRI": "promo:ProductionRate",
+      "IRI": "promo:nProd",
       "aliases": "{'global_ID': ' V_163', 'python': 'nProd', 'cpp': 'nProd', 'matlab': 'nProd', 'latex': '\\\\tilde{n}', 'internal_code': 'nProd'}",
       "doc": "the species production term",
       "equations": "{130: {'rhs': ' V_15  O_5  I_1 O_5  D_0 V_35  O_5  I_7 O_5  D_0 D_0 V_63 O_4 V_160 D_1 O_4 D_0 V_36  O_5  I_8 O_5  V_159 D_1 D_1 D_1', 'type': 'generic', 'doc': 'the species production term', 'network': 'reactions', 'incidence_list': ['15', '159', '160', '35', '36', '63']}}",

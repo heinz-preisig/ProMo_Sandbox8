@@ -45,7 +45,7 @@ from Common.ontology_container import OntologyContainer
 
 from owlready2 import *
 
-ontology = OntologyContainer("ProMo_sandbox7") #'flash_03')
+ontology = OntologyContainer("ProMo_Sandbox9") #'flash_03')
 
 
 variables = ontology.variables
