@@ -5,85 +5,542 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+promo:Axy a promo:variable ;
+    promo:doc "cross sectional area xy" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_50 ;
+    promo:label "Axy" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "geometry" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:Axz a promo:variable ;
+    promo:doc "cross sectional area xz" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_49 ;
+    promo:label "Axz" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "geometry" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:Ho a promo:variable ;
+    promo:doc "initial enthalpy" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_84 ;
+    promo:label "Ho" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "state" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -2 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:P_A_NS a promo:variable ;
+    promo:doc "projection arc to node species for conductivity" ;
+    promo:has_index promo:arc,
+        promo:node_x_species ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "P_A_NS" ;
+    promo:network "physical" ;
+    promo:port_variable "True" ;
+    promo:type "projection" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:P_NK_KS a promo:variable ;
+    promo:doc "projection node conversion to conversion species" ;
+    promo:has_index promo:node_x_species_conversion,
+        promo:species_conversion_x_species ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "P_NK_KS" ;
+    promo:network "physical" ;
+    promo:port_variable "True" ;
+    promo:type "projection" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:P_NS_AS a promo:variable ;
+    promo:doc "projection node species to arc species" ;
+    promo:has_index promo:arc_x_species,
+        promo:node_x_species ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "P_NS_AS" ;
+    promo:network "physical" ;
+    promo:port_variable "True" ;
+    promo:type "projection" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:P_N_A a promo:variable ;
+    promo:doc "projection from node to arc for arc properties" ;
+    promo:has_index promo:arc,
+        promo:node ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "P_N_A" ;
+    promo:network "physical" ;
+    promo:port_variable "True" ;
+    promo:type "projection" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:P_N_NS a promo:variable ;
+    promo:doc "projection of nodes onto the node species" ;
+    promo:has_index promo:node,
+        promo:node_x_species ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "P_N_NS" ;
+    promo:network "physical" ;
+    promo:port_variable "True" ;
+    promo:type "projection" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:P_S_NS a promo:variable ;
+    promo:doc "projection species to node species" ;
+    promo:has_index promo:node_x_species,
+        promo:species ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "P_S_NS" ;
+    promo:network "physical" ;
+    promo:port_variable "True" ;
+    promo:type "projection" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_Cp a promo:variable ;
+    promo:doc "link variable Cp to interface material >>> macroscopic" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_59 ;
+    promo:label "_Cp" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -2 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_Cv a promo:variable ;
+    promo:doc "link variable Cv to interface material >>> macroscopic" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_54 ;
+    promo:label "_Cv" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -2 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_T a promo:variable ;
+    promo:doc "link variable T to interface macroscopic >>> control" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_105 ;
+    promo:label "_T" ;
+    promo:network "macroscopic >>> control" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 1 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_kc a promo:variable ;
+    promo:doc "link variable kc to interface material >>> macroscopic" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_62 ;
+    promo:label "_kc" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length -1 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_kc_y a promo:variable ;
+    promo:doc "link variable kc_y to interface material >>> macroscopic" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_60 ;
+    promo:label "_kc_y" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length -1 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_kc_z a promo:variable ;
+    promo:doc "link variable kc_z to interface material >>> macroscopic" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_61 ;
+    promo:label "_kc_z" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length -1 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_kd a promo:variable ;
+    promo:doc "link variable kd to interface material >>> macroscopic" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_66 ;
+    promo:label "_kd" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 2 ;
+    promo:unit_current 0 ;
+    promo:unit_length -4 ;
+    promo:unit_light 0 ;
+    promo:unit_mass -1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_kd_y a promo:variable ;
+    promo:doc "link variable kd_y to interface material >>> macroscopic" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_64 ;
+    promo:label "_kd_y" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 2 ;
+    promo:unit_current 0 ;
+    promo:unit_length -4 ;
+    promo:unit_light 0 ;
+    promo:unit_mass -1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_kd_z a promo:variable ;
+    promo:doc "link variable kd_z to interface material >>> macroscopic" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_65 ;
+    promo:label "_kd_z" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 2 ;
+    promo:unit_current 0 ;
+    promo:unit_length -4 ;
+    promo:unit_light 0 ;
+    promo:unit_mass -1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_kq a promo:variable ;
+    promo:doc "link variable kq to interface material >>> macroscopic" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_57 ;
+    promo:label "_kq" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_kq_y a promo:variable ;
+    promo:doc "link variable kq_y to interface material >>> macroscopic" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_55 ;
+    promo:label "_kq_y" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_kq_z a promo:variable ;
+    promo:doc "link variable kq_z to interface material >>> macroscopic" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_56 ;
+    promo:label "_kq_z" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
 promo:aliases a rdf:Property ;
     rdfs:domain promo:variable ;
     rdfs:range rdfs:List .
 
 promo:charge a promo:token .
-
-<http://example.org#control+store> a promo:variable ;
-    promo:doc "quantities to be stored" ;
-    promo:is_defined_by_expression_list promo:expression_list_118 ;
-    promo:label "store" ;
-    promo:network "control" ;
-    promo:port_variable "False" ;
-    promo:type "algebraic" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#control+xo> a promo:variable ;
-    promo:doc "initial state" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_109 ;
-    promo:label "xo" ;
-    promo:network "control" ;
-    promo:port_variable "False" ;
-    promo:type "state" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#control+y> a promo:variable ;
-    promo:doc "output equation" ;
-    promo:has_index promo:arc ;
-    promo:is_defined_by_expression_list promo:expression_list_126 ;
-    promo:label "y" ;
-    promo:network "control" ;
-    promo:port_variable "False" ;
-    promo:type "algebraic" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
 
 promo:energy a promo:token .
 
@@ -113,112 +570,7 @@ promo:indices a rdf:Property ;
     rdfs:domain promo:blockIndex ;
     rdfs:range rdfs:List .
 
-promo:label a rdf:Property ;
-    rdfs:domain rdfs:blockIndex,
-        rdfs:index ;
-    rdfs:range rdfs:Literal .
-
-<http://example.org#macroscopic+AmountOfSubstanceInitial> a promo:variable ;
-    promo:doc "initial species" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_85 ;
-    promo:label "no" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "state" ;
-    promo:unit_amount 1 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+AreaXY> a promo:variable ;
-    promo:doc "cross sectional area xy" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_50 ;
-    promo:label "Axy" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "geometry" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+AreaXZ> a promo:variable ;
-    promo:doc "cross sectional area xz" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_49 ;
-    promo:label "Axz" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "geometry" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+EnthalpyInitial> a promo:variable ;
-    promo:doc "initial enthalpy" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_84 ;
-    promo:label "Ho" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "state" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -2 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+Intensities> a promo:variable ;
+promo:intensities a promo:variable ;
     promo:doc "collected intensities" ;
     promo:is_defined_by_expression_list promo:expression_list_106 ;
     promo:label "intensities" ;
@@ -242,7 +594,14 @@ promo:label a rdf:Property ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#macroscopic+TotalAmountOfSubstances> a promo:variable ;
+promo:label a rdf:Property ;
+    rdfs:domain rdfs:blockIndex,
+        rdfs:index ;
+    rdfs:range rdfs:Literal .
+
+promo:mass a promo:token .
+
+promo:nTotal a promo:variable ;
     promo:doc "total number of moles" ;
     promo:has_index promo:node ;
     promo:is_defined_by_expression_list promo:expression_list_107 ;
@@ -267,332 +626,6 @@ promo:label a rdf:Property ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#macroscopic---control+_T> a promo:variable ;
-    promo:doc "link variable T to interface macroscopic >>> control" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_105 ;
-    promo:label "_T" ;
-    promo:network "macroscopic >>> control" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 1 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-promo:mass a promo:token .
-
-<http://example.org#material---macroscopic+_Cp> a promo:variable ;
-    promo:doc "link variable Cp to interface material >>> macroscopic" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_59 ;
-    promo:label "_Cp" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -2 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_Cv> a promo:variable ;
-    promo:doc "link variable Cv to interface material >>> macroscopic" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_54 ;
-    promo:label "_Cv" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -2 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_additive> a promo:variable ;
-    promo:doc "link variable additive to interface material >>> macroscopic" ;
-    promo:is_defined_by_expression_list promo:expression_list_112 ;
-    promo:label "_additive" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_kc> a promo:variable ;
-    promo:doc "link variable kc to interface material >>> macroscopic" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_62 ;
-    promo:label "_kc" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length -1 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_kc_y> a promo:variable ;
-    promo:doc "link variable kc_y to interface material >>> macroscopic" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_60 ;
-    promo:label "_kc_y" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length -1 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_kc_z> a promo:variable ;
-    promo:doc "link variable kc_z to interface material >>> macroscopic" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_61 ;
-    promo:label "_kc_z" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length -1 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_kd> a promo:variable ;
-    promo:doc "link variable kd to interface material >>> macroscopic" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_66 ;
-    promo:label "_kd" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 2 ;
-    promo:unit_current 0 ;
-    promo:unit_length -4 ;
-    promo:unit_light 0 ;
-    promo:unit_mass -1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_kd_y> a promo:variable ;
-    promo:doc "link variable kd_y to interface material >>> macroscopic" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_64 ;
-    promo:label "_kd_y" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 2 ;
-    promo:unit_current 0 ;
-    promo:unit_length -4 ;
-    promo:unit_light 0 ;
-    promo:unit_mass -1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_kd_z> a promo:variable ;
-    promo:doc "link variable kd_z to interface material >>> macroscopic" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_65 ;
-    promo:label "_kd_z" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 2 ;
-    promo:unit_current 0 ;
-    promo:unit_length -4 ;
-    promo:unit_light 0 ;
-    promo:unit_mass -1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_kq> a promo:variable ;
-    promo:doc "link variable kq to interface material >>> macroscopic" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_57 ;
-    promo:label "_kq" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_kq_y> a promo:variable ;
-    promo:doc "link variable kq_y to interface material >>> macroscopic" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_55 ;
-    promo:label "_kq_y" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_kq_z> a promo:variable ;
-    promo:doc "link variable kq_z to interface material >>> macroscopic" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_56 ;
-    promo:label "_kq_z" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
 promo:name a rdf:Property ;
     rdfs:range rdfs:Literal .
 
@@ -602,146 +635,15 @@ promo:network a rdf:Property ;
         promo:variable ;
     rdfs:range rdfs:Literal .
 
-<http://example.org#physical+Projection_A_NS> a promo:variable ;
-    promo:doc "projection arc to node species for conductivity" ;
-    promo:has_index promo:arc,
-        promo:node_x_species ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "P_A_NS" ;
-    promo:network "physical" ;
-    promo:port_variable "True" ;
-    promo:type "projection" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#physical+Projection_NK_KS> a promo:variable ;
-    promo:doc "projection node conversion to conversion species" ;
-    promo:has_index promo:node_x_species_conversion,
-        promo:species_conversion_x_species ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "P_NK_KS" ;
-    promo:network "physical" ;
-    promo:port_variable "True" ;
-    promo:type "projection" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#physical+Projection_NS_AS> a promo:variable ;
-    promo:doc "projection node species to arc species" ;
-    promo:has_index promo:arc_x_species,
-        promo:node_x_species ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "P_NS_AS" ;
-    promo:network "physical" ;
-    promo:port_variable "True" ;
-    promo:type "projection" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#physical+Projection_N_A> a promo:variable ;
-    promo:doc "projection from node to arc for arc properties" ;
-    promo:has_index promo:arc,
-        promo:node ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "P_N_A" ;
-    promo:network "physical" ;
-    promo:port_variable "True" ;
-    promo:type "projection" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#physical+Projection_N_NS> a promo:variable ;
-    promo:doc "projection of nodes onto the node species" ;
-    promo:has_index promo:node,
-        promo:node_x_species ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "P_N_NS" ;
-    promo:network "physical" ;
-    promo:port_variable "True" ;
-    promo:type "projection" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#physical+Projection_S_NS> a promo:variable ;
-    promo:doc "projection species to node species" ;
-    promo:has_index promo:node_x_species,
-        promo:species ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "P_S_NS" ;
-    promo:network "physical" ;
-    promo:port_variable "True" ;
-    promo:type "projection" ;
-    promo:unit_amount 0 ;
+promo:no a promo:variable ;
+    promo:doc "initial species" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_85 ;
+    promo:label "no" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "state" ;
+    promo:unit_amount 1 ;
     promo:unit_current 0 ;
     promo:unit_length 0 ;
     promo:unit_light 0 ;
@@ -760,6 +662,30 @@ promo:network a rdf:Property ;
 
 promo:signal a promo:token .
 
+promo:store a promo:variable ;
+    promo:doc "quantities to be stored" ;
+    promo:is_defined_by_expression_list promo:expression_list_118 ;
+    promo:label "store" ;
+    promo:network "control" ;
+    promo:port_variable "False" ;
+    promo:type "algebraic" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
 promo:token_list a rdf:Property ;
     rdfs:domain promo:variable ;
     rdfs:range rdfs:List .
@@ -771,6 +697,56 @@ promo:tokens a rdf:Property ;
 promo:units a rdf:Property ;
     rdfs:domain promo:variable ;
     rdfs:range rdfs:List .
+
+promo:xo a promo:variable ;
+    promo:doc "initial state" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_109 ;
+    promo:label "xo" ;
+    promo:network "control" ;
+    promo:port_variable "False" ;
+    promo:type "state" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:y a promo:variable ;
+    promo:doc "output equation" ;
+    promo:has_index promo:arc ;
+    promo:is_defined_by_expression_list promo:expression_list_126 ;
+    promo:label "y" ;
+    promo:network "control" ;
+    promo:port_variable "False" ;
+    promo:type "algebraic" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
 
 promolg:BlockReduce rdfs:label "BlockReduce" ;
     rdfs:subClassOf promolg:operator .
@@ -888,7 +864,7 @@ qudt:HelmholtzEnergy a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+A> a promo:variable ;
+promo:A a promo:variable ;
     promo:doc "dynamic matrix" ;
     promo:has_index promo:diffSpace,
         promo:node ;
@@ -914,7 +890,31 @@ qudt:HelmholtzEnergy a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+B> a promo:variable ;
+promo:Avogadro a promo:variable ;
+    promo:doc "Avogadro number" ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "Avogadro" ;
+    promo:network "physical" ;
+    promo:port_variable "True" ;
+    promo:type "constant" ;
+    promo:unit_amount -1 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:B a promo:variable ;
     promo:doc "input matrix" ;
     promo:has_index promo:arc,
         promo:diffSpace ;
@@ -940,7 +940,31 @@ qudt:HelmholtzEnergy a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+C> a promo:variable ;
+promo:Boltzmann a promo:variable ;
+    promo:doc "Boltzmann constant" ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "Boltzmann" ;
+    promo:network "reactions" ;
+    promo:port_variable "True" ;
+    promo:type "constant" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -2 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:C a promo:variable ;
     promo:doc "measurement matrix" ;
     promo:has_index promo:arc,
         promo:node ;
@@ -966,14 +990,65 @@ qudt:HelmholtzEnergy a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+D> a promo:variable ;
-    promo:doc "diagonal event matrix (no dimensional problems)" ;
-    promo:has_index promo:arc ;
+promo:Cp a promo:variable ;
+    promo:doc "total heat capacity at constant pressure" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_21 ;
+    promo:label "Cp" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -2 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:Cv a promo:variable ;
+    promo:doc "total heat capacity at constant volume" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_22 ;
+    promo:label "Cv" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -2 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:D_NS_AS a promo:variable ;
+    promo:doc "difference operator for species topology" ;
+    promo:has_index promo:arc_x_species,
+        promo:node_x_species ;
     promo:is_defined_by_expression_list () ;
-    promo:label "D" ;
-    promo:network "control" ;
+    promo:label "D_NS_AS" ;
+    promo:network "macroscopic" ;
     promo:port_variable "True" ;
-    promo:type "constant" ;
+    promo:type "differenceOperator" ;
     promo:unit_amount 0 ;
     promo:unit_current 0 ;
     promo:unit_length 0 ;
@@ -991,7 +1066,32 @@ qudt:HelmholtzEnergy a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+I_N_D> a promo:variable ;
+promo:Ea a promo:variable ;
+    promo:doc "Arrhenius activation energy" ;
+    promo:has_index promo:node_x_species_conversion ;
+    promo:is_defined_by_expression_list promo:expression_list_41 ;
+    promo:label "Ea" ;
+    promo:network "reactions" ;
+    promo:port_variable "False" ;
+    promo:type "constant" ;
+    promo:unit_amount -1 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -2 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:I_N_D a promo:variable ;
     promo:doc "space transformation D to N" ;
     promo:has_index promo:diffSpace,
         promo:node ;
@@ -1017,7 +1117,134 @@ qudt:HelmholtzEnergy a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+RComputed> a promo:variable ;
+promo:K_NK a promo:variable ;
+    promo:doc "Arrhenius reaction 'constant'" ;
+    promo:has_index promo:node_x_species_conversion ;
+    promo:is_defined_by_expression_list promo:expression_list_42 ;
+    promo:label "K_NK" ;
+    promo:network "reactions" ;
+    promo:port_variable "False" ;
+    promo:type "constant" ;
+    promo:unit_amount 1 ;
+    promo:unit_current 0 ;
+    promo:unit_length -3 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:Ko a promo:variable ;
+    promo:doc "Arrhenius frequency factor" ;
+    promo:has_index promo:species_conversion ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "Ko" ;
+    promo:network "reactions" ;
+    promo:port_variable "True" ;
+    promo:type "constant" ;
+    promo:unit_amount 1 ;
+    promo:unit_current 0 ;
+    promo:unit_length -3 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:N_K_KS a promo:variable ;
+    promo:doc "stoichiometry" ;
+    promo:has_index promo:species_conversion,
+        promo:species_conversion_x_species ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "N_K_KS" ;
+    promo:network "reactions" ;
+    promo:port_variable "True" ;
+    promo:type "constant" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:P_K_NK a promo:variable ;
+    promo:doc "projection of conversion to node conversion" ;
+    promo:has_index promo:node_x_species_conversion,
+        promo:species_conversion ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "P_K_NK" ;
+    promo:network "physical" ;
+    promo:port_variable "True" ;
+    promo:type "projection" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:P_NK a promo:variable ;
+    promo:doc "reactions per node" ;
+    promo:has_index promo:node_x_species_conversion ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "P_NK" ;
+    promo:network "reactions" ;
+    promo:port_variable "True" ;
+    promo:type "projection" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:RComputed a promo:variable ;
     promo:doc "measured resistance " ;
     promo:has_index promo:node ;
     promo:is_defined_by_expression_list promo:expression_list_117 ;
@@ -1042,7 +1269,284 @@ qudt:HelmholtzEnergy a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+addMeasured> a promo:variable ;
+promo:_Mm a promo:variable ;
+    promo:doc "link variable Mm to interface material >>> macroscopic" ;
+    promo:has_index promo:species ;
+    promo:is_defined_by_expression_list promo:expression_list_20 ;
+    promo:label "_Mm" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount -1 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_Ue a promo:variable ;
+    promo:doc "link variable Ue to interface macroscopic >>> control" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_114 ;
+    promo:label "_Ue" ;
+    promo:network "macroscopic >>> control" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current -1 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_additive a promo:variable ;
+    promo:doc "link variable additive to interface material >>> control",
+        "link variable additive to interface material >>> macroscopic" ;
+    promo:is_defined_by_expression_list promo:expression_list_104,
+        promo:expression_list_112 ;
+    promo:label "_additive" ;
+    promo:network "material >>> control",
+        "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_c a promo:variable ;
+    promo:doc "link variable c to interface macroscopic >>> reactions" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_45 ;
+    promo:label "_c" ;
+    promo:network "macroscopic >>> reactions" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 1 ;
+    promo:unit_current 0 ;
+    promo:unit_length -3 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_density a promo:variable ;
+    promo:doc "link variable density to interface material >>> macroscopic" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_51 ;
+    promo:label "_density" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length -3 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_elConductC a promo:variable ;
+    promo:doc "link variable elConductC to interface material >>> macroscopic" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_94 ;
+    promo:label "_elConductC" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 2 ;
+    promo:unit_length -2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass -1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_kc_x a promo:variable ;
+    promo:doc "link variable kc_x to interface material >>> macroscopic" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_58 ;
+    promo:label "_kc_x" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length -1 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_kd_x a promo:variable ;
+    promo:doc "link variable kd_x to interface material >>> macroscopic" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_63 ;
+    promo:label "_kd_x" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 2 ;
+    promo:unit_current 0 ;
+    promo:unit_length -4 ;
+    promo:unit_light 0 ;
+    promo:unit_mass -1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_kq_x a promo:variable ;
+    promo:doc "link variable kq_x to interface material >>> macroscopic" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_53 ;
+    promo:label "_kq_x" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_m a promo:variable ;
+    promo:doc "link variable m to interface macroscopic >>> material" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_37 ;
+    promo:label "_m" ;
+    promo:network "macroscopic >>> material" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_nProd a promo:variable ;
+    promo:doc "link variable nProd to interface reactions >>> macroscopic" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_131 ;
+    promo:label "_nProd" ;
+    promo:network "reactions >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 1 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:addMeasured a promo:variable ;
     promo:doc "measured additive fraction" ;
     promo:is_defined_by_expression_list promo:expression_list_116 ;
     promo:label "addMeasured" ;
@@ -1066,7 +1570,185 @@ qudt:HelmholtzEnergy a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+dxdt> a promo:variable ;
+promo:c_AS a promo:variable ;
+    promo:doc "concentration in convectional flow" ;
+    promo:has_index promo:arc_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_73 ;
+    promo:label "c_AS" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "secondaryState" ;
+    promo:unit_amount 1 ;
+    promo:unit_current 0 ;
+    promo:unit_length -3 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:co a promo:variable ;
+    promo:doc "norming concentration" ;
+    promo:has_index promo:node_x_species_conversion,
+        promo:species_conversion_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_124 ;
+    promo:label "co" ;
+    promo:network "reactions" ;
+    promo:port_variable "False" ;
+    promo:type "secondaryState" ;
+    promo:unit_amount 1 ;
+    promo:unit_current 0 ;
+    promo:unit_length -3 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:d a promo:variable ;
+    promo:doc "flow direction of convectional flow" ;
+    promo:has_index promo:arc ;
+    promo:is_defined_by_expression_list promo:expression_list_72 ;
+    promo:label "d" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "transport" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:dHdt a promo:variable ;
+    promo:doc "differential enthalpy balance" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_83 ;
+    promo:label "dHdt" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "diffState" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:dUedt a promo:variable ;
+    promo:doc "Kirkhoff first law" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_96,
+        promo:expression_list_97,
+        promo:expression_list_98 ;
+    promo:label "dUedt" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "diffState" ;
+    promo:unit_amount 0 ;
+    promo:unit_current -1 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:density a promo:variable ;
+    promo:doc "density" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_38 ;
+    promo:label "density" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length -3 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:dndt a promo:variable ;
+    promo:doc "differential species balance" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_76 ;
+    promo:label "dndt" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "diffState" ;
+    promo:unit_amount 1 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:dxdt a promo:variable ;
     promo:doc "differential state (ABCD) model" ;
     promo:has_index promo:diffSpace ;
     promo:is_defined_by_expression_list promo:expression_list_110 ;
@@ -1091,22 +1773,22 @@ qudt:HelmholtzEnergy a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+meas> a promo:variable ;
-    promo:doc "measurements" ;
-    promo:has_index promo:arc ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "meas" ;
-    promo:network "control" ;
-    promo:port_variable "True" ;
-    promo:type "constant" ;
+promo:elConductC a promo:variable ;
+    promo:doc "simple model for the electrical conductivity as a function of the additive" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_93 ;
+    promo:label "elConductC" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
     promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
+    promo:unit_current 2 ;
+    promo:unit_length -2 ;
     promo:unit_light 0 ;
-    promo:unit_mass 0 ;
+    promo:unit_mass -1 ;
     promo:unit_nil 0 ;
     promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
+    promo:unit_time 3 ;
     qudt:A promo:unit_current ;
     qudt:CD promo:unit_light ;
     qudt:K promo:unit_temperature ;
@@ -1122,9 +1804,9 @@ promo:expression_list_1 a rdf:List ;
     promo:network "root" ;
     rdf:_00 promolg:Instantiate ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#root+Value> ;
+    rdf:_02 promo:value ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_10 a rdf:List ;
@@ -1141,7 +1823,7 @@ promo:expression_list_104 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> control" ;
-    rdf:_00 <http://example.org#material+additive> .
+    rdf:_00 promo:additive .
 
 promo:expression_list_105 a rdf:List ;
     promo:doc "interface equation" ;
@@ -1170,7 +1852,7 @@ promo:expression_list_107 a rdf:List ;
     promo:doc "total number of moles" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#macroscopic+VectorOfOnes> ;
+    rdf:_00 promo:one_S ;
     rdf:_01 promolg:reduceProduct ;
     rdf:_02 promo:species ;
     rdf:_03 promolg:in ;
@@ -1182,9 +1864,9 @@ promo:expression_list_108 a rdf:List ;
     promo:doc "control error" ;
     promo:equation_class "generic" ;
     promo:network "control" ;
-    rdf:_00 <http://example.org#control+meas> ;
+    rdf:_00 promo:meas ;
     rdf:_01 promolg:minus ;
-    rdf:_02 <http://example.org#control+setPoint> .
+    rdf:_02 promo:setPoint .
 
 promo:expression_list_109 a rdf:List ;
     promo:doc "initial state" ;
@@ -1192,9 +1874,9 @@ promo:expression_list_109 a rdf:List ;
     promo:network "control" ;
     rdf:_00 promolg:Instantiate ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#control+x> ;
+    rdf:_02 promo:x ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_11 a rdf:List ;
@@ -1215,17 +1897,17 @@ promo:expression_list_110 a rdf:List ;
     promo:doc "differential state (ABCD) model" ;
     promo:equation_class "generic" ;
     promo:network "control" ;
-    rdf:_00 <http://example.org#control+A> ;
+    rdf:_00 promo:A ;
     rdf:_01 promolg:reduceProduct ;
     rdf:_02 promo:node ;
     rdf:_03 promolg:reduceProduct ;
-    rdf:_04 <http://example.org#control+x> ;
+    rdf:_04 promo:x ;
     rdf:_05 promolg:plus ;
-    rdf:_06 <http://example.org#control+B> ;
+    rdf:_06 promo:B ;
     rdf:_07 promolg:reduceProduct ;
     rdf:_08 promo:arc ;
     rdf:_09 promolg:reduceProduct ;
-    rdf:_10 <http://example.org#control+e> .
+    rdf:_10 promo:e .
 
 promo:expression_list_111 a rdf:List ;
     promo:doc "state" ;
@@ -1233,18 +1915,18 @@ promo:expression_list_111 a rdf:List ;
     promo:network "control" ;
     rdf:_00 promolg:Integral ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#control+I_N_D> ;
+    rdf:_02 promo:I_N_D ;
     rdf:_03 promolg:reduceProduct ;
     rdf:_04 promo:diffSpace ;
     rdf:_05 promolg:reduceProduct ;
-    rdf:_06 <http://example.org#control+dxdt> ;
+    rdf:_06 promo:dxdt ;
     rdf:_07 promolg:double_column ;
     rdf:_08 qudt:Time ;
     rdf:_09 promolg:in ;
     rdf:_10 promolg:left_square ;
-    rdf:_11 <http://example.org#root+TimeStart> ;
+    rdf:_11 promo:to ;
     rdf:_12 promolg:comma ;
-    rdf:_13 <http://example.org#root+TimeEnd> ;
+    rdf:_13 promo:te ;
     rdf:_14 promolg:right_square ;
     rdf:_15 promolg:right_round .
 
@@ -1252,13 +1934,13 @@ promo:expression_list_112 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+additive> .
+    rdf:_00 promo:additive .
 
 promo:expression_list_113 a rdf:List ;
     promo:doc "measured current" ;
     promo:equation_class "generic" ;
     promo:network "control" ;
-    rdf:_00 <http://example.org#macroscopic---control+_i> .
+    rdf:_00 promo:_i .
 
 promo:expression_list_114 a rdf:List ;
     promo:doc "interface equation" ;
@@ -1270,13 +1952,13 @@ promo:expression_list_115 a rdf:List ;
     promo:doc "measured electrical potential" ;
     promo:equation_class "generic" ;
     promo:network "control" ;
-    rdf:_00 <http://example.org#macroscopic---control+_Ue> .
+    rdf:_00 promo:_Ue .
 
 promo:expression_list_116 a rdf:List ;
     promo:doc "measured additive fraction" ;
     promo:equation_class "generic" ;
     promo:network "control" ;
-    rdf:_00 <http://example.org#material---control+_additive> .
+    rdf:_00 promo:_additive .
 
 promo:expression_list_117 a rdf:List ;
     promo:doc "measured resistance " ;
@@ -1284,10 +1966,10 @@ promo:expression_list_117 a rdf:List ;
     promo:network "control" ;
     rdf:_00 promolg:inv ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#control+Imeasured> ;
+    rdf:_02 promo:Imeasured ;
     rdf:_03 promolg:right_round ;
     rdf:_04 promolg:expandProduct ;
-    rdf:_05 <http://example.org#control+UeMeasured> .
+    rdf:_05 promo:UeMeasured .
 
 promo:expression_list_118 a rdf:List ;
     promo:doc "quantities to be stored" ;
@@ -1295,13 +1977,13 @@ promo:expression_list_118 a rdf:List ;
     promo:network "control" ;
     rdf:_00 promolg:MixedStack ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#control+Imeasured> ;
+    rdf:_02 promo:Imeasured ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#control+UeMeasured> ;
+    rdf:_04 promo:UeMeasured ;
     rdf:_05 promolg:comma ;
-    rdf:_06 <http://example.org#control+RComputed> ;
+    rdf:_06 promo:RComputed ;
     rdf:_07 promolg:comma ;
-    rdf:_08 <http://example.org#control+addMeasured> ;
+    rdf:_08 promo:addMeasured ;
     rdf:_09 promolg:right_round .
 
 promo:expression_list_119 a rdf:List ;
@@ -1310,23 +1992,23 @@ promo:expression_list_119 a rdf:List ;
     promo:network "control" ;
     rdf:_00 promolg:Instantiate ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#control+setPoint> ;
+    rdf:_02 promo:setPoint ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_123 a rdf:List ;
     promo:doc "var doc : " ;
     promo:equation_class "generic" ;
     promo:network "reactions" ;
-    rdf:_00 <http://example.org#reactions+P_NK> ;
+    rdf:_00 promo:P_NK ;
     rdf:_01 promolg:expandProduct ;
     rdf:_02 promolg:left_round ;
-    rdf:_03 <http://example.org#physical+Projection_NS_KS> ;
+    rdf:_03 promo:P_NS_KS ;
     rdf:_04 promolg:reduceProduct ;
     rdf:_05 promo:node_x_species ;
     rdf:_06 promolg:reduceProduct ;
-    rdf:_07 <http://example.org#macroscopic---reactions+_c> ;
+    rdf:_07 promo:_c ;
     rdf:_08 promolg:right_round .
 
 promo:expression_list_124 a rdf:List ;
@@ -1335,9 +2017,9 @@ promo:expression_list_124 a rdf:List ;
     promo:network "reactions" ;
     rdf:_00 promolg:Instantiate ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#reactions+ConcentrationMatrixRPerNodeSpeciesPerReaction> ;
+    rdf:_02 promo:c ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_125 a rdf:List ;
@@ -1346,42 +2028,42 @@ promo:expression_list_125 a rdf:List ;
     promo:network "reactions" ;
     rdf:_00 promolg:inv ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#reactions+NormingConcentration> ;
+    rdf:_02 promo:co ;
     rdf:_03 promolg:right_round ;
     rdf:_04 promolg:expandProduct ;
-    rdf:_05 <http://example.org#reactions+ConcentrationMatrixRPerNodeSpeciesPerReaction> .
+    rdf:_05 promo:c .
 
 promo:expression_list_126 a rdf:List ;
     promo:doc "output equation" ;
     promo:equation_class "generic" ;
     promo:network "control" ;
-    rdf:_00 <http://example.org#control+C> ;
+    rdf:_00 promo:C ;
     rdf:_01 promolg:reduceProduct ;
     rdf:_02 promo:node ;
     rdf:_03 promolg:reduceProduct ;
-    rdf:_04 <http://example.org#control+x> ;
+    rdf:_04 promo:x ;
     rdf:_05 promolg:plus ;
-    rdf:_06 <http://example.org#control+D> ;
+    rdf:_06 promo:D ;
     rdf:_07 promolg:expandProduct ;
-    rdf:_08 <http://example.org#control+e> .
+    rdf:_08 promo:e .
 
 promo:expression_list_127 a rdf:List ;
     promo:doc "gas constant" ;
     promo:equation_class "generic" ;
     promo:network "reactions" ;
-    rdf:_00 <http://example.org#physical+AvogadroNumber> ;
+    rdf:_00 promo:Avogadro ;
     rdf:_01 promolg:expandProduct ;
-    rdf:_02 <http://example.org#reactions+Boltzmann> .
+    rdf:_02 promo:Boltzmann .
 
 promo:expression_list_128 a rdf:List ;
     promo:doc "extended stoichiometrix matrix" ;
     promo:equation_class "generic" ;
     promo:network "reactions" ;
-    rdf:_00 <http://example.org#physical+Projection_K_NK> ;
+    rdf:_00 promo:P_K_NK ;
     rdf:_01 promolg:reduceProduct ;
     rdf:_02 promo:species_conversion ;
     rdf:_03 promolg:reduceProduct ;
-    rdf:_04 <http://example.org#reactions+StoichiometrixMatrixKKS> .
+    rdf:_04 promo:N_K_KS .
 
 promo:expression_list_129 a rdf:List ;
     promo:doc "probability function for reactions" ;
@@ -1392,7 +2074,7 @@ promo:expression_list_129 a rdf:List ;
     rdf:_02 qudt:MoleFraction ;
     rdf:_03 promolg:power ;
     rdf:_04 promolg:left_round ;
-    rdf:_05 <http://example.org#reactions+StoichiometricMatrixNKKS> ;
+    rdf:_05 promo:N_NK_KS ;
     rdf:_06 promolg:right_round ;
     rdf:_07 promolg:comma ;
     rdf:_08 promo:species_conversion_x_species ;
@@ -1407,23 +2089,23 @@ promo:expression_list_130 a rdf:List ;
     rdf:_02 promo:node ;
     rdf:_03 promolg:reduceProduct ;
     rdf:_04 promolg:left_round ;
-    rdf:_05 <http://example.org#physical+Prpjection_N_NK> ;
+    rdf:_05 promo:P_N_NK ;
     rdf:_06 promolg:reduceProduct ;
     rdf:_07 promo:node_x_species_conversion ;
     rdf:_08 promolg:reduceProduct ;
     rdf:_09 promolg:left_round ;
     rdf:_10 promolg:left_round ;
-    rdf:_11 <http://example.org#reactions+ReactionConstant> ;
+    rdf:_11 promo:K_NK ;
     rdf:_12 promolg:expandProduct ;
-    rdf:_13 <http://example.org#reactions+KineticProbability> ;
+    rdf:_13 promo:phi ;
     rdf:_14 promolg:right_round ;
     rdf:_15 promolg:expandProduct ;
     rdf:_16 promolg:left_round ;
-    rdf:_17 <http://example.org#physical+Projection_NS_KS> ;
+    rdf:_17 promo:P_NS_KS ;
     rdf:_18 promolg:reduceProduct ;
     rdf:_19 promo:species_conversion_x_species ;
     rdf:_20 promolg:reduceProduct ;
-    rdf:_21 <http://example.org#reactions+StoichiometricMatrixNKKS> ;
+    rdf:_21 promo:N_NK_KS ;
     rdf:_22 promolg:right_round ;
     rdf:_23 promolg:right_round ;
     rdf:_24 promolg:right_round .
@@ -1432,7 +2114,7 @@ promo:expression_list_131 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "reactions >>> macroscopic" ;
-    rdf:_00 <http://example.org#reactions+ProductionRate> .
+    rdf:_00 promo:nProd .
 
 promo:expression_list_14 a rdf:List ;
     promo:doc "electrical potential -- voltage" ;
@@ -1451,7 +2133,7 @@ promo:expression_list_15 a rdf:List ;
     promo:network "physical" ;
     rdf:_00 promolg:ParDiff ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#physical+X-Coordinate> ;
+    rdf:_02 promo:r_x ;
     rdf:_03 promolg:comma ;
     rdf:_04 qudt:Time ;
     rdf:_05 promolg:right_round .
@@ -1462,7 +2144,7 @@ promo:expression_list_16 a rdf:List ;
     promo:network "physical" ;
     rdf:_00 promolg:ParDiff ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#physical+Y-Coordinate> ;
+    rdf:_02 promo:r_y ;
     rdf:_03 promolg:comma ;
     rdf:_04 qudt:Time ;
     rdf:_05 promolg:right_round .
@@ -1473,7 +2155,7 @@ promo:expression_list_17 a rdf:List ;
     promo:network "physical" ;
     rdf:_00 promolg:ParDiff ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#physical+Z-Coordinate> ;
+    rdf:_02 promo:r_z ;
     rdf:_03 promolg:comma ;
     rdf:_04 qudt:Time ;
     rdf:_05 promolg:right_round .
@@ -1484,16 +2166,16 @@ promo:expression_list_2 a rdf:List ;
     promo:network "root" ;
     rdf:_00 promolg:Instantiate ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#root+Value> ;
+    rdf:_02 promo:value ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_20 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+Mm> .
+    rdf:_00 promo:Mm .
 
 promo:expression_list_21 a rdf:List ;
     promo:doc "total heat capacity at constant pressure" ;
@@ -1533,7 +2215,7 @@ promo:expression_list_23 a rdf:List ;
     rdf:_09 qudt:Temperature ;
     rdf:_10 promolg:right_round ;
     rdf:_11 promolg:expandProduct ;
-    rdf:_12 <http://example.org#physical+LinearVelocityX> .
+    rdf:_12 promo:v_x .
 
 promo:expression_list_24 a rdf:List ;
     promo:doc "thermal conductivity in y-direction" ;
@@ -1551,7 +2233,7 @@ promo:expression_list_24 a rdf:List ;
     rdf:_09 qudt:Temperature ;
     rdf:_10 promolg:right_round ;
     rdf:_11 promolg:expandProduct ;
-    rdf:_12 <http://example.org#physical+LinearVelocityY> .
+    rdf:_12 promo:v_y .
 
 promo:expression_list_25 a rdf:List ;
     promo:doc "thermal conductivity in z-direction'" ;
@@ -1569,7 +2251,7 @@ promo:expression_list_25 a rdf:List ;
     rdf:_09 qudt:Temperature ;
     rdf:_10 promolg:right_round ;
     rdf:_11 promolg:expandProduct ;
-    rdf:_12 <http://example.org#physical+LinearVelocityZ> .
+    rdf:_12 promo:v_z .
 
 promo:expression_list_26 a rdf:List ;
     promo:doc "thermal conductivity" ;
@@ -1577,11 +2259,11 @@ promo:expression_list_26 a rdf:List ;
     promo:network "material" ;
     rdf:_00 promolg:Stack ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#material+kq_x> ;
+    rdf:_02 promo:kq_x ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#material+kq_y> ;
+    rdf:_04 promo:kq_y ;
     rdf:_05 promolg:comma ;
-    rdf:_06 <http://example.org#material+kq_z> ;
+    rdf:_06 promo:kq_z ;
     rdf:_07 promolg:right_round .
 
 promo:expression_list_27 a rdf:List ;
@@ -1589,7 +2271,7 @@ promo:expression_list_27 a rdf:List ;
     promo:equation_class "generic" ;
     promo:network "material" ;
     rdf:_00 promolg:left_round ;
-    rdf:_01 <http://example.org#material+Mm> ;
+    rdf:_01 promo:Mm ;
     rdf:_02 promolg:reduceProduct ;
     rdf:_03 promo:species ;
     rdf:_04 promolg:in ;
@@ -1613,14 +2295,14 @@ promo:expression_list_27 a rdf:List ;
     rdf:_22 qudt:Pressure ;
     rdf:_23 promolg:right_round ;
     rdf:_24 promolg:expandProduct ;
-    rdf:_25 <http://example.org#physical+LinearVelocityX> .
+    rdf:_25 promo:v_x .
 
 promo:expression_list_28 a rdf:List ;
     promo:doc "convecitve mass conductivity in y-direction" ;
     promo:equation_class "generic" ;
     promo:network "material" ;
     rdf:_00 promolg:left_round ;
-    rdf:_01 <http://example.org#material+Mm> ;
+    rdf:_01 promo:Mm ;
     rdf:_02 promolg:reduceProduct ;
     rdf:_03 promo:species ;
     rdf:_04 promolg:in ;
@@ -1644,14 +2326,14 @@ promo:expression_list_28 a rdf:List ;
     rdf:_22 qudt:Pressure ;
     rdf:_23 promolg:right_round ;
     rdf:_24 promolg:expandProduct ;
-    rdf:_25 <http://example.org#physical+LinearVelocityY> .
+    rdf:_25 promo:v_y .
 
 promo:expression_list_29 a rdf:List ;
     promo:doc "convecitve mass conductivity in z-direction" ;
     promo:equation_class "generic" ;
     promo:network "material" ;
     rdf:_00 promolg:left_round ;
-    rdf:_01 <http://example.org#material+Mm> ;
+    rdf:_01 promo:Mm ;
     rdf:_02 promolg:reduceProduct ;
     rdf:_03 promo:species ;
     rdf:_04 promolg:in ;
@@ -1675,7 +2357,7 @@ promo:expression_list_29 a rdf:List ;
     rdf:_22 qudt:Pressure ;
     rdf:_23 promolg:right_round ;
     rdf:_24 promolg:expandProduct ;
-    rdf:_25 <http://example.org#physical+LinearVelocityZ> .
+    rdf:_25 promo:v_z .
 
 promo:expression_list_3 a rdf:List ;
     promo:doc "numerical value one half" ;
@@ -1683,9 +2365,9 @@ promo:expression_list_3 a rdf:List ;
     promo:network "root" ;
     rdf:_00 promolg:Instantiate ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#root+Value> ;
+    rdf:_02 promo:value ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_30 a rdf:List ;
@@ -1694,11 +2376,11 @@ promo:expression_list_30 a rdf:List ;
     promo:network "material" ;
     rdf:_00 promolg:Stack ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#material+kc_x> ;
+    rdf:_02 promo:kc_x ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#material+kc_y> ;
+    rdf:_04 promo:kc_y ;
     rdf:_05 promolg:comma ;
-    rdf:_06 <http://example.org#material+kc_z> ;
+    rdf:_06 promo:kc_z ;
     rdf:_07 promolg:right_round .
 
 promo:expression_list_31 a rdf:List ;
@@ -1711,7 +2393,7 @@ promo:expression_list_31 a rdf:List ;
     rdf:_03 promolg:right_round ;
     rdf:_04 promolg:expandProduct ;
     rdf:_05 promolg:left_round ;
-    rdf:_06 <http://example.org#physical+LinearVelocityX> ;
+    rdf:_06 promo:v_x ;
     rdf:_07 promolg:KR ;
     rdf:_08 promolg:left_round ;
     rdf:_09 promolg:inv ;
@@ -1738,7 +2420,7 @@ promo:expression_list_32 a rdf:List ;
     rdf:_03 promolg:right_round ;
     rdf:_04 promolg:expandProduct ;
     rdf:_05 promolg:left_round ;
-    rdf:_06 <http://example.org#physical+LinearVelocityY> ;
+    rdf:_06 promo:v_y ;
     rdf:_07 promolg:KR ;
     rdf:_08 promolg:left_round ;
     rdf:_09 promolg:inv ;
@@ -1765,7 +2447,7 @@ promo:expression_list_33 a rdf:List ;
     rdf:_03 promolg:right_round ;
     rdf:_04 promolg:expandProduct ;
     rdf:_05 promolg:left_round ;
-    rdf:_06 <http://example.org#physical+LinearVelocityZ> ;
+    rdf:_06 promo:v_z ;
     rdf:_07 promolg:KR ;
     rdf:_08 promolg:left_round ;
     rdf:_09 promolg:inv ;
@@ -1788,11 +2470,11 @@ promo:expression_list_34 a rdf:List ;
     promo:network "material" ;
     rdf:_00 promolg:Stack ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#material+kd_x> ;
+    rdf:_02 promo:kd_x ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#material+kd_y> ;
+    rdf:_04 promo:kd_y ;
     rdf:_05 promolg:comma ;
-    rdf:_06 <http://example.org#material+kd_z> ;
+    rdf:_06 promo:kd_z ;
     rdf:_07 promolg:right_round .
 
 promo:expression_list_35 a rdf:List ;
@@ -1810,7 +2492,7 @@ promo:expression_list_36 a rdf:List ;
     promo:doc "total mass" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#material---macroscopic+_Mm> ;
+    rdf:_00 promo:_Mm ;
     rdf:_01 promolg:reduceProduct ;
     rdf:_02 promo:species ;
     rdf:_03 promolg:in ;
@@ -1828,7 +2510,7 @@ promo:expression_list_38 a rdf:List ;
     promo:doc "density" ;
     promo:equation_class "generic" ;
     promo:network "material" ;
-    rdf:_00 <http://example.org#macroscopic---material+_m> ;
+    rdf:_00 promo:_m ;
     rdf:_01 promolg:expandProduct ;
     rdf:_02 promolg:inv ;
     rdf:_03 promolg:left_round ;
@@ -1839,7 +2521,7 @@ promo:expression_list_39 a rdf:List ;
     promo:doc "temperature of the reactive system" ;
     promo:equation_class "generic" ;
     promo:network "reactions" ;
-    rdf:_00 <http://example.org#physical+Prpjection_N_NK> ;
+    rdf:_00 promo:P_N_NK ;
     rdf:_01 promolg:reduceProduct ;
     rdf:_02 promo:node ;
     rdf:_03 promolg:reduceProduct ;
@@ -1853,7 +2535,7 @@ promo:expression_list_4 a rdf:List ;
     rdf:_01 promolg:left_round ;
     rdf:_02 qudt:Time ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_41 a rdf:List ;
@@ -1862,31 +2544,31 @@ promo:expression_list_41 a rdf:List ;
     promo:network "reactions" ;
     rdf:_00 promolg:Instantiate ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#reactions+GasConstant> ;
+    rdf:_02 promo:GasConstant ;
     rdf:_03 promolg:expandProduct ;
-    rdf:_04 <http://example.org#reactions+ReactionTemperature> ;
+    rdf:_04 promo:T_NK ;
     rdf:_05 promolg:comma ;
-    rdf:_06 <http://example.org#root+Value> ;
+    rdf:_06 promo:value ;
     rdf:_07 promolg:right_round .
 
 promo:expression_list_42 a rdf:List ;
     promo:doc "Arrhenius reaction 'constant'" ;
     promo:equation_class "generic" ;
     promo:network "reactions" ;
-    rdf:_00 <http://example.org#reactions+ArrheniusFrequencyFactor> ;
+    rdf:_00 promo:Ko ;
     rdf:_01 promolg:KR ;
     rdf:_02 promolg:exp ;
     rdf:_03 promolg:left_round ;
     rdf:_04 promolg:neg ;
     rdf:_05 promolg:left_round ;
-    rdf:_06 <http://example.org#reactions+ActivationEnergy> ;
+    rdf:_06 promo:Ea ;
     rdf:_07 promolg:right_round ;
     rdf:_08 promolg:expandProduct ;
     rdf:_09 promolg:inv ;
     rdf:_10 promolg:left_round ;
-    rdf:_11 <http://example.org#reactions+GasConstant> ;
+    rdf:_11 promo:GasConstant ;
     rdf:_12 promolg:expandProduct ;
-    rdf:_13 <http://example.org#reactions+ReactionTemperature> ;
+    rdf:_13 promo:T_NK ;
     rdf:_14 promolg:right_round ;
     rdf:_15 promolg:right_round .
 
@@ -1911,17 +2593,17 @@ promo:expression_list_48 a rdf:List ;
     promo:doc "cross sectional area yz" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#physical+Y-Coordinate> ;
+    rdf:_00 promo:r_y ;
     rdf:_01 promolg:expandProduct ;
-    rdf:_02 <http://example.org#physical+Z-Coordinate> .
+    rdf:_02 promo:r_z .
 
 promo:expression_list_49 a rdf:List ;
     promo:doc "cross sectional area xz" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#physical+X-Coordinate> ;
+    rdf:_00 promo:r_x ;
     rdf:_01 promolg:expandProduct ;
-    rdf:_02 <http://example.org#physical+Z-Coordinate> .
+    rdf:_02 promo:r_z .
 
 promo:expression_list_5 a rdf:List ;
     promo:doc "end time" ;
@@ -1931,70 +2613,70 @@ promo:expression_list_5 a rdf:List ;
     rdf:_01 promolg:left_round ;
     rdf:_02 qudt:Time ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_50 a rdf:List ;
     promo:doc "cross sectional area xy" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#physical+X-Coordinate> ;
+    rdf:_00 promo:r_x ;
     rdf:_01 promolg:expandProduct ;
-    rdf:_02 <http://example.org#physical+Y-Coordinate> .
+    rdf:_02 promo:r_y .
 
 promo:expression_list_51 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+density> .
+    rdf:_00 promo:density .
 
 promo:expression_list_52 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+h> .
+    rdf:_00 promo:h .
 
 promo:expression_list_53 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+kq_x> .
+    rdf:_00 promo:kq_x .
 
 promo:expression_list_54 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+Cv> .
+    rdf:_00 promo:Cv .
 
 promo:expression_list_55 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+kq_y> .
+    rdf:_00 promo:kq_y .
 
 promo:expression_list_56 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+kq_z> .
+    rdf:_00 promo:kq_z .
 
 promo:expression_list_57 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+kq> .
+    rdf:_00 promo:kq .
 
 promo:expression_list_58 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+kc_x> .
+    rdf:_00 promo:kc_x .
 
 promo:expression_list_59 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+Cp> .
+    rdf:_00 promo:Cp .
 
 promo:expression_list_6 a rdf:List ;
     promo:doc "thermodynamic pressure" ;
@@ -2014,43 +2696,43 @@ promo:expression_list_60 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+kc_y> .
+    rdf:_00 promo:kc_y .
 
 promo:expression_list_61 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+kc_z> .
+    rdf:_00 promo:kc_z .
 
 promo:expression_list_62 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+kc> .
+    rdf:_00 promo:kc .
 
 promo:expression_list_63 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+kd_x> .
+    rdf:_00 promo:kd_x .
 
 promo:expression_list_64 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+kd_y> .
+    rdf:_00 promo:kd_y .
 
 promo:expression_list_65 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+kd_z> .
+    rdf:_00 promo:kd_z .
 
 promo:expression_list_66 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+kd> .
+    rdf:_00 promo:kd .
 
 promo:expression_list_67 a rdf:List ;
     promo:doc "volumetric flow" ;
@@ -2058,14 +2740,14 @@ promo:expression_list_67 a rdf:List ;
     promo:network "macroscopic" ;
     rdf:_00 promolg:inv ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#material---macroscopic+_density> ;
+    rdf:_02 promo:_density ;
     rdf:_03 promolg:right_round ;
     rdf:_04 promolg:expandProduct ;
-    rdf:_05 <http://example.org#material---macroscopic+_kc_x> ;
+    rdf:_05 promo:_kc_x ;
     rdf:_06 promolg:expandProduct ;
-    rdf:_07 <http://example.org#macroscopic+AreaYZ> ;
+    rdf:_07 promo:Ayz ;
     rdf:_08 promolg:expandProduct ;
-    rdf:_09 <http://example.org#macroscopic+D> ;
+    rdf:_09 promo:D ;
     rdf:_10 promolg:reduceProduct ;
     rdf:_11 promo:node ;
     rdf:_12 promolg:reduceProduct ;
@@ -2075,14 +2757,14 @@ promo:expression_list_68 a rdf:List ;
     promo:doc "diffusional mass flow in a given stream" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#macroscopic+AreaYZ> ;
+    rdf:_00 promo:Ayz ;
     rdf:_01 promolg:KR ;
     rdf:_02 promolg:neg ;
     rdf:_03 promolg:left_round ;
-    rdf:_04 <http://example.org#material---macroscopic+_kd_x> ;
+    rdf:_04 promo:_kd_x ;
     rdf:_05 promolg:right_round ;
     rdf:_06 promolg:expandProduct ;
-    rdf:_07 <http://example.org#macroscopic+D_NS_AS> ;
+    rdf:_07 promo:D_NS_AS ;
     rdf:_08 promolg:reduceProduct ;
     rdf:_09 promo:node_x_species ;
     rdf:_10 promolg:reduceProduct ;
@@ -2092,11 +2774,11 @@ promo:expression_list_69 a rdf:List ;
     promo:doc "net diffusional mass flow" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#macroscopic+F_NS_AS> ;
+    rdf:_00 promo:F_NS_AS ;
     rdf:_01 promolg:reduceProduct ;
     rdf:_02 promo:arc_x_species ;
     rdf:_03 promolg:reduceProduct ;
-    rdf:_04 <http://example.org#macroscopic+EnthalpyFlowDiffusionPerStream> .
+    rdf:_04 promo:fnd_AS .
 
 promo:expression_list_7 a rdf:List ;
     promo:doc "temperature" ;
@@ -2114,28 +2796,28 @@ promo:expression_list_70 a rdf:List ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
     rdf:_00 promolg:left_round ;
-    rdf:_01 <http://example.org#macroscopic+F_NS_AS> ;
+    rdf:_01 promo:F_NS_AS ;
     rdf:_02 promolg:reduceProduct ;
     rdf:_03 promo:node_x_species ;
     rdf:_04 promolg:reduceProduct ;
-    rdf:_05 <http://example.org#material---macroscopic+_h> ;
+    rdf:_05 promo:_h ;
     rdf:_06 promolg:right_round ;
     rdf:_07 promolg:reduceProduct ;
     rdf:_08 promo:species ;
     rdf:_09 promolg:in ;
     rdf:_10 promo:arc_x_species ;
     rdf:_11 promolg:reduceProduct ;
-    rdf:_12 <http://example.org#macroscopic+EnthalpyFlowDiffusionPerStream> .
+    rdf:_12 promo:fnd_AS .
 
 promo:expression_list_71 a rdf:List ;
     promo:doc "net enthaply stream due to diffusion" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#root+NetworkIncidenceMatrix> ;
+    rdf:_00 promo:F_N_A ;
     rdf:_01 promolg:reduceProduct ;
     rdf:_02 promo:arc ;
     rdf:_03 promolg:reduceProduct ;
-    rdf:_04 <http://example.org#macroscopic+EnthalpyFlowDiffusion> .
+    rdf:_04 promo:fHd_A .
 
 promo:expression_list_72 a rdf:List ;
     promo:doc "flow direction of convectional flow" ;
@@ -2143,7 +2825,7 @@ promo:expression_list_72 a rdf:List ;
     promo:network "macroscopic" ;
     rdf:_00 promolg:sign ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#root+NetworkIncidenceMatrix> ;
+    rdf:_02 promo:F_N_A ;
     rdf:_03 promolg:reduceProduct ;
     rdf:_04 promo:node ;
     rdf:_05 promolg:reduceProduct ;
@@ -2155,16 +2837,16 @@ promo:expression_list_73 a rdf:List ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
     rdf:_00 promolg:left_round ;
-    rdf:_01 <http://example.org#root+OneHalf> ;
+    rdf:_01 promo:onehalf ;
     rdf:_02 promolg:expandProduct ;
     rdf:_03 promolg:left_round ;
-    rdf:_04 <http://example.org#macroscopic+F_NS_AS> ;
+    rdf:_04 promo:F_NS_AS ;
     rdf:_05 promolg:minus ;
-    rdf:_06 <http://example.org#macroscopic+FlowDirection> ;
+    rdf:_06 promo:d ;
     rdf:_07 promolg:KR ;
     rdf:_08 promolg:abs ;
     rdf:_09 promolg:left_round ;
-    rdf:_10 <http://example.org#macroscopic+F_NS_AS> ;
+    rdf:_10 promo:F_NS_AS ;
     rdf:_11 promolg:right_round ;
     rdf:_12 promolg:right_round ;
     rdf:_13 promolg:right_round ;
@@ -2179,13 +2861,13 @@ promo:expression_list_74 a rdf:List ;
     promo:network "macroscopic" ;
     rdf:_00 qudt:VolumeFlowRate ;
     rdf:_01 promolg:KR ;
-    rdf:_02 <http://example.org#macroscopic+ConcentrationInConvectiveFlow> .
+    rdf:_02 promo:c_AS .
 
 promo:expression_list_75 a rdf:List ;
     promo:doc "net molar convectional mass flow" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#macroscopic+F_NS_AS> ;
+    rdf:_00 promo:F_NS_AS ;
     rdf:_01 promolg:reduceProduct ;
     rdf:_02 promo:arc_x_species ;
     rdf:_03 promolg:reduceProduct ;
@@ -2195,22 +2877,22 @@ promo:expression_list_76 a rdf:List ;
     promo:doc "differential species balance" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#macroscopic+NetMolarFlowRate> ;
+    rdf:_00 promo:fnc ;
     rdf:_01 promolg:plus ;
-    rdf:_02 <http://example.org#macroscopic+NetDiffusionalAmountOfMaterialFlow> ;
+    rdf:_02 promo:fnd ;
     rdf:_03 promolg:plus ;
-    rdf:_04 <http://example.org#reactions---macroscopic+_nProd> .
+    rdf:_04 promo:_nProd .
 
 promo:expression_list_77 a rdf:List ;
     promo:doc "convective enthalpy flow for given stream" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
     rdf:_00 promolg:left_round ;
-    rdf:_01 <http://example.org#macroscopic+F_NS_AS> ;
+    rdf:_01 promo:F_NS_AS ;
     rdf:_02 promolg:reduceProduct ;
     rdf:_03 promo:node_x_species ;
     rdf:_04 promolg:reduceProduct ;
-    rdf:_05 <http://example.org#material---macroscopic+_h> ;
+    rdf:_05 promo:_h ;
     rdf:_06 promolg:right_round ;
     rdf:_07 promolg:reduceProduct ;
     rdf:_08 promo:species ;
@@ -2223,11 +2905,11 @@ promo:expression_list_78 a rdf:List ;
     promo:doc "net convectional enthalpy stream" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#root+NetworkIncidenceMatrix> ;
+    rdf:_00 promo:F_N_A ;
     rdf:_01 promolg:reduceProduct ;
     rdf:_02 promo:arc ;
     rdf:_03 promolg:reduceProduct ;
-    rdf:_04 <http://example.org#macroscopic+EnthalpyFlowConvection> .
+    rdf:_04 promo:fHc_A .
 
 promo:expression_list_79 a rdf:List ;
     promo:doc "sample work stream" ;
@@ -2235,9 +2917,9 @@ promo:expression_list_79 a rdf:List ;
     promo:network "macroscopic" ;
     rdf:_00 promolg:Instantiate ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#macroscopic+EnthalpyFlowConvection> ;
+    rdf:_02 promo:fHc_A ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_8 a rdf:List ;
@@ -2255,21 +2937,21 @@ promo:expression_list_80 a rdf:List ;
     promo:doc "net work stream" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#root+NetworkIncidenceMatrix> ;
+    rdf:_00 promo:F_N_A ;
     rdf:_01 promolg:reduceProduct ;
     rdf:_02 promo:arc ;
     rdf:_03 promolg:reduceProduct ;
-    rdf:_04 <http://example.org#macroscopic+WorkFlow> .
+    rdf:_04 promo:fw_A .
 
 promo:expression_list_81 a rdf:List ;
     promo:doc "heat flow in x-direction for given stream" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#macroscopic+AreaYZ> ;
+    rdf:_00 promo:Ayz ;
     rdf:_01 promolg:expandProduct ;
-    rdf:_02 <http://example.org#material---macroscopic+_kq_x> ;
+    rdf:_02 promo:_kq_x ;
     rdf:_03 promolg:expandProduct ;
-    rdf:_04 <http://example.org#macroscopic+D> ;
+    rdf:_04 promo:D ;
     rdf:_05 promolg:reduceProduct ;
     rdf:_06 promo:node ;
     rdf:_07 promolg:reduceProduct ;
@@ -2279,23 +2961,23 @@ promo:expression_list_82 a rdf:List ;
     promo:doc "net heat flow" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#root+NetworkIncidenceMatrix> ;
+    rdf:_00 promo:F_N_A ;
     rdf:_01 promolg:reduceProduct ;
     rdf:_02 promo:arc ;
     rdf:_03 promolg:reduceProduct ;
-    rdf:_04 <http://example.org#macroscopic+HeatFlowXDirection> .
+    rdf:_04 promo:fq_A_x .
 
 promo:expression_list_83 a rdf:List ;
     promo:doc "differential enthalpy balance" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#macroscopic+NetEnthalpyFlowConvection> ;
+    rdf:_00 promo:fHc ;
     rdf:_01 promolg:plus ;
-    rdf:_02 <http://example.org#macroscopic+NetEnthalpyFlowDiffusion> ;
+    rdf:_02 promo:fHd ;
     rdf:_03 promolg:plus ;
     rdf:_04 qudt:HeatFlowRate ;
     rdf:_05 promolg:plus ;
-    rdf:_06 <http://example.org#macroscopic+NetWorkFlow> .
+    rdf:_06 promo:fw .
 
 promo:expression_list_84 a rdf:List ;
     promo:doc "initial enthalpy" ;
@@ -2305,7 +2987,7 @@ promo:expression_list_84 a rdf:List ;
     rdf:_01 promolg:left_round ;
     rdf:_02 qudt:Enthalpy ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_85 a rdf:List ;
@@ -2316,7 +2998,7 @@ promo:expression_list_85 a rdf:List ;
     rdf:_01 promolg:left_round ;
     rdf:_02 qudt:AmountOfSubstance ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_86 a rdf:List ;
@@ -2325,14 +3007,14 @@ promo:expression_list_86 a rdf:List ;
     promo:network "macroscopic" ;
     rdf:_00 promolg:Integral ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#macroscopic+AmountOfSubstanceAccumulation> ;
+    rdf:_02 promo:dndt ;
     rdf:_03 promolg:double_column ;
     rdf:_04 qudt:Time ;
     rdf:_05 promolg:in ;
     rdf:_06 promolg:left_square ;
-    rdf:_07 <http://example.org#root+TimeStart> ;
+    rdf:_07 promo:to ;
     rdf:_08 promolg:comma ;
-    rdf:_09 <http://example.org#root+TimeEnd> ;
+    rdf:_09 promo:te ;
     rdf:_10 promolg:right_square ;
     rdf:_11 promolg:right_round .
 
@@ -2342,14 +3024,14 @@ promo:expression_list_87 a rdf:List ;
     promo:network "macroscopic" ;
     rdf:_00 promolg:Integral ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#macroscopic+EnthalpyAccumulation> ;
+    rdf:_02 promo:dHdt ;
     rdf:_03 promolg:double_column ;
     rdf:_04 qudt:Time ;
     rdf:_05 promolg:in ;
     rdf:_06 promolg:left_square ;
-    rdf:_07 <http://example.org#root+TimeStart> ;
+    rdf:_07 promo:to ;
     rdf:_08 promolg:comma ;
-    rdf:_09 <http://example.org#root+TimeEnd> ;
+    rdf:_09 promo:te ;
     rdf:_10 promolg:right_square ;
     rdf:_11 promolg:right_round .
 
@@ -2359,9 +3041,9 @@ promo:expression_list_88 a rdf:List ;
     promo:network "material" ;
     rdf:_00 promolg:Instantiate ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#material+additive> ;
+    rdf:_02 promo:additive ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_89 a rdf:List ;
@@ -2397,7 +3079,7 @@ promo:expression_list_91 a rdf:List ;
     promo:network "material" ;
     rdf:_00 promolg:inv ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#macroscopic---material+_i> ;
+    rdf:_02 promo:_i ;
     rdf:_03 promolg:right_round ;
     rdf:_04 promolg:expandProduct ;
     rdf:_05 qudt:ElectricPotential .
@@ -2408,9 +3090,9 @@ promo:expression_list_92 a rdf:List ;
     promo:network "material" ;
     rdf:_00 promolg:Instantiate ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#material+elResist> ;
+    rdf:_02 promo:elResist ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Value> ;
+    rdf:_04 promo:value ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_93 a rdf:List ;
@@ -2419,16 +3101,16 @@ promo:expression_list_93 a rdf:List ;
     promo:network "material" ;
     rdf:_00 promolg:inv ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#material+elResist> ;
+    rdf:_02 promo:elResist ;
     rdf:_03 promolg:right_round ;
     rdf:_04 promolg:expandProduct ;
-    rdf:_05 <http://example.org#material+additive> .
+    rdf:_05 promo:additive .
 
 promo:expression_list_94 a rdf:List ;
     promo:doc "interface equation" ;
     promo:equation_class "interface_link_equation" ;
     promo:network "material >>> macroscopic" ;
-    rdf:_00 <http://example.org#material+elConductC> .
+    rdf:_00 promo:elConductC .
 
 promo:expression_list_95 a rdf:List ;
     promo:doc "electrical potential -- voltage" ;
@@ -2436,7 +3118,7 @@ promo:expression_list_95 a rdf:List ;
     promo:network "macroscopic" ;
     rdf:_00 promolg:inv ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#material---macroscopic+_elConductC> ;
+    rdf:_02 promo:_elConductC ;
     rdf:_03 promolg:right_round ;
     rdf:_04 promolg:expandProduct ;
     rdf:_05 qudt:TotalCurrent .
@@ -2445,7 +3127,7 @@ promo:expression_list_96 a rdf:List ;
     promo:doc "Kirkhoff first law" ;
     promo:equation_class "generic" ;
     promo:network "macroscopic" ;
-    rdf:_00 <http://example.org#root+One> ;
+    rdf:_00 promo:one ;
     rdf:_01 promolg:expandProduct ;
     rdf:_02 qudt:ElectricPotential .
 
@@ -2464,9 +3146,9 @@ promo:expression_list_98 a rdf:List ;
     promo:network "macroscopic" ;
     rdf:_00 promolg:Instantiate ;
     rdf:_01 promolg:left_round ;
-    rdf:_02 <http://example.org#macroscopic+InternalEnergyAccumulation> ;
+    rdf:_02 promo:dUedt ;
     rdf:_03 promolg:comma ;
-    rdf:_04 <http://example.org#root+Zero> ;
+    rdf:_04 promo:zero ;
     rdf:_05 promolg:right_round .
 
 promo:expression_list_99 a rdf:List ;
@@ -2475,235 +3157,7 @@ promo:expression_list_99 a rdf:List ;
     promo:network "macroscopic >>> control" ;
     rdf:_00 qudt:TotalCurrent .
 
-<http://example.org#macroscopic+AmountOfSubstanceAccumulation> a promo:variable ;
-    promo:doc "differential species balance" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_76 ;
-    promo:label "dndt" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "diffState" ;
-    promo:unit_amount 1 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+ConcentrationInConvectiveFlow> a promo:variable ;
-    promo:doc "concentration in convectional flow" ;
-    promo:has_index promo:arc_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_73 ;
-    promo:label "c_AS" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "secondaryState" ;
-    promo:unit_amount 1 ;
-    promo:unit_current 0 ;
-    promo:unit_length -3 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+D_NS_AS> a promo:variable ;
-    promo:doc "difference operator for species topology" ;
-    promo:has_index promo:arc_x_species,
-        promo:node_x_species ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "D_NS_AS" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "True" ;
-    promo:type "differenceOperator" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+EnthalpyAccumulation> a promo:variable ;
-    promo:doc "differential enthalpy balance" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_83 ;
-    promo:label "dHdt" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "diffState" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+EnthalpyFlowDiffusion> a promo:variable ;
-    promo:doc "enthalpy flow per diffusional mass stream" ;
-    promo:has_index promo:arc ;
-    promo:is_defined_by_expression_list promo:expression_list_70 ;
-    promo:label "fHd_A" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "transport" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+FlowDirection> a promo:variable ;
-    promo:doc "flow direction of convectional flow" ;
-    promo:has_index promo:arc ;
-    promo:is_defined_by_expression_list promo:expression_list_72 ;
-    promo:label "d" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "transport" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+HeatFlowXDirection> a promo:variable ;
-    promo:doc "heat flow in x-direction for given stream" ;
-    promo:has_index promo:arc ;
-    promo:is_defined_by_expression_list promo:expression_list_81 ;
-    promo:label "fq_A_x" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "transport" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+InternalEnergyAccumulation> a promo:variable ;
-    promo:doc "Kirkhoff first law" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_96,
-        promo:expression_list_97,
-        promo:expression_list_98 ;
-    promo:label "dUedt" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "diffState" ;
-    promo:unit_amount 0 ;
-    promo:unit_current -1 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+NetDiffusionalAmountOfMaterialFlow> a promo:variable ;
-    promo:doc "net diffusional mass flow" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_69 ;
-    promo:label "fnd" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "transport" ;
-    promo:unit_amount 1 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+NetEnthalpyFlowConvection> a promo:variable ;
+promo:fHc a promo:variable ;
     promo:doc "net convectional enthalpy stream" ;
     promo:has_index promo:node ;
     promo:is_defined_by_expression_list promo:expression_list_78 ;
@@ -2728,7 +3182,7 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#macroscopic+NetEnthalpyFlowDiffusion> a promo:variable ;
+promo:fHd a promo:variable ;
     promo:doc "net enthaply stream due to diffusion" ;
     promo:has_index promo:node ;
     promo:is_defined_by_expression_list promo:expression_list_71 ;
@@ -2753,7 +3207,32 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#macroscopic+NetMolarFlowRate> a promo:variable ;
+promo:fHd_A a promo:variable ;
+    promo:doc "enthalpy flow per diffusional mass stream" ;
+    promo:has_index promo:arc ;
+    promo:is_defined_by_expression_list promo:expression_list_70 ;
+    promo:label "fHd_A" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "transport" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:fnc a promo:variable ;
     promo:doc "net molar convectional mass flow" ;
     promo:has_index promo:node_x_species ;
     promo:is_defined_by_expression_list promo:expression_list_75 ;
@@ -2778,7 +3257,57 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#macroscopic+NetWorkFlow> a promo:variable ;
+promo:fnd a promo:variable ;
+    promo:doc "net diffusional mass flow" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_69 ;
+    promo:label "fnd" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "transport" ;
+    promo:unit_amount 1 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:fq_A_x a promo:variable ;
+    promo:doc "heat flow in x-direction for given stream" ;
+    promo:has_index promo:arc ;
+    promo:is_defined_by_expression_list promo:expression_list_81 ;
+    promo:label "fq_A_x" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "transport" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:fw a promo:variable ;
     promo:doc "net work stream" ;
     promo:has_index promo:node ;
     promo:is_defined_by_expression_list promo:expression_list_80 ;
@@ -2803,32 +3332,7 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#macroscopic+VectorOfOnes> a promo:variable ;
-    promo:doc "a vector of ones with the length of the ordinal number of S" ;
-    promo:has_index promo:species ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "one_S" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "True" ;
-    promo:type "constant" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+WorkFlow> a promo:variable ;
+promo:fw_A a promo:variable ;
     promo:doc "sample work stream" ;
     promo:has_index promo:arc ;
     promo:is_defined_by_expression_list promo:expression_list_79 ;
@@ -2853,232 +3357,7 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#macroscopic---control+_Ue> a promo:variable ;
-    promo:doc "link variable Ue to interface macroscopic >>> control" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_114 ;
-    promo:label "_Ue" ;
-    promo:network "macroscopic >>> control" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current -1 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic---control+_i> a promo:variable ;
-    promo:doc "link variable i to interface macroscopic >>> control" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_99 ;
-    promo:label "_i" ;
-    promo:network "macroscopic >>> control" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 1 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic---material+_i> a promo:variable ;
-    promo:doc "link variable i to interface macroscopic >>> material" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_90 ;
-    promo:label "_i" ;
-    promo:network "macroscopic >>> material" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 1 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic---material+_m> a promo:variable ;
-    promo:doc "link variable m to interface macroscopic >>> material" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_37 ;
-    promo:label "_m" ;
-    promo:network "macroscopic >>> material" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic---reactions+_c> a promo:variable ;
-    promo:doc "link variable c to interface macroscopic >>> reactions" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_45 ;
-    promo:label "_c" ;
-    promo:network "macroscopic >>> reactions" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 1 ;
-    promo:unit_current 0 ;
-    promo:unit_length -3 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+Cp> a promo:variable ;
-    promo:doc "total heat capacity at constant pressure" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_21 ;
-    promo:label "Cp" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -2 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+Cv> a promo:variable ;
-    promo:doc "total heat capacity at constant volume" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_22 ;
-    promo:label "Cv" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -2 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+density> a promo:variable ;
-    promo:doc "density" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_38 ;
-    promo:label "density" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length -3 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+elConductC> a promo:variable ;
-    promo:doc "simple model for the electrical conductivity as a function of the additive" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_93 ;
-    promo:label "elConductC" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 2 ;
-    promo:unit_length -2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass -1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+h> a promo:variable ;
+promo:h a promo:variable ;
     promo:doc "partial molar enthalpies" ;
     promo:has_index promo:node_x_species ;
     promo:is_defined_by_expression_list promo:expression_list_35 ;
@@ -3103,7 +3382,7 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#material+kc> a promo:variable ;
+promo:kc a promo:variable ;
     promo:doc "convective mass conductivity" ;
     promo:has_index promo:node ;
     promo:is_defined_by_expression_list promo:expression_list_30 ;
@@ -3128,7 +3407,7 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#material+kd> a promo:variable ;
+promo:kd a promo:variable ;
     promo:doc "diffusional mass condctivity" ;
     promo:has_index promo:node_x_species ;
     promo:is_defined_by_expression_list promo:expression_list_34 ;
@@ -3153,7 +3432,7 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#material+kq> a promo:variable ;
+promo:kq a promo:variable ;
     promo:doc "thermal conductivity" ;
     promo:has_index promo:node ;
     promo:is_defined_by_expression_list promo:expression_list_26 ;
@@ -3178,314 +3457,16 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#material---control+_additive> a promo:variable ;
-    promo:doc "link variable additive to interface material >>> control" ;
-    promo:is_defined_by_expression_list promo:expression_list_104 ;
-    promo:label "_additive" ;
-    promo:network "material >>> control" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_Mm> a promo:variable ;
-    promo:doc "link variable Mm to interface material >>> macroscopic" ;
-    promo:has_index promo:species ;
-    promo:is_defined_by_expression_list promo:expression_list_20 ;
-    promo:label "_Mm" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount -1 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_density> a promo:variable ;
-    promo:doc "link variable density to interface material >>> macroscopic" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_51 ;
-    promo:label "_density" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length -3 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_elConductC> a promo:variable ;
-    promo:doc "link variable elConductC to interface material >>> macroscopic" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_94 ;
-    promo:label "_elConductC" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 2 ;
-    promo:unit_length -2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass -1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_kc_x> a promo:variable ;
-    promo:doc "link variable kc_x to interface material >>> macroscopic" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_58 ;
-    promo:label "_kc_x" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length -1 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_kd_x> a promo:variable ;
-    promo:doc "link variable kd_x to interface material >>> macroscopic" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_63 ;
-    promo:label "_kd_x" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 2 ;
-    promo:unit_current 0 ;
-    promo:unit_length -4 ;
-    promo:unit_light 0 ;
-    promo:unit_mass -1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_kq_x> a promo:variable ;
-    promo:doc "link variable kq_x to interface material >>> macroscopic" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_53 ;
-    promo:label "_kq_x" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#physical+AvogadroNumber> a promo:variable ;
-    promo:doc "Avogadro number" ;
+promo:meas a promo:variable ;
+    promo:doc "measurements" ;
+    promo:has_index promo:arc ;
     promo:is_defined_by_expression_list () ;
-    promo:label "Avogadro" ;
-    promo:network "physical" ;
-    promo:port_variable "True" ;
-    promo:type "constant" ;
-    promo:unit_amount -1 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#physical+Projection_K_NK> a promo:variable ;
-    promo:doc "projection of conversion to node conversion" ;
-    promo:has_index promo:node_x_species_conversion,
-        promo:species_conversion ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "P_K_NK" ;
-    promo:network "physical" ;
-    promo:port_variable "True" ;
-    promo:type "projection" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#reactions+ActivationEnergy> a promo:variable ;
-    promo:doc "Arrhenius activation energy" ;
-    promo:has_index promo:node_x_species_conversion ;
-    promo:is_defined_by_expression_list promo:expression_list_41 ;
-    promo:label "Ea" ;
-    promo:network "reactions" ;
-    promo:port_variable "False" ;
-    promo:type "constant" ;
-    promo:unit_amount -1 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -2 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#reactions+ArrheniusFrequencyFactor> a promo:variable ;
-    promo:doc "Arrhenius frequency factor" ;
-    promo:has_index promo:species_conversion ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "Ko" ;
-    promo:network "reactions" ;
-    promo:port_variable "True" ;
-    promo:type "constant" ;
-    promo:unit_amount 1 ;
-    promo:unit_current 0 ;
-    promo:unit_length -3 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#reactions+Boltzmann> a promo:variable ;
-    promo:doc "Boltzmann constant" ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "Boltzmann" ;
-    promo:network "reactions" ;
+    promo:label "meas" ;
+    promo:network "control" ;
     promo:port_variable "True" ;
     promo:type "constant" ;
     promo:unit_amount 0 ;
     promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -2 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#reactions+KineticProbability> a promo:variable ;
-    promo:doc "probability function for reactions" ;
-    promo:has_index promo:node_x_species_conversion ;
-    promo:is_defined_by_expression_list promo:expression_list_129 ;
-    promo:label "phi" ;
-    promo:network "reactions" ;
-    promo:port_variable "False" ;
-    promo:type "secondaryState" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
     promo:unit_length 0 ;
     promo:unit_light 0 ;
     promo:unit_mass 0 ;
@@ -3501,58 +3482,7 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#reactions+NormingConcentration> a promo:variable ;
-    promo:doc "norming concentration" ;
-    promo:has_index promo:node_x_species_conversion,
-        promo:species_conversion_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_124 ;
-    promo:label "co" ;
-    promo:network "reactions" ;
-    promo:port_variable "False" ;
-    promo:type "secondaryState" ;
-    promo:unit_amount 1 ;
-    promo:unit_current 0 ;
-    promo:unit_length -3 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#reactions+P_NK> a promo:variable ;
-    promo:doc "reactions per node" ;
-    promo:has_index promo:node_x_species_conversion ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "P_NK" ;
-    promo:network "reactions" ;
-    promo:port_variable "True" ;
-    promo:type "projection" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#reactions+ProductionRate> a promo:variable ;
+promo:nProd a promo:variable ;
     promo:doc "the species production term" ;
     promo:has_index promo:node_x_species ;
     promo:is_defined_by_expression_list promo:expression_list_130 ;
@@ -3577,83 +3507,7 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#reactions+ReactionConstant> a promo:variable ;
-    promo:doc "Arrhenius reaction 'constant'" ;
-    promo:has_index promo:node_x_species_conversion ;
-    promo:is_defined_by_expression_list promo:expression_list_42 ;
-    promo:label "K_NK" ;
-    promo:network "reactions" ;
-    promo:port_variable "False" ;
-    promo:type "constant" ;
-    promo:unit_amount 1 ;
-    promo:unit_current 0 ;
-    promo:unit_length -3 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#reactions+StoichiometrixMatrixKKS> a promo:variable ;
-    promo:doc "stoichiometry" ;
-    promo:has_index promo:species_conversion,
-        promo:species_conversion_x_species ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "N_K_KS" ;
-    promo:network "reactions" ;
-    promo:port_variable "True" ;
-    promo:type "constant" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#reactions---macroscopic+_nProd> a promo:variable ;
-    promo:doc "link variable nProd to interface reactions >>> macroscopic" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_131 ;
-    promo:label "_nProd" ;
-    promo:network "reactions >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount 1 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#root+One> a promo:variable ;
+promo:one a promo:variable ;
     promo:doc "numerical value one" ;
     promo:is_defined_by_expression_list promo:expression_list_1 ;
     promo:label "one" ;
@@ -3677,7 +3531,32 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#root+OneHalf> a promo:variable ;
+promo:one_S a promo:variable ;
+    promo:doc "a vector of ones with the length of the ordinal number of S" ;
+    promo:has_index promo:species ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "one_S" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "True" ;
+    promo:type "constant" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:onehalf a promo:variable ;
     promo:doc "numerical value one half" ;
     promo:is_defined_by_expression_list promo:expression_list_3 ;
     promo:label "onehalf" ;
@@ -3701,7 +3580,32 @@ promo:expression_list_99 a rdf:List ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#root+Zero> a promo:variable ;
+promo:phi a promo:variable ;
+    promo:doc "probability function for reactions" ;
+    promo:has_index promo:node_x_species_conversion ;
+    promo:is_defined_by_expression_list promo:expression_list_129 ;
+    promo:label "phi" ;
+    promo:network "reactions" ;
+    promo:port_variable "False" ;
+    promo:type "secondaryState" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:zero a promo:variable ;
     promo:doc "numerical value zero" ;
     promo:is_defined_by_expression_list promo:expression_list_2 ;
     promo:label "zero" ;
@@ -3847,7 +3751,31 @@ qudt:VolumeFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+Imeasured> a promo:variable ;
+promo:GasConstant a promo:variable ;
+    promo:doc "gas constant" ;
+    promo:is_defined_by_expression_list promo:expression_list_127 ;
+    promo:label "GasConstant" ;
+    promo:network "reactions" ;
+    promo:port_variable "False" ;
+    promo:type "constant" ;
+    promo:unit_amount -1 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -2 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:Imeasured a promo:variable ;
     promo:doc "measured current" ;
     promo:has_index promo:node ;
     promo:is_defined_by_expression_list promo:expression_list_113 ;
@@ -3872,37 +3800,13 @@ qudt:VolumeFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+UeMeasured> a promo:variable ;
-    promo:doc "measured electrical potential" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_115 ;
-    promo:label "UeMeasured" ;
-    promo:network "control" ;
-    promo:port_variable "False" ;
-    promo:type "algebraic" ;
-    promo:unit_amount 0 ;
-    promo:unit_current -1 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#control+e> a promo:variable ;
-    promo:doc "control error" ;
-    promo:has_index promo:arc ;
-    promo:is_defined_by_expression_list promo:expression_list_108 ;
-    promo:label "e" ;
-    promo:network "control" ;
+promo:N_NK_KS a promo:variable ;
+    promo:doc "extended stoichiometrix matrix" ;
+    promo:has_index promo:node_x_species_conversion,
+        promo:species_conversion_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_128 ;
+    promo:label "N_NK_KS" ;
+    promo:network "reactions" ;
     promo:port_variable "False" ;
     promo:type "constant" ;
     promo:unit_amount 0 ;
@@ -3922,384 +3826,7 @@ qudt:VolumeFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+setPoint> a promo:variable ;
-    promo:doc "set point" ;
-    promo:has_index promo:arc ;
-    promo:is_defined_by_expression_list promo:expression_list_119 ;
-    promo:label "setPoint" ;
-    promo:network "control" ;
-    promo:port_variable "True" ;
-    promo:type "constant" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+D> a promo:variable ;
-    promo:doc "difference operator" ;
-    promo:has_index promo:arc,
-        promo:node ;
-    promo:is_defined_by_expression_list () ;
-    promo:label "D" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "True" ;
-    promo:type "differenceOperator" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+EnthalpyFlowConvection> a promo:variable ;
-    promo:doc "convective enthalpy flow for given stream" ;
-    promo:has_index promo:arc ;
-    promo:is_defined_by_expression_list promo:expression_list_77 ;
-    promo:label "fHc_A" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "transport" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+EnthalpyFlowDiffusionPerStream> a promo:variable ;
-    promo:doc "diffusional mass flow in a given stream" ;
-    promo:has_index promo:arc_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_68 ;
-    promo:label "fnd_AS" ;
-    promo:network "macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "transport" ;
-    promo:unit_amount 1 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+elResist> a promo:variable ;
-    promo:doc "electrical resistant" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_91,
-        promo:expression_list_92 ;
-    promo:label "elResist" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 0 ;
-    promo:unit_current -2 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+kc_x> a promo:variable ;
-    promo:doc "convecitve mass conductivity in x-direction" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_27 ;
-    promo:label "kc_x" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length -1 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+kc_y> a promo:variable ;
-    promo:doc "convecitve mass conductivity in y-direction" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_28 ;
-    promo:label "kc_y" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length -1 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+kc_z> a promo:variable ;
-    promo:doc "convecitve mass conductivity in z-direction" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_29 ;
-    promo:label "kc_z" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length -1 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+kd_x> a promo:variable ;
-    promo:doc "diffusional mass conductivity in x-direction" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_31 ;
-    promo:label "kd_x" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 2 ;
-    promo:unit_current 0 ;
-    promo:unit_length -4 ;
-    promo:unit_light 0 ;
-    promo:unit_mass -1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+kd_y> a promo:variable ;
-    promo:doc "diffusional mass conductivity in y-direction" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_32 ;
-    promo:label "kd_y" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 2 ;
-    promo:unit_current 0 ;
-    promo:unit_length -4 ;
-    promo:unit_light 0 ;
-    promo:unit_mass -1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+kd_z> a promo:variable ;
-    promo:doc "diffusional mass conductivity in z-direction" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_33 ;
-    promo:label "kd_z" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 2 ;
-    promo:unit_current 0 ;
-    promo:unit_length -4 ;
-    promo:unit_light 0 ;
-    promo:unit_mass -1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+kq_x> a promo:variable ;
-    promo:doc "thermal conductivity in x-direction" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_23 ;
-    promo:label "kq_x" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+kq_y> a promo:variable ;
-    promo:doc "thermal conductivity in y-direction" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_24 ;
-    promo:label "kq_y" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material+kq_z> a promo:variable ;
-    promo:doc "thermal conductivity in z-direction'" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_25 ;
-    promo:label "kq_z" ;
-    promo:network "material" ;
-    promo:port_variable "False" ;
-    promo:type "property" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -3 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#material---macroscopic+_h> a promo:variable ;
-    promo:doc "link variable h to interface material >>> macroscopic" ;
-    promo:has_index promo:node_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_52 ;
-    promo:label "_h" ;
-    promo:network "material >>> macroscopic" ;
-    promo:port_variable "False" ;
-    promo:type "get" ;
-    promo:unit_amount -1 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -2 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#physical+Projection_NS_KS> a promo:variable ;
+promo:P_NS_KS a promo:variable ;
     promo:doc "projection node species to conversion species" ;
     promo:has_index promo:node_x_species,
         promo:species_conversion_x_species ;
@@ -4325,7 +3852,7 @@ qudt:VolumeFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#physical+Prpjection_N_NK> a promo:variable ;
+promo:P_N_NK a promo:variable ;
     promo:doc "projection node to node conversion" ;
     promo:has_index promo:node,
         promo:node_x_species_conversion ;
@@ -4351,7 +3878,110 @@ qudt:VolumeFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#reactions+ConcentrationMatrixRPerNodeSpeciesPerReaction> a promo:variable ;
+promo:T_NK a promo:variable ;
+    promo:doc "temperature of the reactive system" ;
+    promo:has_index promo:node_x_species_conversion ;
+    promo:is_defined_by_expression_list promo:expression_list_39 ;
+    promo:label "T_NK" ;
+    promo:network "reactions" ;
+    promo:port_variable "False" ;
+    promo:type "effort" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 1 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:UeMeasured a promo:variable ;
+    promo:doc "measured electrical potential" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_115 ;
+    promo:label "UeMeasured" ;
+    promo:network "control" ;
+    promo:port_variable "False" ;
+    promo:type "algebraic" ;
+    promo:unit_amount 0 ;
+    promo:unit_current -1 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_h a promo:variable ;
+    promo:doc "link variable h to interface material >>> macroscopic" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_52 ;
+    promo:label "_h" ;
+    promo:network "material >>> macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount -1 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -2 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:_i a promo:variable ;
+    promo:doc "link variable i to interface macroscopic >>> control",
+        "link variable i to interface macroscopic >>> material" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_90,
+        promo:expression_list_99 ;
+    promo:label "_i" ;
+    promo:network "macroscopic >>> control",
+        "macroscopic >>> material" ;
+    promo:port_variable "False" ;
+    promo:type "get" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 1 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:c a promo:variable ;
     promo:doc "concentration matrix reaction per node and species per reaction" ;
     promo:has_index promo:node_x_species_conversion,
         promo:species_conversion_x_species ;
@@ -4377,45 +4007,21 @@ qudt:VolumeFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#reactions+GasConstant> a promo:variable ;
-    promo:doc "gas constant" ;
-    promo:is_defined_by_expression_list promo:expression_list_127 ;
-    promo:label "GasConstant" ;
-    promo:network "reactions" ;
+promo:e a promo:variable ;
+    promo:doc "control error" ;
+    promo:has_index promo:arc ;
+    promo:is_defined_by_expression_list promo:expression_list_108 ;
+    promo:label "e" ;
+    promo:network "control" ;
     promo:port_variable "False" ;
     promo:type "constant" ;
-    promo:unit_amount -1 ;
-    promo:unit_current 0 ;
-    promo:unit_length 2 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 1 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature -1 ;
-    promo:unit_time -2 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#reactions+ReactionTemperature> a promo:variable ;
-    promo:doc "temperature of the reactive system" ;
-    promo:has_index promo:node_x_species_conversion ;
-    promo:is_defined_by_expression_list promo:expression_list_39 ;
-    promo:label "T_NK" ;
-    promo:network "reactions" ;
-    promo:port_variable "False" ;
-    promo:type "effort" ;
     promo:unit_amount 0 ;
     promo:unit_current 0 ;
     promo:unit_length 0 ;
     promo:unit_light 0 ;
     promo:unit_mass 0 ;
     promo:unit_nil 0 ;
-    promo:unit_temperature 1 ;
+    promo:unit_temperature 0 ;
     promo:unit_time 0 ;
     qudt:A promo:unit_current ;
     qudt:CD promo:unit_light ;
@@ -4426,14 +4032,314 @@ qudt:VolumeFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#reactions+StoichiometricMatrixNKKS> a promo:variable ;
-    promo:doc "extended stoichiometrix matrix" ;
-    promo:has_index promo:node_x_species_conversion,
-        promo:species_conversion_x_species ;
-    promo:is_defined_by_expression_list promo:expression_list_128 ;
-    promo:label "N_NK_KS" ;
-    promo:network "reactions" ;
+promo:elResist a promo:variable ;
+    promo:doc "electrical resistant" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_91,
+        promo:expression_list_92 ;
+    promo:label "elResist" ;
+    promo:network "material" ;
     promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 0 ;
+    promo:unit_current -2 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:fHc_A a promo:variable ;
+    promo:doc "convective enthalpy flow for given stream" ;
+    promo:has_index promo:arc ;
+    promo:is_defined_by_expression_list promo:expression_list_77 ;
+    promo:label "fHc_A" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "transport" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 2 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:fnd_AS a promo:variable ;
+    promo:doc "diffusional mass flow in a given stream" ;
+    promo:has_index promo:arc_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_68 ;
+    promo:label "fnd_AS" ;
+    promo:network "macroscopic" ;
+    promo:port_variable "False" ;
+    promo:type "transport" ;
+    promo:unit_amount 1 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:kc_x a promo:variable ;
+    promo:doc "convecitve mass conductivity in x-direction" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_27 ;
+    promo:label "kc_x" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length -1 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:kc_y a promo:variable ;
+    promo:doc "convecitve mass conductivity in y-direction" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_28 ;
+    promo:label "kc_y" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length -1 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:kc_z a promo:variable ;
+    promo:doc "convecitve mass conductivity in z-direction" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_29 ;
+    promo:label "kc_z" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length -1 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:kd_x a promo:variable ;
+    promo:doc "diffusional mass conductivity in x-direction" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_31 ;
+    promo:label "kd_x" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 2 ;
+    promo:unit_current 0 ;
+    promo:unit_length -4 ;
+    promo:unit_light 0 ;
+    promo:unit_mass -1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:kd_y a promo:variable ;
+    promo:doc "diffusional mass conductivity in y-direction" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_32 ;
+    promo:label "kd_y" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 2 ;
+    promo:unit_current 0 ;
+    promo:unit_length -4 ;
+    promo:unit_light 0 ;
+    promo:unit_mass -1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:kd_z a promo:variable ;
+    promo:doc "diffusional mass conductivity in z-direction" ;
+    promo:has_index promo:node_x_species ;
+    promo:is_defined_by_expression_list promo:expression_list_33 ;
+    promo:label "kd_z" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 2 ;
+    promo:unit_current 0 ;
+    promo:unit_length -4 ;
+    promo:unit_light 0 ;
+    promo:unit_mass -1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:kq_x a promo:variable ;
+    promo:doc "thermal conductivity in x-direction" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_23 ;
+    promo:label "kq_x" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:kq_y a promo:variable ;
+    promo:doc "thermal conductivity in y-direction" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_24 ;
+    promo:label "kq_y" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:kq_z a promo:variable ;
+    promo:doc "thermal conductivity in z-direction'" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_25 ;
+    promo:label "kq_z" ;
+    promo:network "material" ;
+    promo:port_variable "False" ;
+    promo:type "property" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 1 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature -1 ;
+    promo:unit_time -3 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:setPoint a promo:variable ;
+    promo:doc "set point" ;
+    promo:has_index promo:arc ;
+    promo:is_defined_by_expression_list promo:expression_list_119 ;
+    promo:label "setPoint" ;
+    promo:network "control" ;
+    promo:port_variable "True" ;
     promo:type "constant" ;
     promo:unit_amount 0 ;
     promo:unit_current 0 ;
@@ -4505,32 +4411,7 @@ qudt:MolarFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#control+x> a promo:variable ;
-    promo:doc "state" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_111 ;
-    promo:label "x" ;
-    promo:network "control" ;
-    promo:port_variable "True" ;
-    promo:type "state" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 0 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time 0 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#macroscopic+AreaYZ> a promo:variable ;
+promo:Ayz a promo:variable ;
     promo:doc "cross sectional area yz" ;
     promo:has_index promo:node ;
     promo:is_defined_by_expression_list promo:expression_list_48 ;
@@ -4555,22 +4436,26 @@ qudt:MolarFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#physical+LinearVelocityX> a promo:variable ;
-    promo:doc "velocitiy in x-direction" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_15 ;
-    promo:label "v_x" ;
-    promo:network "physical" ;
-    promo:port_variable "False" ;
-    promo:type "secondaryState" ;
+promo:D a promo:variable ;
+    promo:doc "diagonal event matrix (no dimensional problems)",
+        "difference operator" ;
+    promo:has_index promo:arc,
+        promo:node ;
+    promo:is_defined_by_expression_list () ;
+    promo:label "D" ;
+    promo:network "control",
+        "macroscopic" ;
+    promo:port_variable "True" ;
+    promo:type "constant",
+        "differenceOperator" ;
     promo:unit_amount 0 ;
     promo:unit_current 0 ;
-    promo:unit_length 1 ;
+    promo:unit_length 0 ;
     promo:unit_light 0 ;
     promo:unit_mass 0 ;
     promo:unit_nil 0 ;
     promo:unit_temperature 0 ;
-    promo:unit_time -1 ;
+    promo:unit_time 0 ;
     qudt:A promo:unit_current ;
     qudt:CD promo:unit_light ;
     qudt:K promo:unit_temperature ;
@@ -4580,57 +4465,7 @@ qudt:MolarFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#physical+LinearVelocityY> a promo:variable ;
-    promo:doc "velocity in y-direction" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_16 ;
-    promo:label "v_y" ;
-    promo:network "physical" ;
-    promo:port_variable "False" ;
-    promo:type "secondaryState" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 1 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#physical+LinearVelocityZ> a promo:variable ;
-    promo:doc "velocity in z-direction" ;
-    promo:has_index promo:node ;
-    promo:is_defined_by_expression_list promo:expression_list_17 ;
-    promo:label "v_z" ;
-    promo:network "physical" ;
-    promo:port_variable "False" ;
-    promo:type "secondaryState" ;
-    promo:unit_amount 0 ;
-    promo:unit_current 0 ;
-    promo:unit_length 1 ;
-    promo:unit_light 0 ;
-    promo:unit_mass 0 ;
-    promo:unit_nil 0 ;
-    promo:unit_temperature 0 ;
-    promo:unit_time -1 ;
-    qudt:A promo:unit_current ;
-    qudt:CD promo:unit_light ;
-    qudt:K promo:unit_temperature ;
-    qudt:KiloGM promo:unit_mass ;
-    qudt:M promo:unit_length ;
-    qudt:MOL promo:unit_amount ;
-    qudt:SEC promo:unit_time ;
-    qudt:UNITLESS promo:unit_nil .
-
-<http://example.org#physical+X-Coordinate> a promo:variable ;
+promo:r_x a promo:variable ;
     promo:doc "x-coordinate" ;
     promo:has_index promo:node ;
     promo:is_defined_by_expression_list () ;
@@ -4655,7 +4490,7 @@ qudt:MolarFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#physical+Y-Coordinate> a promo:variable ;
+promo:r_y a promo:variable ;
     promo:doc "y-coordinate" ;
     promo:has_index promo:node ;
     promo:is_defined_by_expression_list () ;
@@ -4680,7 +4515,7 @@ qudt:MolarFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#physical+Z-Coordinate> a promo:variable ;
+promo:r_z a promo:variable ;
     promo:doc "z_coordinate" ;
     promo:has_index promo:node ;
     promo:is_defined_by_expression_list () ;
@@ -4705,7 +4540,7 @@ qudt:MolarFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#root+TimeEnd> a promo:variable ;
+promo:te a promo:variable ;
     promo:doc "end time" ;
     promo:is_defined_by_expression_list promo:expression_list_5 ;
     promo:label "te" ;
@@ -4729,7 +4564,7 @@ qudt:MolarFlowRate a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#root+TimeStart> a promo:variable ;
+promo:to a promo:variable ;
     promo:doc "starting time" ;
     promo:is_defined_by_expression_list promo:expression_list_4 ;
     promo:label "to" ;
@@ -4744,6 +4579,106 @@ qudt:MolarFlowRate a promo:variable ;
     promo:unit_nil 0 ;
     promo:unit_temperature 0 ;
     promo:unit_time 1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:v_x a promo:variable ;
+    promo:doc "velocitiy in x-direction" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_15 ;
+    promo:label "v_x" ;
+    promo:network "physical" ;
+    promo:port_variable "False" ;
+    promo:type "secondaryState" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 1 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:v_y a promo:variable ;
+    promo:doc "velocity in y-direction" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_16 ;
+    promo:label "v_y" ;
+    promo:network "physical" ;
+    promo:port_variable "False" ;
+    promo:type "secondaryState" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 1 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:v_z a promo:variable ;
+    promo:doc "velocity in z-direction" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_17 ;
+    promo:label "v_z" ;
+    promo:network "physical" ;
+    promo:port_variable "False" ;
+    promo:type "secondaryState" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 1 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time -1 ;
+    qudt:A promo:unit_current ;
+    qudt:CD promo:unit_light ;
+    qudt:K promo:unit_temperature ;
+    qudt:KiloGM promo:unit_mass ;
+    qudt:M promo:unit_length ;
+    qudt:MOL promo:unit_amount ;
+    qudt:SEC promo:unit_time ;
+    qudt:UNITLESS promo:unit_nil .
+
+promo:x a promo:variable ;
+    promo:doc "state" ;
+    promo:has_index promo:node ;
+    promo:is_defined_by_expression_list promo:expression_list_111 ;
+    promo:label "x" ;
+    promo:network "control" ;
+    promo:port_variable "True" ;
+    promo:type "state" ;
+    promo:unit_amount 0 ;
+    promo:unit_current 0 ;
+    promo:unit_length 0 ;
+    promo:unit_light 0 ;
+    promo:unit_mass 0 ;
+    promo:unit_nil 0 ;
+    promo:unit_temperature 0 ;
+    promo:unit_time 0 ;
     qudt:A promo:unit_current ;
     qudt:CD promo:unit_light ;
     qudt:K promo:unit_temperature ;
@@ -4872,7 +4807,7 @@ qudt:TotalCurrent a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#material+Mm> a promo:variable ;
+promo:Mm a promo:variable ;
     promo:doc "species molecular mass" ;
     promo:has_index promo:species ;
     promo:is_defined_by_expression_list () ;
@@ -4897,7 +4832,7 @@ qudt:TotalCurrent a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#material+additive> a promo:variable ;
+promo:additive a promo:variable ;
     promo:doc "fraction of additives" ;
     promo:is_defined_by_expression_list promo:expression_list_88 ;
     promo:label "additive" ;
@@ -4923,7 +4858,7 @@ qudt:TotalCurrent a promo:variable ;
 
 promo:token a rdfs:class .
 
-<http://example.org#root+NetworkIncidenceMatrix> a promo:variable ;
+promo:F_N_A a promo:variable ;
     promo:doc "fudamental incidence matrix" ;
     promo:has_index promo:arc,
         promo:node ;
@@ -4978,15 +4913,7 @@ qudt:ElectricPotential a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-promo:blockIndex a rdfs:class .
-
-promo:diffSpace a promo:index ;
-    promo:label "diffSpace" ;
-    promo:network "['control']" .
-
-promo:index a rdfs:class .
-
-<http://example.org#macroscopic+F_NS_AS> a promo:variable ;
+promo:F_NS_AS a promo:variable ;
     promo:doc "species related incidence matrix" ;
     promo:has_index promo:arc_x_species,
         promo:node_x_species ;
@@ -5011,6 +4938,14 @@ promo:index a rdfs:class .
     qudt:MOL promo:unit_amount ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
+
+promo:blockIndex a rdfs:class .
+
+promo:diffSpace a promo:index ;
+    promo:label "diffSpace" ;
+    promo:network "['control']" .
+
+promo:index a rdfs:class .
 
 qudt:AmountOfSubstance a promo:variable ;
     promo:doc "fundamental state -- molar mass" ;
@@ -5199,7 +5134,7 @@ qudt:Volume a promo:variable ;
     qudt:SEC promo:unit_time ;
     qudt:UNITLESS promo:unit_nil .
 
-<http://example.org#root+Value> a promo:variable ;
+promo:value a promo:variable ;
     promo:doc "numerical value" ;
     promo:is_defined_by_expression_list () ;
     promo:label "value" ;
