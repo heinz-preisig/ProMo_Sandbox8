@@ -578,5 +578,60 @@
     "lhs": "_nProd",
     "network": "reactions >>> macroscopic",
     "rhs": " nProd"
+  },
+  "132": {
+    "lhs": "Bo",
+    "network": "physical",
+    "rhs": " Instantiate ( S , value )"
+  },
+  "133": {
+    "lhs": "R",
+    "network": "physical",
+    "rhs": " Avogadro . Bo"
+  },
+  "134": {
+    "lhs": "nt",
+    "network": "macroscopic",
+    "rhs": " one_S | S in N & S | n"
+  },
+  "135": {
+    "lhs": "xi",
+    "network": "macroscopic",
+    "rhs": " inv ( nt ) : n"
+  },
+  "136": {
+    "lhs": "chemPot",
+    "network": "macroscopic",
+    "rhs": " ( R . T ) : ln ( xi )"
+  },
+  "137": {
+    "lhs": "nProd",
+    "network": "macroscopic",
+    "rhs": " _nProd"
+  },
+  "138": {
+    "lhs": "switch",
+    "network": "control",
+    "rhs": " onehalf . ( one + sign ( to ) )"
+  },
+  "139": {
+    "lhs": "_switch",
+    "network": "control >>> macroscopic",
+    "rhs": " switch"
+  },
+  "140": {
+    "lhs": "fV",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( fV , value )"
+  },
+  "141": {
+    "lhs": "fnc_AS_controlled",
+    "network": "macroscopic",
+    "rhs": " _switch . fnc_AS"
+  },
+  "142": {
+    "lhs": "dndt",
+    "network": "macroscopic",
+    "rhs": " F_NS_AS | A & S | Stack ( fnc_AS , fnc_AS_controlled )"
   }
 }

@@ -114,3 +114,14 @@
 129 :: phi =  Product ( x ^ ( N_NK_KS ) , K & S )
 130 :: nProd =  V | N | ( P_N_NK | N & K | ( ( K_NK . phi ) . ( P_NS_KS | K & S | N_NK_KS ) ) )
 131 :: _nProd =  nProd
+132 :: Bo =  Instantiate ( S , value )
+133 :: R =  Avogadro . Bo
+134 :: nt =  one_S | S in N & S | n
+135 :: xi =  inv ( nt ) : n
+136 :: chemPot =  ( R . T ) : ln ( xi )
+137 :: nProd =  _nProd
+138 :: switch =  onehalf . ( one + sign ( to ) )
+139 :: _switch =  switch
+140 :: fV =  Instantiate ( fV , value )
+141 :: fnc_AS_controlled =  _switch . fnc_AS
+142 :: dndt =  F_NS_AS | A & S | Stack ( fnc_AS , fnc_AS_controlled )

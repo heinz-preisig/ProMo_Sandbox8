@@ -694,5 +694,71 @@
     "lhs": " V_164",
     "network": "reactions >>> macroscopic",
     "rhs": " V_163"
+  },
+  "132": {
+    "variable_ID": 165,
+    "lhs": " V_165",
+    "network": "physical",
+    "rhs": " O_11 D_0 V_14 D_7 V_1 D_1"
+  },
+  "133": {
+    "variable_ID": 166,
+    "lhs": " V_166",
+    "network": "physical",
+    "rhs": " V_24 O_4 V_165"
+  },
+  "134": {
+    "variable_ID": 168,
+    "lhs": " V_168",
+    "network": "macroscopic",
+    "rhs": " V_127 O_5 I_3 O_14 I_5 O_5 V_16"
+  },
+  "135": {
+    "variable_ID": 169,
+    "lhs": " V_169",
+    "network": "macroscopic",
+    "rhs": " F_15 D_0 V_168 D_1 O_3 V_16"
+  },
+  "136": {
+    "variable_ID": 19,
+    "lhs": " V_19",
+    "network": "macroscopic",
+    "rhs": " D_0 V_166 O_4 V_18 D_1 O_3 F_2 D_0 V_169 D_1"
+  },
+  "137": {
+    "variable_ID": 170,
+    "lhs": " V_170",
+    "network": "macroscopic",
+    "rhs": " V_164"
+  },
+  "138": {
+    "variable_ID": 171,
+    "lhs": " V_171",
+    "network": "control",
+    "rhs": " V_4 O_4 D_0 V_2 O_0 F_16 D_0 V_6 D_1 D_1"
+  },
+  "139": {
+    "variable_ID": 172,
+    "lhs": " V_172",
+    "network": "control >>> macroscopic",
+    "rhs": " V_171"
+  },
+  "140": {
+    "variable_ID": 92,
+    "lhs": " V_92",
+    "network": "macroscopic",
+    "rhs": " O_11 D_0 V_92 D_7 V_1 D_1"
+  },
+  "141": {
+    "variable_ID": 173,
+    "lhs": " V_173",
+    "network": "macroscopic",
+    "rhs": " V_172 O_4 V_99"
+  },
+  "142": {
+    "variable_ID": 101,
+    "lhs": " V_101",
+    "network": "macroscopic",
+    "rhs": " V_70  O_5  I_6 O_5  F_20 D_0 V_99 D_7 V_173 D_1"
   }
 }

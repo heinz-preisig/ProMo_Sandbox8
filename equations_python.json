@@ -694,5 +694,71 @@
     "lhs": "_nProd",
     "network": "reactions >>> macroscopic",
     "rhs": "nProd"
+  },
+  "132": {
+    "variable_ID": 165,
+    "lhs": "Bo",
+    "network": "physical",
+    "rhs": "np.ones(np.shape(S)), value"
+  },
+  "133": {
+    "variable_ID": 166,
+    "lhs": "R",
+    "network": "physical",
+    "rhs": "np.multiply(Avogadro, Bo)"
+  },
+  "134": {
+    "variable_ID": 168,
+    "lhs": "nt",
+    "network": "macroscopic",
+    "rhs": "blockReduce(one_S, S, N_x_S, n)"
+  },
+  "135": {
+    "variable_ID": 169,
+    "lhs": "xi",
+    "network": "macroscopic",
+    "rhs": "khatriRao(np.reciprocal(nt), [N], n, [N_x_S])"
+  },
+  "136": {
+    "variable_ID": 19,
+    "lhs": "chemPot",
+    "network": "macroscopic",
+    "rhs": "khatriRao((np.multiply(R, T)), [N], np.log(xi), [N_x_S])"
+  },
+  "137": {
+    "variable_ID": 170,
+    "lhs": "nProd",
+    "network": "macroscopic",
+    "rhs": "_nProd"
+  },
+  "138": {
+    "variable_ID": 171,
+    "lhs": "switch",
+    "network": "control",
+    "rhs": "np.multiply(onehalf, (np.add(one, np.sign(to))))"
+  },
+  "139": {
+    "variable_ID": 172,
+    "lhs": "_switch",
+    "network": "control >>> macroscopic",
+    "rhs": "switch"
+  },
+  "140": {
+    "variable_ID": 92,
+    "lhs": "fV",
+    "network": "macroscopic",
+    "rhs": "np.ones(np.shape(fV)), value"
+  },
+  "141": {
+    "variable_ID": 173,
+    "lhs": "fnc_AS_controlled",
+    "network": "macroscopic",
+    "rhs": "np.multiply(_switch, fnc_AS)"
+  },
+  "142": {
+    "variable_ID": 101,
+    "lhs": "dndt",
+    "network": "macroscopic",
+    "rhs": "np.dot(F_NS_AS, Stack(fnc_AS,fnc_AS_controlled))"
   }
 }

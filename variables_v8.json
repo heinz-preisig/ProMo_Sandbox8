@@ -239,7 +239,7 @@
       "IRI": "qudt:ChemicalPotential",
       "aliases": "{'global_ID': ' V_19', 'python': 'chemPot', 'cpp': 'chemPot', 'matlab': 'chemPot', 'latex': '\\\\mu', 'internal_code': 'chemPot'}",
       "doc": "chemical potential",
-      "equations": "{8: {'rhs': ' O_7 D_0 V_13 D_7 V_16 D_1', 'type': 'generic', 'doc': 'chemical potential', 'network': 'physical', 'incidence_list': ['13', '16']}}",
+      "equations": "{8: {'rhs': ' O_7 D_0 V_13 D_7 V_16 D_1', 'type': 'generic', 'doc': 'chemical potential', 'network': 'physical', 'incidence_list': ['13', '16']}, 136: {'rhs': ' D_0 V_166 O_4 V_18 D_1 O_3 F_2 D_0 V_169 D_1', 'type': 'generic', 'doc': 'chemical potential', 'network': 'macroscopic', 'incidence_list': ['166', '169', '18']}}",
       "index_structures": "[5]",
       "label": "chemPot",
       "network": "physical",
@@ -1084,7 +1084,7 @@
       "IRI": "qudt:VolumeFlowRate",
       "aliases": "{'global_ID': ' V_92', 'python': 'fV', 'cpp': 'fV', 'matlab': 'fV', 'latex': '\\\\hat{V}', 'internal_code': 'fV'}",
       "doc": "volumetric flow",
-      "equations": "{67: {'rhs': ' F_15 D_0 V_74 D_1 O_4 V_81 O_4 V_71 O_4 V_90  O_5  I_1 O_5  V_17', 'type': 'generic', 'doc': 'volumetric flow', 'network': 'macroscopic', 'incidence_list': ['17', '71', '74', '81', '90']}}",
+      "equations": "{67: {'rhs': ' F_15 D_0 V_74 D_1 O_4 V_81 O_4 V_71 O_4 V_90  O_5  I_1 O_5  V_17', 'type': 'generic', 'doc': 'volumetric flow', 'network': 'macroscopic', 'incidence_list': ['17', '71', '74', '81', '90']}, 140: {'rhs': ' O_11 D_0 V_92 D_7 V_1 D_1', 'type': 'instantiation_equation', 'doc': 'instantiation equation', 'network': 'macroscopic', 'incidence_list': ['1', '92']}}",
       "index_structures": "[2]",
       "label": "fV",
       "network": "macroscopic",
@@ -1181,7 +1181,7 @@
       "network": "macroscopic",
       "port_variable": "False",
       "tokens": "[]",
-      "type": "secondaryState",
+      "type": "transport",
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
     },
     "100": {
@@ -1194,14 +1194,14 @@
       "network": "macroscopic",
       "port_variable": "False",
       "tokens": "[]",
-      "type": "secondaryState",
+      "type": "transport",
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
     },
     "101": {
       "IRI": "promo:dndt",
       "aliases": "{'global_ID': ' V_101', 'python': 'dndt', 'cpp': 'dndt', 'matlab': 'dndt', 'latex': '\\\\dot{n}', 'internal_code': 'dndt'}",
       "doc": "differential species balance",
-      "equations": "{76: {'rhs': ' V_100 O_0 V_94 O_0 V_164', 'type': 'generic', 'doc': 'differential species balance', 'network': 'macroscopic', 'incidence_list': ['100', '164', '94']}}",
+      "equations": "{76: {'rhs': ' V_100 O_0 V_94 O_0 V_164', 'type': 'generic', 'doc': 'differential species balance', 'network': 'macroscopic', 'incidence_list': ['100', '164', '94']}, 142: {'rhs': ' V_70  O_5  I_6 O_5  F_20 D_0 V_99 D_7 V_173 D_1', 'type': 'generic', 'doc': 'differential species balance switched', 'network': 'macroscopic', 'incidence_list': ['173', '70', '99']}}",
       "index_structures": "[5]",
       "label": "dndt",
       "network": "macroscopic",
@@ -1602,7 +1602,7 @@
     },
     "137": {
       "IRI": "promo:xo",
-      "aliases": "{'global_ID': ' V_137', 'python': 'xo', 'cpp': 'xo', 'matlab': 'xo', 'latex': 'xo', 'internal_code': 'xo'}",
+      "aliases": "{'global_ID': ' V_137', 'python': 'xo', 'cpp': 'xo', 'matlab': 'xo', 'latex': 'x_o', 'internal_code': 'xo'}",
       "doc": "initial state",
       "equations": "{109: {'rhs': ' O_11 D_0 V_136 D_7 V_1 D_1', 'type': 'instantiate', 'doc': 'initial state', 'network': 'control', 'incidence_list': ['1', '136']}}",
       "index_structures": "[1]",
@@ -1897,6 +1897,110 @@
       "port_variable": "False",
       "tokens": "[]",
       "type": "get",
+      "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
+    },
+    "165": {
+      "IRI": "promo:Bo",
+      "aliases": "{'global_ID': ' V_165', 'python': 'Bo', 'cpp': 'Bo', 'matlab': 'Bo', 'latex': 'Bo', 'internal_code': 'Bo'}",
+      "doc": "Boltzmann constant",
+      "equations": "{132: {'rhs': ' O_11 D_0 V_14 D_7 V_1 D_1', 'type': 'generic', 'doc': 'Boltzmann constant', 'network': 'physical', 'incidence_list': ['1', '14']}}",
+      "index_structures": "[1]",
+      "label": "Bo",
+      "network": "physical",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "constant",
+      "units": "[-2, 2, 0, 1, -1, 0, 0, 0]"
+    },
+    "166": {
+      "IRI": "promo:R",
+      "aliases": "{'global_ID': ' V_166', 'python': 'R', 'cpp': 'R', 'matlab': 'R', 'latex': 'R', 'internal_code': 'R'}",
+      "doc": "gas constant",
+      "equations": "{133: {'rhs': ' V_24 O_4 V_165', 'type': 'generic', 'doc': 'gas constant', 'network': 'physical', 'incidence_list': ['165', '24']}}",
+      "index_structures": "[1]",
+      "label": "R",
+      "network": "physical",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "constant",
+      "units": "[-2, 2, -1, 1, -1, 0, 0, 0]"
+    },
+    "168": {
+      "IRI": "promo:nt",
+      "aliases": "{'global_ID': ' V_168', 'python': 'nt', 'cpp': 'nt', 'matlab': 'nt', 'latex': 'n_t', 'internal_code': 'nt'}",
+      "doc": "total number of species in a node",
+      "equations": "{134: {'rhs': ' V_127 O_5 I_3 O_14 I_5 O_5 V_16', 'type': 'generic', 'doc': 'total number of species in a node', 'network': 'macroscopic', 'incidence_list': ['127', '16']}}",
+      "index_structures": "[1]",
+      "label": "nt",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "secondaryState",
+      "units": "[0, 0, 1, 0, 0, 0, 0, 0]"
+    },
+    "169": {
+      "IRI": "promo:xi",
+      "aliases": "{'global_ID': ' V_169', 'python': 'xi', 'cpp': 'xi', 'matlab': 'xi', 'latex': '\\\\xi', 'internal_code': 'xi'}",
+      "doc": "mole fraction",
+      "equations": "{135: {'rhs': ' F_15 D_0 V_168 D_1 O_3 V_16', 'type': 'generic', 'doc': 'mole fraction', 'network': 'macroscopic', 'incidence_list': ['16', '168']}}",
+      "index_structures": "[5]",
+      "label": "xi",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "secondaryState",
+      "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    "170": {
+      "IRI": "promo:nProd",
+      "aliases": "{'global_ID': ' V_170', 'python': 'nProd', 'cpp': 'nProd', 'matlab': 'nProd', 'latex': '{\\\\tilde n}', 'internal_code': 'nProd'}",
+      "doc": "production term",
+      "equations": "{137: {'rhs': ' V_164', 'type': 'generic', 'doc': 'production term', 'network': 'macroscopic', 'incidence_list': ['164']}}",
+      "index_structures": "[5]",
+      "label": "nProd",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "conversion",
+      "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
+    },
+    "171": {
+      "IRI": "promo:switch",
+      "aliases": "{'global_ID': ' V_171', 'python': 'switch', 'cpp': 'switch', 'matlab': 'switch', 'latex': 's', 'internal_code': 'switch'}",
+      "doc": "switches at to",
+      "equations": "{138: {'rhs': ' V_4 O_4 D_0 V_2 O_0 F_16 D_0 V_6 D_1 D_1', 'type': 'generic', 'doc': 'switches at to', 'network': 'control', 'incidence_list': ['2', '4', '6']}}",
+      "index_structures": "[]",
+      "label": "switch",
+      "network": "control",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "algebraic",
+      "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    "172": {
+      "IRI": "promo:_switch",
+      "aliases": "{'global_ID': ' V_172', 'python': '_switch', 'cpp': '_switch', 'matlab': '_switch', 'latex': 's', 'internal_code': '_switch'}",
+      "doc": "switches at to",
+      "equations": "{139: {'rhs': ' V_171', 'type': 'generic', 'doc': 'switches at to', 'network': 'control >>> macroscopic', 'incidence_list': ['171']}}",
+      "index_structures": "[]",
+      "label": "_switch",
+      "network": "control >>> macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "get",
+      "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    "173": {
+      "IRI": "promo:fnc_AS_controlled",
+      "aliases": "{'global_ID': ' V_173', 'python': 'fnc_AS_controlled', 'cpp': 'fnc_AS_controlled', 'matlab': 'fnc_AS_controlled', 'latex': '\\\\hat{n}^{c,controlled}', 'internal_code': 'fnc_AS_controlled'}",
+      "doc": "switched flow",
+      "equations": "{141: {'rhs': ' V_172 O_4 V_99', 'type': 'generic', 'doc': 'switched flow', 'network': 'macroscopic', 'incidence_list': ['172', '99']}}",
+      "index_structures": "[6]",
+      "label": "fnc_AS_controlled",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transport",
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
     }
   },
@@ -2216,7 +2320,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 164,
-    "equation": 131
+    "variable": 173,
+    "equation": 142
   }
 }

@@ -304,5 +304,45 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{\tilde{n}}{_{{N S}}} := {V}{_{N}} \stackrel{N}{\,\star\,} \left({P}{_{N, {N K}}} \stackrel{{N K}}{\,\star\,} \left(\left({K}{_{{N K}}} \, . \, {\phi}{_{{N K}}}\right) \, . \, \left({P}{_{{N S}, {K S}}} \stackrel{{K S}}{\,\star\,} {N}{_{{N K}, {K S}}}\right)\right)\right)\end{eq} &
     \begin{lay}the species production term\end{lay} &
     \begin{lay}reactions\end{lay} \\
+\hyperlink{"v:165"}{ 132 }\hypertarget{"e:132"}{  } &
+    \begin{eq}{Bo}{_{N}} := \text{Instantiate}({S}{_{N}}, {\#}{_{}})\end{eq} &
+    \begin{lay}Boltzmann constant\end{lay} &
+    \begin{lay}physical\end{lay} \\
+\hyperlink{"v:166"}{ 133 }\hypertarget{"e:133"}{  } &
+    \begin{eq}{R}{_{N}} := {{A^v}}{_{}} \, . \, {Bo}{_{N}}\end{eq} &
+    \begin{lay}gas constant\end{lay} &
+    \begin{lay}physical\end{lay} \\
+\hyperlink{"v:168"}{ 134 }\hypertarget{"e:134"}{  } &
+    \begin{eq}{n_t}{_{N}} := {{1}}{_{S}} \stackrel{ S \, \in \, {N S} }{\,\star\,} {n}{_{{N S}}}\end{eq} &
+    \begin{lay}total number of species in a node\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:169"}{ 135 }\hypertarget{"e:135"}{  } &
+    \begin{eq}{\xi}{_{{N S}}} := \left( {n_t}{_{N}} \right)^{-1} \, {\odot} \, {n}{_{{N S}}}\end{eq} &
+    \begin{lay}mole fraction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:19"}{ 136 }\hypertarget{"e:136"}{  } &
+    \begin{eq}{\mu}{_{{N S}}} := \left({R}{_{N}} \, . \, {T}{_{N}}\right) \, {\odot} \, ln({\xi}{_{{N S}}})\end{eq} &
+    \begin{lay}chemical potential\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:170"}{ 137 }\hypertarget{"e:137"}{  } &
+    \begin{eq}{{\tilde n}}{_{{N S}}} := {\tilde{n}}{_{{N S}}}\end{eq} &
+    \begin{lay}production term\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:171"}{ 138 }\hypertarget{"e:138"}{  } &
+    \begin{eq}{s}{_{}} := {0.5}{_{}} \, . \, \left({1}{_{}}  + \text{sign} \left( {{t^o}}{_{}} \right)\right)\end{eq} &
+    \begin{lay}switches at to\end{lay} &
+    \begin{lay}control\end{lay} \\
+\hyperlink{"v:172"}{ 139 }\hypertarget{"e:139"}{  } &
+    \begin{eq}{s}{_{}} := {s}{_{}}\end{eq} &
+    \begin{lay}switches at to\end{lay} &
+    \begin{lay}control --> macroscopic\end{lay} \\
+\hyperlink{"v:173"}{ 141 }\hypertarget{"e:141"}{  } &
+    \begin{eq}{\hat{n}^{c,controlled}}{_{{A S}}} := {s}{_{}} \, . \, {{\hat{n}^c}}{_{{A S}}}\end{eq} &
+    \begin{lay}switched flow\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:101"}{ 142 }\hypertarget{"e:142"}{  } &
+    \begin{eq}{\dot{n}}{_{{N S}}} := {F}{_{{N S}, {A S}}} \stackrel{{A S}}{\,\star\,} \text{Stack}\left( {{\hat{n}^c}}{_{{A S}}},{\hat{n}^{c,controlled}}{_{{A S}}} \right)\end{eq} &
+    \begin{lay}differential species balance switched\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
 \hline
 \end{longtable}

@@ -19,6 +19,7 @@
              & \begin{lay}transport \end{lay}
              & $ m^{3} \,s^{-1} \, $
              & \hyperlink{"e:67"}{ 67 }
+                 \hyperlink{"e:140"}{ 140 }
                  \\
     93
              & \hypertarget{"v:93"}{ $ {{\hat{n}^{d}}}{_{{A S}}} $}
@@ -59,6 +60,22 @@
              & \begin{lay}transport \end{lay}
              & $  $
              & \hyperlink{"e:72"}{ 72 }
+                 \\
+    99
+             & \hypertarget{"v:99"}{ $ {{\hat{n}^c}}{_{{A S}}} $}
+             & \verb|fnc_AS|
+             & molar convetional mass flow in the given stream
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             & \hyperlink{"e:74"}{ 74 }
+                 \\
+    100
+             & \hypertarget{"v:100"}{ $ {{\hat{n}^c}}{_{{N S}}} $}
+             & \verb|fnc|
+             & net molar convectional mass flow
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             & \hyperlink{"e:75"}{ 75 }
                  \\
     102
              & \hypertarget{"v:102"}{ $ {{\hat{H}^c}}{_{A}} $}
@@ -107,6 +124,14 @@
              & \begin{lay}transport \end{lay}
              & $ kg \,m^{2} \,s^{-3} \, $
              & \hyperlink{"e:82"}{ 82 }
+                 \\
+    173
+             & \hypertarget{"v:173"}{ $ {\hat{n}^{c,controlled}}{_{{A S}}} $}
+             & \verb|fnc_AS_controlled|
+             & switched flow
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             & \hyperlink{"e:141"}{ 141 }
                  \\
     71
              & \hypertarget{"v:71"}{ $ {{A_{yz}}}{_{N}} $}
@@ -200,22 +225,6 @@
              & $ m^{-3} \,mol \, $
              & \hyperlink{"e:73"}{ 73 }
                  \\
-    99
-             & \hypertarget{"v:99"}{ $ {{\hat{n}^c}}{_{{A S}}} $}
-             & \verb|fnc_AS|
-             & molar convetional mass flow in the given stream
-             & \begin{lay}secondaryState \end{lay}
-             & $ mol \,s^{-1} \, $
-             & \hyperlink{"e:74"}{ 74 }
-                 \\
-    100
-             & \hypertarget{"v:100"}{ $ {{\hat{n}^c}}{_{{N S}}} $}
-             & \verb|fnc|
-             & net molar convectional mass flow
-             & \begin{lay}secondaryState \end{lay}
-             & $ mol \,s^{-1} \, $
-             & \hyperlink{"e:75"}{ 75 }
-                 \\
     126
              & \hypertarget{"v:126"}{ $ {\phi}{_{}} $}
              & \verb|intensities|
@@ -232,6 +241,30 @@
              & $ mol \, $
              & \hyperlink{"e:107"}{ 107 }
                  \\
+    168
+             & \hypertarget{"v:168"}{ $ {n_t}{_{N}} $}
+             & \verb|nt|
+             & total number of species in a node
+             & \begin{lay}secondaryState \end{lay}
+             & $ mol \, $
+             & \hyperlink{"e:134"}{ 134 }
+                 \\
+    169
+             & \hypertarget{"v:169"}{ $ {\xi}{_{{N S}}} $}
+             & \verb|xi|
+             & mole fraction
+             & \begin{lay}secondaryState \end{lay}
+             & $  $
+             & \hyperlink{"e:135"}{ 135 }
+                 \\
+    170
+             & \hypertarget{"v:170"}{ $ {{\tilde n}}{_{{N S}}} $}
+             & \verb|nProd|
+             & production term
+             & \begin{lay}conversion \end{lay}
+             & $ mol \,s^{-1} \, $
+             & \hyperlink{"e:137"}{ 137 }
+                 \\
     101
              & \hypertarget{"v:101"}{ $ {\dot{n}}{_{{N S}}} $}
              & \verb|dndt|
@@ -239,6 +272,7 @@
              & \begin{lay}diffState \end{lay}
              & $ mol \,s^{-1} \, $
              & \hyperlink{"e:76"}{ 76 }
+                 \hyperlink{"e:142"}{ 142 }
                  \\
     108
              & \hypertarget{"v:108"}{ $ {{\dot{H}}}{_{N}} $}
