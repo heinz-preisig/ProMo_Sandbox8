@@ -674,8 +674,7 @@
       "event"
     ],
     "nodes_allowing_token_injection": [
-      "constant",
-      "dynamic"
+      "constant"
     ],
     "nodes_allowing_token_transfer": [
       "intraface"

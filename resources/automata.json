@@ -2302,13 +2302,13 @@
         "('ancestor', 'root', '-')": {
           "left": {
             "state": "-",
-            "output": "-"
+            "output": "zoom in"
           },
           "right": {
             "state": "-",
             "output": "-"
           },
-          "cursor": "-"
+          "cursor": "TR_enter"
         },
         "('connector', 'name', '-')": {
           "left": {
@@ -2346,13 +2346,13 @@
         "('node_composite', 'root', '-')": {
           "left": {
             "state": "-",
-            "output": "-"
+            "output": "zoom in"
           },
           "right": {
             "state": "-",
             "output": "-"
           },
-          "cursor": "-"
+          "cursor": "TR_enter"
         },
         "('node_interface', 'name', '-')": {
           "left": {
@@ -2412,13 +2412,13 @@
         "('sibling', 'root', '-')": {
           "left": {
             "state": "-",
-            "output": "-"
+            "output": "zoom in"
           },
           "right": {
             "state": "-",
             "output": "-"
           },
-          "cursor": "-"
+          "cursor": "TR_enter"
         }
       }
     }
