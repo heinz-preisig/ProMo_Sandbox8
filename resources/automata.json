@@ -2350,9 +2350,9 @@
           },
           "right": {
             "state": "-",
-            "output": "-"
+            "output": "instantiate"
           },
-          "cursor": "TR_enter"
+          "cursor": "CC_L_goin-R_instantiate"
         },
         "('node_interface', 'name', '-')": {
           "left": {
@@ -2405,9 +2405,9 @@
           },
           "right": {
             "state": "-",
-            "output": "-"
+            "output": "instantiate"
           },
-          "cursor": "-"
+          "cursor": "TR_instantiate"
         },
         "('sibling', 'root', '-')": {
           "left": {
@@ -2453,12 +2453,12 @@
       }
     },
     "equation_topology": {
-      "reset": {
-        "state": "roam",
-        "output": "-"
-      },
       "Key_I": {
         "state": "instantiate",
+        "output": "-"
+      },
+      "Key_Escape": {
+        "state": "roam",
         "output": "-"
       }
     }
