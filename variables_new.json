@@ -4853,9 +4853,8 @@
             ]
         }
     },
-    "version": "8",
     "indices": {
-        "1": {
+        "I_1": {
             "type": "index",
             "label": "node",
             "network": [
@@ -4881,7 +4880,7 @@
             "tokens": null,
             "IRI": "promo:node"
         },
-        "2": {
+        "I_2": {
             "type": "index",
             "label": "arc",
             "network": [
@@ -4907,7 +4906,7 @@
             "tokens": null,
             "IRI": "promo:arc"
         },
-        "3": {
+        "I_3": {
             "type": "index",
             "label": "species",
             "network": [
@@ -4931,7 +4930,7 @@
             "tokens": "mass",
             "IRI": "promo:species"
         },
-        "4": {
+        "I_4": {
             "type": "index",
             "label": "species_conversion",
             "network": [
@@ -4982,12 +4981,12 @@
             },
             "IRI": "promo:species_conversion"
         },
-        "5": {
+        "I_5": {
             "type": "block_index",
             "label": "node & species",
             "indices": [
-                1,
-                3
+                "1",
+                "3"
             ],
             "network": [
                 "physical",
@@ -5010,12 +5009,12 @@
             "tokens": "mass",
             "IRI": "promo:node_&_species"
         },
-        "6": {
+        "I_6": {
             "type": "block_index",
             "label": "arc & species",
             "indices": [
-                2,
-                3
+                "2",
+                "3"
             ],
             "network": [
                 "physical",
@@ -5038,12 +5037,12 @@
             "tokens": "mass",
             "IRI": "promo:arc_&_species"
         },
-        "7": {
+        "I_7": {
             "type": "block_index",
             "label": "node & species_conversion",
             "indices": [
-                1,
-                4
+                "1",
+                "4"
             ],
             "network": [
                 "physical",
@@ -5093,12 +5092,12 @@
             },
             "IRI": "promo:node_&_species_conversion"
         },
-        "8": {
+        "I_8": {
             "type": "block_index",
             "label": "species_conversion & species",
             "indices": [
-                4,
-                3
+                "4",
+                "3"
             ],
             "network": [
                 "physical",
@@ -5151,7 +5150,7 @@
             ],
             "IRI": "promo:species_conversion_&_species"
         },
-        "9": {
+        "I_9": {
             "type": "index",
             "label": "diffSpace",
             "network": [
@@ -5169,8 +5168,9 @@
             "IRI": "promo:diffSpace"
         }
     },
+    "version": "8",
     "Ontology_global_IDs": {
-        "variable": 173,
-        "equation": 142
+        "variable": 174,
+        "equation": 143
     }
 }
