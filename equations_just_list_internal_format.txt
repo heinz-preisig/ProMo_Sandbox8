@@ -75,7 +75,7 @@
 83 :: dHdt =  fHc + fHd + fq + fw
 84 :: Ho =  Instantiate ( H , value )
 85 :: no =  Instantiate ( n , value )
-86 :: n =  Integral ( dndt :: t in [ to , te ] )
+86 :: n =  Integral ( dndt :: t in [ to , te ] ) + no
 87 :: H =  Integral ( dHdt :: t in [ to , te ] )
 88 :: additive =  Instantiate ( additive , value )
 89 :: i =  TotalDiff ( charge , t )

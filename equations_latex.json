@@ -465,7 +465,7 @@
     "variable_ID": 16,
     "lhs": "{n}{_{{N S}}}",
     "network": "macroscopic",
-    "rhs": "\\int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \\, {\\dot{n}}{_{{N S}}} \\enskip d\\,{t}{_{}}"
+    "rhs": "\\int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \\, {\\dot{n}}{_{{N S}}} \\enskip d\\,{t}{_{}}  + {{n^o}}{_{{N S}}}"
   },
   "87": {
     "variable_ID": 20,

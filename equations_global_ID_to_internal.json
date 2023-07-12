@@ -387,7 +387,7 @@
   "86": {
     "lhs": "n",
     "network": "macroscopic",
-    "rhs": " Integral ( dndt :: t in [ to , te ] )"
+    "rhs": " Integral ( dndt :: t in [ to , te ] ) + no"
   },
   "87": {
     "lhs": "H",

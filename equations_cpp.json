@@ -465,7 +465,7 @@
     "variable_ID": 16,
     "lhs": "n",
     "network": "macroscopic",
-    "rhs": "integral(dndt,t,to,te)"
+    "rhs": "np.add(integral(dndt,t,to,te), no)"
   },
   "87": {
     "variable_ID": 20,

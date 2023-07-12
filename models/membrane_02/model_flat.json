@@ -18,7 +18,10 @@
           "A"
         ]
       },
-      "mass": []
+      "mass": [],
+      "instantiated_variables": {
+        "V_66": 1.0
+      }
     },
     "2": {
       "name": "default",
@@ -29,7 +32,8 @@
       "variant": "MaterialSource",
       "tokens": {},
       "injected_typed_tokens": {},
-      "mass": []
+      "mass": [],
+      "instantiated_variables": {}
     },
     "4": {
       "name": "default",
@@ -46,7 +50,11 @@
       },
       "conversions": {},
       "injected_typed_tokens": {},
-      "mass": []
+      "mass": [],
+      "instantiated_variables": {
+        "V_6": 0.0,
+        "V_7": 100.0
+      }
     },
     "5": {
       "name": "default",
@@ -63,7 +71,11 @@
       },
       "conversions": {},
       "injected_typed_tokens": {},
-      "mass": []
+      "mass": [],
+      "instantiated_variables": {
+        "V_6": 0.0,
+        "V_7": 100.0
+      }
     },
     "6": {
       "name": "default",
@@ -80,7 +92,11 @@
       },
       "conversions": {},
       "injected_typed_tokens": {},
-      "mass": []
+      "mass": [],
+      "instantiated_variables": {
+        "V_6": 0.0,
+        "V_7": 100.0
+      }
     },
     "7": {
       "name": "default",
@@ -97,7 +113,11 @@
       },
       "conversions": {},
       "injected_typed_tokens": {},
-      "mass": []
+      "mass": [],
+      "instantiated_variables": {
+        "V_6": 0.0,
+        "V_7": 200.0
+      }
     },
     "8": {
       "name": "default",
@@ -114,7 +134,11 @@
       },
       "conversions": {},
       "injected_typed_tokens": {},
-      "mass": []
+      "mass": [],
+      "instantiated_variables": {
+        "V_6": 0.0,
+        "V_7": 100.0
+      }
     },
     "9": {
       "name": "default",
@@ -131,7 +155,11 @@
       },
       "conversions": {},
       "injected_typed_tokens": {},
-      "mass": []
+      "mass": [],
+      "instantiated_variables": {
+        "V_6": 0.0,
+        "V_7": 100.0
+      }
     },
     "10": {
       "name": "default",
@@ -147,7 +175,11 @@
       },
       "conversions": {},
       "injected_typed_tokens": {},
-      "mass": []
+      "mass": [],
+      "instantiated_variables": {
+        "V_6": 0.0,
+        "V_7": 100.0
+      }
     },
     "11": {
       "name": "default",
@@ -177,7 +209,8 @@
           "A"
         ]
       },
-      "mass": []
+      "mass": [],
+      "instantiated_variables": {}
     },
     "12": {
       "name": "default",
@@ -196,7 +229,10 @@
           "B"
         ]
       },
-      "mass": []
+      "mass": [],
+      "instantiated_variables": {
+        "V_66": 5.0
+      }
     },
     "13": {
       "name": "default",
@@ -211,7 +247,14 @@
         ]
       },
       "conversions": {},
-      "mass": []
+      "mass": [],
+      "instantiated_variables": {
+        "V_6": 0.0,
+        "V_2": 1.0,
+        "V_4": 0.5,
+        "V_101": 0.0,
+        "V_99": 10.0
+      }
     }
   },
   "arcs": {
@@ -228,7 +271,8 @@
       "named_network": "A-liquid",
       "mechanism": "diffusion",
       "nature": "lumped",
-      "variant": "MassDiffusion"
+      "variant": "MassDiffusion",
+      "instantiated_variables": {}
     },
     "1": {
       "name": "11 | 8",
@@ -243,7 +287,8 @@
       "named_network": "A-liquid",
       "mechanism": "diffusion",
       "nature": "lumped",
-      "variant": "MassDiffusion"
+      "variant": "MassDiffusion",
+      "instantiated_variables": {}
     },
     "2": {
       "name": "8 | 6",
@@ -258,7 +303,8 @@
       "named_network": "A-liquid",
       "mechanism": "diffusion",
       "nature": "lumped",
-      "variant": "MassDiffusion"
+      "variant": "MassDiffusion",
+      "instantiated_variables": {}
     },
     "3": {
       "name": "6 | 9",
@@ -273,7 +319,8 @@
       "named_network": "A-liquid",
       "mechanism": "diffusion",
       "nature": "lumped",
-      "variant": "MassDiffusion"
+      "variant": "MassDiffusion",
+      "instantiated_variables": {}
     },
     "4": {
       "name": "9 | 7",
@@ -288,7 +335,8 @@
       "named_network": "A-liquid",
       "mechanism": "diffusion",
       "nature": "lumped",
-      "variant": "MassDiffusion"
+      "variant": "MassDiffusion",
+      "instantiated_variables": {}
     },
     "5": {
       "name": "1 | 8",
@@ -303,7 +351,8 @@
       "named_network": "A-liquid",
       "mechanism": "diffusion",
       "nature": "lumped",
-      "variant": "MassDiffusion"
+      "variant": "MassDiffusion",
+      "instantiated_variables": {}
     },
     "6": {
       "name": "13 | 14",
@@ -317,7 +366,8 @@
       "named_network": "activeComponent",
       "mechanism": "diffusion",
       "nature": "lumped",
-      "variant": ""
+      "variant": "",
+      "instantiated_variables": {}
     },
     "7": {
       "name": "14 | 7",
@@ -332,7 +382,8 @@
       "named_network": "A-liquid",
       "mechanism": "diffusion",
       "nature": "lumped",
-      "variant": ""
+      "variant": "",
+      "instantiated_variables": {}
     },
     "8": {
       "name": "15 | 16",
@@ -346,7 +397,8 @@
       "named_network": "activeComponent",
       "mechanism": "convection",
       "nature": "lumped",
-      "variant": "ConvectiveFlowControlled"
+      "variant": "ConvectiveFlowControlled",
+      "instantiated_variables": {}
     },
     "9": {
       "name": "16 | 13",
@@ -360,7 +412,8 @@
       "named_network": "activeComponent",
       "mechanism": "convection",
       "nature": "lumped",
-      "variant": "ConvectiveFlowControlled"
+      "variant": "ConvectiveFlowControlled",
+      "instantiated_variables": {}
     }
   },
   "named_networks": {
@@ -628,13 +681,5 @@
         "B"
       ]
     }
-  },
-  "instantiation_info": {
-    "nodes": {
-      "1": {
-        "V_66": "100"
-      }
-    },
-    "arcs": {}
   }
 }

@@ -39,7 +39,9 @@
         "head": {
           "-": {
             "-": {
-              "action": [],
+              "action": [
+                "instantiate"
+              ],
               "colour": [
                 46,
                 52,
@@ -86,6 +88,54 @@
               "position_y": 0,
               "style": "dash dot",
               "width": 2
+            }
+          },
+          "constant|AE": {
+            "enabled": {
+              "action": [
+                "instantiate"
+              ]
+            },
+            "selected": {
+              "action": [
+                "instantiate"
+              ]
+            }
+          },
+          "constant|infinity": {
+            "enabled": {
+              "action": [
+                "instantiate"
+              ]
+            },
+            "selected": {
+              "action": [
+                "instantiate"
+              ]
+            }
+          },
+          "dynamic|ODE": {
+            "enabled": {
+              "action": [
+                "instantiate"
+              ]
+            },
+            "selected": {
+              "action": [
+                "instantiate"
+              ]
+            }
+          },
+          "dynamic|lumped": {
+            "enabled": {
+              "action": [
+                "instantiate"
+              ]
+            },
+            "selected": {
+              "action": [
+                "instantiate"
+              ]
             }
           },
           "energy|conduction|lumped": {
@@ -150,6 +200,30 @@
               "position_y": 0,
               "style": "dashed",
               "width": 2
+            }
+          },
+          "event|AE": {
+            "enabled": {
+              "action": [
+                "instantiate"
+              ]
+            },
+            "selected": {
+              "action": [
+                "instantiate"
+              ]
+            }
+          },
+          "event|lumped": {
+            "enabled": {
+              "action": [
+                "instantiate"
+              ]
+            },
+            "selected": {
+              "action": [
+                "instantiate"
+              ]
             }
           },
           "information|link|unidirectional": {
@@ -284,7 +358,9 @@
         "tail": {
           "-": {
             "-": {
-              "action": [],
+              "action": [
+                "instantiate"
+              ],
               "colour": [
                 186,
                 189,
@@ -1840,6 +1916,12 @@
               "position_y": 0,
               "width": 15
             }
+          },
+          "charge|conduction|lumped": {
+            "-": {
+              "height": 15,
+              "width": 15
+            }
           }
         },
         "root": {
@@ -2194,6 +2276,12 @@
               "movable": false,
               "position_x": 0,
               "position_y": 0,
+              "width": 10
+            }
+          },
+          "charge|conduction|lumped": {
+            "-": {
+              "height": 10,
               "width": 10
             }
           }
@@ -2888,12 +2976,6 @@
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 100
-            }
-          },
-          "constant|AE": {
-            "-": {
-              "height": 100,
               "width": 100
             }
           }

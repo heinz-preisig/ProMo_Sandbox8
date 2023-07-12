@@ -200,7 +200,7 @@
       "IRI": "qudt:AmountOfSubstance",
       "aliases": "{'global_ID': ' V_16', 'python': 'n', 'cpp': 'n', 'matlab': 'n', 'latex': 'n', 'internal_code': 'n'}",
       "doc": "fundamental state -- molar mass",
-      "equations": "{86: {'rhs': ' O_9 D_0 V_101 D_8 V_5 O_14 D_2 V_6 D_7 V_7 D_3 D_1', 'type': 'generic', 'doc': 'fundamental state -- molar mass', 'network': 'macroscopic', 'incidence_list': ['101', '5', '6', '7']}}",
+      "equations": "{86: {'rhs': ' O_9 D_0 V_101 D_8 V_5 O_14 D_2 V_6 D_7 V_7 D_3 D_1 O_0 V_110', 'type': 'generic', 'doc': 'fundamental state -- molar mass', 'network': 'macroscopic', 'incidence_list': ['101', '110', '5', '6', '7']}}",
       "index_structures": "[5]",
       "label": "n",
       "network": "physical",

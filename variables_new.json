@@ -217,8 +217,8 @@
             },
             "doc": "fudamental incidence matrix",
             "index_structures": [
-                1,
-                2
+                "I_1",
+                "I_2"
             ],
             "label": "F_N_A",
             "network": "root",
@@ -248,8 +248,8 @@
             },
             "doc": "projection from node to arc for arc properties",
             "index_structures": [
-                1,
-                2
+                "I_1",
+                "I_2"
             ],
             "label": "P_N_A",
             "network": "physical",
@@ -279,7 +279,7 @@
             },
             "doc": "x-coordinate",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "r_x",
             "network": "physical",
@@ -309,7 +309,7 @@
             },
             "doc": "y-coordinate",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "r_y",
             "network": "physical",
@@ -339,7 +339,7 @@
             },
             "doc": "z_coordinate",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "r_z",
             "network": "physical",
@@ -369,7 +369,7 @@
             },
             "doc": "fundamental state -- internal energy",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "U",
             "network": "physical",
@@ -399,7 +399,7 @@
             },
             "doc": "fundamental state -- entropy",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "S",
             "network": "physical",
@@ -429,7 +429,7 @@
             },
             "doc": "fundamental state -- volume",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "V",
             "network": "physical",
@@ -459,7 +459,7 @@
             },
             "doc": "fundamental state -- molar mass",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "n",
             "network": "physical",
@@ -491,7 +491,7 @@
             },
             "doc": "thermodynamic pressure",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "p",
             "network": "physical",
@@ -523,7 +523,7 @@
             },
             "doc": "temperature",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "T",
             "network": "physical",
@@ -555,7 +555,7 @@
             },
             "doc": "chemical potential",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "chemPot",
             "network": "physical",
@@ -588,7 +588,7 @@
             },
             "doc": "enthalpy",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "H",
             "network": "physical",
@@ -621,7 +621,7 @@
             },
             "doc": "Helmholtz energy",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "A",
             "network": "physical",
@@ -653,7 +653,7 @@
             },
             "doc": "Gibbs free energy",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "G",
             "network": "physical",
@@ -685,7 +685,7 @@
             },
             "doc": "fundamental state -- charge",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "charge",
             "network": "physical",
@@ -743,7 +743,7 @@
             },
             "doc": "electrical potential -- voltage",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "Ue",
             "network": "physical",
@@ -776,7 +776,7 @@
             },
             "doc": "velocitiy in x-direction",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "v_x",
             "network": "physical",
@@ -808,7 +808,7 @@
             },
             "doc": "velocity in y-direction",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "v_y",
             "network": "physical",
@@ -840,7 +840,7 @@
             },
             "doc": "velocity in z-direction",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "v_z",
             "network": "physical",
@@ -872,8 +872,8 @@
             },
             "doc": "projection node species to arc species",
             "index_structures": [
-                5,
-                6
+                "I_5",
+                "I_6"
             ],
             "label": "P_NS_AS",
             "network": "physical",
@@ -903,8 +903,8 @@
             },
             "doc": "projection of conversion to node conversion",
             "index_structures": [
-                4,
-                7
+                "I_4",
+                "I_7"
             ],
             "label": "P_K_NK",
             "network": "physical",
@@ -934,8 +934,8 @@
             },
             "doc": "projection species to node species",
             "index_structures": [
-                3,
-                5
+                "I_3",
+                "I_5"
             ],
             "label": "P_S_NS",
             "network": "physical",
@@ -965,8 +965,8 @@
             },
             "doc": "projection node to node conversion",
             "index_structures": [
-                1,
-                7
+                "I_1",
+                "I_7"
             ],
             "label": "P_N_NK",
             "network": "physical",
@@ -996,8 +996,8 @@
             },
             "doc": "projection node species to conversion species",
             "index_structures": [
-                5,
-                8
+                "I_5",
+                "I_8"
             ],
             "label": "P_NS_KS",
             "network": "physical",
@@ -1027,8 +1027,8 @@
             },
             "doc": "projection arc to node species for conductivity",
             "index_structures": [
-                2,
-                5
+                "I_2",
+                "I_5"
             ],
             "label": "P_A_NS",
             "network": "physical",
@@ -1058,7 +1058,7 @@
             },
             "doc": "Arrhenius frequency factor",
             "index_structures": [
-                4
+                "I_4"
             ],
             "label": "Ko",
             "network": "reactions",
@@ -1088,7 +1088,7 @@
             },
             "doc": "species molecular mass",
             "index_structures": [
-                3
+                "I_3"
             ],
             "label": "Mm",
             "network": "material",
@@ -1118,7 +1118,7 @@
             },
             "doc": "link variable Mm to interface material >>> macroscopic",
             "index_structures": [
-                3
+                "I_3"
             ],
             "label": "_Mm",
             "network": "material >>> macroscopic",
@@ -1150,7 +1150,7 @@
             },
             "doc": "total heat capacity at constant pressure",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "Cp",
             "network": "material",
@@ -1182,7 +1182,7 @@
             },
             "doc": "total heat capacity at constant volume",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "Cv",
             "network": "material",
@@ -1214,7 +1214,7 @@
             },
             "doc": "thermal conductivity in x-direction",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "kq_x",
             "network": "material",
@@ -1246,7 +1246,7 @@
             },
             "doc": "thermal conductivity in y-direction",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "kq_y",
             "network": "material",
@@ -1278,7 +1278,7 @@
             },
             "doc": "thermal conductivity in z-direction'",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "kq_z",
             "network": "material",
@@ -1310,7 +1310,7 @@
             },
             "doc": "thermal conductivity",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "kq",
             "network": "material",
@@ -1342,7 +1342,7 @@
             },
             "doc": "convecitve mass conductivity in x-direction",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "kc_x",
             "network": "material",
@@ -1374,7 +1374,7 @@
             },
             "doc": "convecitve mass conductivity in y-direction",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "kc_y",
             "network": "material",
@@ -1406,7 +1406,7 @@
             },
             "doc": "convecitve mass conductivity in z-direction",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "kc_z",
             "network": "material",
@@ -1438,7 +1438,7 @@
             },
             "doc": "convective mass conductivity",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "kc",
             "network": "material",
@@ -1470,7 +1470,7 @@
             },
             "doc": "diffusional mass conductivity in x-direction",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "kd_x",
             "network": "material",
@@ -1502,7 +1502,7 @@
             },
             "doc": "diffusional mass conductivity in y-direction",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "kd_y",
             "network": "material",
@@ -1534,7 +1534,7 @@
             },
             "doc": "diffusional mass conductivity in z-direction",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "kd_z",
             "network": "material",
@@ -1566,7 +1566,7 @@
             },
             "doc": "diffusional mass condctivity",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "kd",
             "network": "material",
@@ -1598,7 +1598,7 @@
             },
             "doc": "partial molar enthalpies",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "h",
             "network": "material",
@@ -1630,7 +1630,7 @@
             },
             "doc": "total mass",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "m",
             "network": "macroscopic",
@@ -1662,7 +1662,7 @@
             },
             "doc": "link variable m to interface macroscopic >>> material",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_m",
             "network": "macroscopic >>> material",
@@ -1694,7 +1694,7 @@
             },
             "doc": "density",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "density",
             "network": "material",
@@ -1726,7 +1726,7 @@
             },
             "doc": "temperature of the reactive system",
             "index_structures": [
-                7
+                "I_7"
             ],
             "label": "T_NK",
             "network": "reactions",
@@ -1758,7 +1758,7 @@
             },
             "doc": "Arrhenius activation energy",
             "index_structures": [
-                7
+                "I_7"
             ],
             "label": "Ea",
             "network": "reactions",
@@ -1790,7 +1790,7 @@
             },
             "doc": "Arrhenius reaction 'constant'",
             "index_structures": [
-                7
+                "I_7"
             ],
             "label": "K_NK",
             "network": "reactions",
@@ -1822,8 +1822,8 @@
             },
             "doc": "projection node conversion to conversion species",
             "index_structures": [
-                7,
-                8
+                "I_7",
+                "I_8"
             ],
             "label": "P_NK_KS",
             "network": "physical",
@@ -1853,7 +1853,7 @@
             },
             "doc": "molar composition",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "c",
             "network": "macroscopic",
@@ -1885,7 +1885,7 @@
             },
             "doc": "link variable c to interface macroscopic >>> reactions",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "_c",
             "network": "macroscopic >>> reactions",
@@ -1917,8 +1917,8 @@
             },
             "doc": "species related incidence matrix",
             "index_structures": [
-                5,
-                6
+                "I_5",
+                "I_6"
             ],
             "label": "F_NS_AS",
             "network": "macroscopic",
@@ -1948,7 +1948,7 @@
             },
             "doc": "cross sectional area yz",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "Ayz",
             "network": "macroscopic",
@@ -1980,7 +1980,7 @@
             },
             "doc": "cross sectional area xz",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "Axz",
             "network": "macroscopic",
@@ -2012,7 +2012,7 @@
             },
             "doc": "cross sectional area xy",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "Axy",
             "network": "macroscopic",
@@ -2044,7 +2044,7 @@
             },
             "doc": "link variable density to interface material >>> macroscopic",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_density",
             "network": "material >>> macroscopic",
@@ -2076,7 +2076,7 @@
             },
             "doc": "link variable h to interface material >>> macroscopic",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "_h",
             "network": "material >>> macroscopic",
@@ -2108,7 +2108,7 @@
             },
             "doc": "link variable kq_x to interface material >>> macroscopic",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_kq_x",
             "network": "material >>> macroscopic",
@@ -2140,7 +2140,7 @@
             },
             "doc": "link variable Cv to interface material >>> macroscopic",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_Cv",
             "network": "material >>> macroscopic",
@@ -2172,7 +2172,7 @@
             },
             "doc": "link variable kq_y to interface material >>> macroscopic",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_kq_y",
             "network": "material >>> macroscopic",
@@ -2204,7 +2204,7 @@
             },
             "doc": "link variable kq_z to interface material >>> macroscopic",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_kq_z",
             "network": "material >>> macroscopic",
@@ -2236,7 +2236,7 @@
             },
             "doc": "link variable kq to interface material >>> macroscopic",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_kq",
             "network": "material >>> macroscopic",
@@ -2268,7 +2268,7 @@
             },
             "doc": "link variable kc_x to interface material >>> macroscopic",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_kc_x",
             "network": "material >>> macroscopic",
@@ -2300,7 +2300,7 @@
             },
             "doc": "link variable Cp to interface material >>> macroscopic",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_Cp",
             "network": "material >>> macroscopic",
@@ -2332,7 +2332,7 @@
             },
             "doc": "link variable kc_y to interface material >>> macroscopic",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_kc_y",
             "network": "material >>> macroscopic",
@@ -2364,7 +2364,7 @@
             },
             "doc": "link variable kc_z to interface material >>> macroscopic",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_kc_z",
             "network": "material >>> macroscopic",
@@ -2396,7 +2396,7 @@
             },
             "doc": "link variable kc to interface material >>> macroscopic",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_kc",
             "network": "material >>> macroscopic",
@@ -2428,7 +2428,7 @@
             },
             "doc": "link variable kd_x to interface material >>> macroscopic",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "_kd_x",
             "network": "material >>> macroscopic",
@@ -2460,7 +2460,7 @@
             },
             "doc": "link variable kd_y to interface material >>> macroscopic",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "_kd_y",
             "network": "material >>> macroscopic",
@@ -2492,7 +2492,7 @@
             },
             "doc": "link variable kd_z to interface material >>> macroscopic",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "_kd_z",
             "network": "material >>> macroscopic",
@@ -2524,7 +2524,7 @@
             },
             "doc": "link variable kd to interface material >>> macroscopic",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "_kd",
             "network": "material >>> macroscopic",
@@ -2556,8 +2556,8 @@
             },
             "doc": "difference operator",
             "index_structures": [
-                1,
-                2
+                "I_1",
+                "I_2"
             ],
             "label": "D",
             "network": "macroscopic",
@@ -2587,8 +2587,8 @@
             },
             "doc": "difference operator for species topology",
             "index_structures": [
-                5,
-                6
+                "I_5",
+                "I_6"
             ],
             "label": "D_NS_AS",
             "network": "macroscopic",
@@ -2618,7 +2618,7 @@
             },
             "doc": "volumetric flow",
             "index_structures": [
-                2
+                "I_2"
             ],
             "label": "fV",
             "network": "macroscopic",
@@ -2651,7 +2651,7 @@
             },
             "doc": "diffusional mass flow in a given stream",
             "index_structures": [
-                6
+                "I_6"
             ],
             "label": "fnd_AS",
             "network": "macroscopic",
@@ -2683,7 +2683,7 @@
             },
             "doc": "net diffusional mass flow",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "fnd",
             "network": "macroscopic",
@@ -2715,7 +2715,7 @@
             },
             "doc": "enthalpy flow per diffusional mass stream",
             "index_structures": [
-                2
+                "I_2"
             ],
             "label": "fHd_A",
             "network": "macroscopic",
@@ -2747,7 +2747,7 @@
             },
             "doc": "net enthaply stream due to diffusion",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "fHd",
             "network": "macroscopic",
@@ -2779,7 +2779,7 @@
             },
             "doc": "flow direction of convectional flow",
             "index_structures": [
-                2
+                "I_2"
             ],
             "label": "d",
             "network": "macroscopic",
@@ -2811,7 +2811,7 @@
             },
             "doc": "concentration in convectional flow",
             "index_structures": [
-                6
+                "I_6"
             ],
             "label": "c_AS",
             "network": "macroscopic",
@@ -2843,7 +2843,7 @@
             },
             "doc": "molar convetional mass flow in the given stream",
             "index_structures": [
-                6
+                "I_6"
             ],
             "label": "fnc_AS",
             "network": "macroscopic",
@@ -2875,7 +2875,7 @@
             },
             "doc": "net molar convectional mass flow",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "fnc",
             "network": "macroscopic",
@@ -2907,7 +2907,7 @@
             },
             "doc": "differential species balance",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "dndt",
             "network": "macroscopic",
@@ -2940,7 +2940,7 @@
             },
             "doc": "convective enthalpy flow for given stream",
             "index_structures": [
-                2
+                "I_2"
             ],
             "label": "fHc_A",
             "network": "macroscopic",
@@ -2972,7 +2972,7 @@
             },
             "doc": "net convectional enthalpy stream",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "fHc",
             "network": "macroscopic",
@@ -3004,7 +3004,7 @@
             },
             "doc": "sample work stream",
             "index_structures": [
-                2
+                "I_2"
             ],
             "label": "fw_A",
             "network": "macroscopic",
@@ -3036,7 +3036,7 @@
             },
             "doc": "net work stream",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "fw",
             "network": "macroscopic",
@@ -3068,7 +3068,7 @@
             },
             "doc": "heat flow in x-direction for given stream",
             "index_structures": [
-                2
+                "I_2"
             ],
             "label": "fq_A_x",
             "network": "macroscopic",
@@ -3100,7 +3100,7 @@
             },
             "doc": "net heat flow",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "fq",
             "network": "macroscopic",
@@ -3132,7 +3132,7 @@
             },
             "doc": "differential enthalpy balance",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "dHdt",
             "network": "macroscopic",
@@ -3164,7 +3164,7 @@
             },
             "doc": "initial enthalpy",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "Ho",
             "network": "macroscopic",
@@ -3196,7 +3196,7 @@
             },
             "doc": "initial species",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "no",
             "network": "macroscopic",
@@ -3258,7 +3258,7 @@
             },
             "doc": "electrical current definition",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "i",
             "network": "macroscopic",
@@ -3290,7 +3290,7 @@
             },
             "doc": "link variable i to interface macroscopic >>> material",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_i",
             "network": "macroscopic >>> material",
@@ -3322,7 +3322,7 @@
             },
             "doc": "electrical resistant",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "elResist",
             "network": "material",
@@ -3355,7 +3355,7 @@
             },
             "doc": "simple model for the electrical conductivity as a function of the additive",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "elConductC",
             "network": "material",
@@ -3387,7 +3387,7 @@
             },
             "doc": "link variable elConductC to interface material >>> macroscopic",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_elConductC",
             "network": "material >>> macroscopic",
@@ -3419,7 +3419,7 @@
             },
             "doc": "Kirkhoff first law",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "dUedt",
             "network": "macroscopic",
@@ -3453,7 +3453,7 @@
             },
             "doc": "link variable i to interface macroscopic >>> control",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_i",
             "network": "macroscopic >>> control",
@@ -3515,7 +3515,7 @@
             },
             "doc": "link variable T to interface macroscopic >>> control",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_T",
             "network": "macroscopic >>> control",
@@ -3577,7 +3577,7 @@
             },
             "doc": "a vector of ones with the length of the ordinal number of S",
             "index_structures": [
-                3
+                "I_3"
             ],
             "label": "one_S",
             "network": "macroscopic",
@@ -3607,7 +3607,7 @@
             },
             "doc": "total number of moles",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "nTotal",
             "network": "macroscopic",
@@ -3639,8 +3639,8 @@
             },
             "doc": "dynamic matrix",
             "index_structures": [
-                1,
-                9
+                "I_1",
+                "I_9"
             ],
             "label": "A",
             "network": "control",
@@ -3670,8 +3670,8 @@
             },
             "doc": "input matrix",
             "index_structures": [
-                2,
-                9
+                "I_2",
+                "I_9"
             ],
             "label": "B",
             "network": "control",
@@ -3701,8 +3701,8 @@
             },
             "doc": "measurement matrix",
             "index_structures": [
-                1,
-                2
+                "I_1",
+                "I_2"
             ],
             "label": "C",
             "network": "control",
@@ -3732,7 +3732,7 @@
             },
             "doc": "diagonal event matrix (no dimensional problems)",
             "index_structures": [
-                2
+                "I_2"
             ],
             "label": "D",
             "network": "control",
@@ -3762,7 +3762,7 @@
             },
             "doc": "set point",
             "index_structures": [
-                2
+                "I_2"
             ],
             "label": "setPoint",
             "network": "control",
@@ -3794,7 +3794,7 @@
             },
             "doc": "measurements",
             "index_structures": [
-                2
+                "I_2"
             ],
             "label": "meas",
             "network": "control",
@@ -3824,7 +3824,7 @@
             },
             "doc": "control error",
             "index_structures": [
-                2
+                "I_2"
             ],
             "label": "e",
             "network": "control",
@@ -3856,7 +3856,7 @@
             },
             "doc": "state",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "x",
             "network": "control",
@@ -3888,7 +3888,7 @@
             },
             "doc": "initial state",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "xo",
             "network": "control",
@@ -3920,7 +3920,7 @@
             },
             "doc": "differential state (ABCD) model",
             "index_structures": [
-                9
+                "I_9"
             ],
             "label": "dxdt",
             "network": "control",
@@ -3952,8 +3952,8 @@
             },
             "doc": "space transformation D to N",
             "index_structures": [
-                1,
-                9
+                "I_1",
+                "I_9"
             ],
             "label": "I_N_D",
             "network": "control",
@@ -4013,7 +4013,7 @@
             },
             "doc": "measured current",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "Imeasured",
             "network": "control",
@@ -4045,7 +4045,7 @@
             },
             "doc": "link variable Ue to interface macroscopic >>> control",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "_Ue",
             "network": "macroscopic >>> control",
@@ -4077,7 +4077,7 @@
             },
             "doc": "measured electrical potential",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "UeMeasured",
             "network": "control",
@@ -4139,7 +4139,7 @@
             },
             "doc": "measured resistance ",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "RComputed",
             "network": "control",
@@ -4201,7 +4201,7 @@
             },
             "doc": "reactions per node",
             "index_structures": [
-                7
+                "I_7"
             ],
             "label": "P_NK",
             "network": "reactions",
@@ -4231,8 +4231,8 @@
             },
             "doc": "concentration matrix reaction per node and species per reaction",
             "index_structures": [
-                7,
-                8
+                "I_7",
+                "I_8"
             ],
             "label": "c",
             "network": "reactions",
@@ -4264,8 +4264,8 @@
             },
             "doc": "norming concentration",
             "index_structures": [
-                7,
-                8
+                "I_7",
+                "I_8"
             ],
             "label": "co",
             "network": "reactions",
@@ -4297,8 +4297,8 @@
             },
             "doc": "matrix of normed, dimensionless mole fractions ",
             "index_structures": [
-                7,
-                8
+                "I_7",
+                "I_8"
             ],
             "label": "x",
             "network": "reactions",
@@ -4330,7 +4330,7 @@
             },
             "doc": "output equation",
             "index_structures": [
-                2
+                "I_2"
             ],
             "label": "y",
             "network": "control",
@@ -4420,8 +4420,8 @@
             },
             "doc": "stoichiometry",
             "index_structures": [
-                4,
-                8
+                "I_4",
+                "I_8"
             ],
             "label": "N_K_KS",
             "network": "reactions",
@@ -4451,8 +4451,8 @@
             },
             "doc": "extended stoichiometrix matrix",
             "index_structures": [
-                7,
-                8
+                "I_7",
+                "I_8"
             ],
             "label": "N_NK_KS",
             "network": "reactions",
@@ -4484,7 +4484,7 @@
             },
             "doc": "probability function for reactions",
             "index_structures": [
-                7
+                "I_7"
             ],
             "label": "phi",
             "network": "reactions",
@@ -4516,8 +4516,8 @@
             },
             "doc": "projection of nodes onto the node species",
             "index_structures": [
-                1,
-                5
+                "I_1",
+                "I_5"
             ],
             "label": "P_N_NS",
             "network": "physical",
@@ -4547,7 +4547,7 @@
             },
             "doc": "the species production term",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "nProd",
             "network": "reactions",
@@ -4579,7 +4579,7 @@
             },
             "doc": "link variable nProd to interface reactions >>> macroscopic",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "_nProd",
             "network": "reactions >>> macroscopic",
@@ -4611,7 +4611,7 @@
             },
             "doc": "Boltzmann constant",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "Bo",
             "network": "physical",
@@ -4643,7 +4643,7 @@
             },
             "doc": "gas constant",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "R",
             "network": "physical",
@@ -4675,7 +4675,7 @@
             },
             "doc": "total number of species in a node",
             "index_structures": [
-                1
+                "I_1"
             ],
             "label": "nt",
             "network": "macroscopic",
@@ -4707,7 +4707,7 @@
             },
             "doc": "mole fraction",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "xi",
             "network": "macroscopic",
@@ -4739,7 +4739,7 @@
             },
             "doc": "production term",
             "index_structures": [
-                5
+                "I_5"
             ],
             "label": "nProd",
             "network": "macroscopic",
@@ -4831,7 +4831,7 @@
             },
             "doc": "switched flow",
             "index_structures": [
-                6
+                "I_6"
             ],
             "label": "fnc_AS_controlled",
             "network": "macroscopic",
