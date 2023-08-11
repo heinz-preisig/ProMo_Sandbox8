@@ -1,0 +1,1625 @@
+@prefix promo: <http://example.org#> .
+@prefix promolg: <http://example.org/language#> .
+@prefix qudt: <http://qudt.org/2.1/vocab/quantitykind#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+promo:aliases a rdf:Property ;
+    rdfs:domain promo:variable ;
+    rdfs:range rdfs:List .
+
+promo:charge a promo:token .
+
+promo:energy a promo:token .
+
+promo:equations a rdfs:class .
+
+promo:expression_list a rdf:Property ;
+    rdfs:domain promo:variable ;
+    rdfs:range rdfs:List .
+
+promo:expression_list_1 a rdf:List ;
+    promo:doc "numerical value 1" ;
+    promo:equation_class "instantiate" ;
+    promo:network "root" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:value ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_10 a rdf:List ;
+    promo:doc "Helmholtz energy" ;
+    promo:equation_class "generic" ;
+    promo:network "physical" ;
+    rdf:_00 qudt:InternalEnergy ;
+    rdf:_01 promolg:minus ;
+    rdf:_02 qudt:Temperature ;
+    rdf:_03 promolg:expandProduct ;
+    rdf:_04 qudt:Entropy .
+
+promo:expression_list_104 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> control" ;
+    rdf:_00 promo:additive .
+
+promo:expression_list_105 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "macroscopic >>> control" ;
+    rdf:_00 qudt:Temperature .
+
+promo:expression_list_106 a rdf:List ;
+    promo:doc "collected intensities" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:MixedStack ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:Pressure ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 qudt:Temperature ;
+    rdf:_05 promolg:comma ;
+    rdf:_06 qudt:ChemicalPotential ;
+    rdf:_07 promolg:comma ;
+    rdf:_08 qudt:Concentration ;
+    rdf:_09 promolg:comma ;
+    rdf:_10 qudt:ElectricPotential ;
+    rdf:_11 promolg:right_round .
+
+promo:expression_list_107 a rdf:List ;
+    promo:doc "total number of moles" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:one_S ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:species ;
+    rdf:_03 promolg:in ;
+    rdf:_04 promo:node_x_species ;
+    rdf:_05 promolg:reduceProduct ;
+    rdf:_06 qudt:AmountOfSubstance .
+
+promo:expression_list_108 a rdf:List ;
+    promo:doc "control error" ;
+    promo:equation_class "generic" ;
+    promo:network "control" ;
+    rdf:_00 promo:meas ;
+    rdf:_01 promolg:minus ;
+    rdf:_02 promo:setPoint .
+
+promo:expression_list_109 a rdf:List ;
+    promo:doc "initial state" ;
+    promo:equation_class "instantiate" ;
+    promo:network "control" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:x ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_11 a rdf:List ;
+    promo:doc "Gibbs free energy" ;
+    promo:equation_class "generic" ;
+    promo:network "physical" ;
+    rdf:_00 qudt:InternalEnergy ;
+    rdf:_01 promolg:plus ;
+    rdf:_02 qudt:Pressure ;
+    rdf:_03 promolg:expandProduct ;
+    rdf:_04 qudt:Volume ;
+    rdf:_05 promolg:minus ;
+    rdf:_06 qudt:Temperature ;
+    rdf:_07 promolg:expandProduct ;
+    rdf:_08 qudt:Entropy .
+
+promo:expression_list_110 a rdf:List ;
+    promo:doc "differential state (ABCD) model" ;
+    promo:equation_class "generic" ;
+    promo:network "control" ;
+    rdf:_00 promo:A ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:node ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 promo:x ;
+    rdf:_05 promolg:plus ;
+    rdf:_06 promo:B ;
+    rdf:_07 promolg:reduceProduct ;
+    rdf:_08 promo:arc ;
+    rdf:_09 promolg:reduceProduct ;
+    rdf:_10 promo:e .
+
+promo:expression_list_111 a rdf:List ;
+    promo:doc "state" ;
+    promo:equation_class "generic" ;
+    promo:network "control" ;
+    rdf:_00 promolg:Integral ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:I_N_D ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 promo:diffSpace ;
+    rdf:_05 promolg:reduceProduct ;
+    rdf:_06 promo:dxdt ;
+    rdf:_07 promolg:double_column ;
+    rdf:_08 qudt:Time ;
+    rdf:_09 promolg:in ;
+    rdf:_10 promolg:left_square ;
+    rdf:_11 promo:to ;
+    rdf:_12 promolg:comma ;
+    rdf:_13 promo:te ;
+    rdf:_14 promolg:right_square ;
+    rdf:_15 promolg:right_round .
+
+promo:expression_list_112 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:additive .
+
+promo:expression_list_113 a rdf:List ;
+    promo:doc "measured current" ;
+    promo:equation_class "generic" ;
+    promo:network "control" ;
+    rdf:_00 promo:_i .
+
+promo:expression_list_114 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "macroscopic >>> control" ;
+    rdf:_00 qudt:ElectricPotential .
+
+promo:expression_list_115 a rdf:List ;
+    promo:doc "measured electrical potential" ;
+    promo:equation_class "generic" ;
+    promo:network "control" ;
+    rdf:_00 promo:_Ue .
+
+promo:expression_list_116 a rdf:List ;
+    promo:doc "measured additive fraction" ;
+    promo:equation_class "generic" ;
+    promo:network "control" ;
+    rdf:_00 promo:_additive .
+
+promo:expression_list_117 a rdf:List ;
+    promo:doc "measured resistance " ;
+    promo:equation_class "generic" ;
+    promo:network "control" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:Imeasured ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 promo:UeMeasured .
+
+promo:expression_list_118 a rdf:List ;
+    promo:doc "quantities to be stored" ;
+    promo:equation_class "generic" ;
+    promo:network "control" ;
+    rdf:_00 promolg:MixedStack ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:Imeasured ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:UeMeasured ;
+    rdf:_05 promolg:comma ;
+    rdf:_06 promo:RComputed ;
+    rdf:_07 promolg:comma ;
+    rdf:_08 promo:addMeasured ;
+    rdf:_09 promolg:right_round .
+
+promo:expression_list_119 a rdf:List ;
+    promo:doc "set point" ;
+    promo:equation_class "instantiate" ;
+    promo:network "control" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:setPoint ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_123 a rdf:List ;
+    promo:doc "var doc : " ;
+    promo:equation_class "generic" ;
+    promo:network "reactions" ;
+    rdf:_00 promo:P_NK ;
+    rdf:_01 promolg:expandProduct ;
+    rdf:_02 promolg:left_round ;
+    rdf:_03 promo:P_NS_KS ;
+    rdf:_04 promolg:reduceProduct ;
+    rdf:_05 promo:node_x_species ;
+    rdf:_06 promolg:reduceProduct ;
+    rdf:_07 promo:_c ;
+    rdf:_08 promolg:right_round .
+
+promo:expression_list_124 a rdf:List ;
+    promo:doc "norming concentration" ;
+    promo:equation_class "instantiate" ;
+    promo:network "reactions" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:c ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_125 a rdf:List ;
+    promo:doc "matrix of normed, dimensionless mole fractions " ;
+    promo:equation_class "generic" ;
+    promo:network "reactions" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:co ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 promo:c .
+
+promo:expression_list_126 a rdf:List ;
+    promo:doc "output equation" ;
+    promo:equation_class "generic" ;
+    promo:network "control" ;
+    rdf:_00 promo:C ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:node ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 promo:x ;
+    rdf:_05 promolg:plus ;
+    rdf:_06 promo:D ;
+    rdf:_07 promolg:expandProduct ;
+    rdf:_08 promo:e .
+
+promo:expression_list_127 a rdf:List ;
+    promo:doc "gas constant" ;
+    promo:equation_class "generic" ;
+    promo:network "reactions" ;
+    rdf:_00 promo:Avogadro ;
+    rdf:_01 promolg:expandProduct ;
+    rdf:_02 promo:Boltzmann .
+
+promo:expression_list_128 a rdf:List ;
+    promo:doc "extended stoichiometrix matrix" ;
+    promo:equation_class "generic" ;
+    promo:network "reactions" ;
+    rdf:_00 promo:P_K_NK ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:species_conversion ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 promo:N_K_KS .
+
+promo:expression_list_129 a rdf:List ;
+    promo:doc "probability function for reactions" ;
+    promo:equation_class "generic" ;
+    promo:network "reactions" ;
+    rdf:_00 promolg:Product ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:MoleFraction ;
+    rdf:_03 promolg:power ;
+    rdf:_04 promolg:left_round ;
+    rdf:_05 promo:N_NK_KS ;
+    rdf:_06 promolg:right_round ;
+    rdf:_07 promolg:comma ;
+    rdf:_08 promo:species_conversion_x_species ;
+    rdf:_09 promolg:right_round .
+
+promo:expression_list_130 a rdf:List ;
+    promo:doc "the species production term" ;
+    promo:equation_class "generic" ;
+    promo:network "reactions" ;
+    rdf:_00 qudt:Volume ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:node ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 promolg:left_round ;
+    rdf:_05 promo:P_N_NK ;
+    rdf:_06 promolg:reduceProduct ;
+    rdf:_07 promo:node_x_species_conversion ;
+    rdf:_08 promolg:reduceProduct ;
+    rdf:_09 promolg:left_round ;
+    rdf:_10 promolg:left_round ;
+    rdf:_11 promo:K_NK ;
+    rdf:_12 promolg:expandProduct ;
+    rdf:_13 promo:phi ;
+    rdf:_14 promolg:right_round ;
+    rdf:_15 promolg:expandProduct ;
+    rdf:_16 promolg:left_round ;
+    rdf:_17 promo:P_NS_KS ;
+    rdf:_18 promolg:reduceProduct ;
+    rdf:_19 promo:species_conversion_x_species ;
+    rdf:_20 promolg:reduceProduct ;
+    rdf:_21 promo:N_NK_KS ;
+    rdf:_22 promolg:right_round ;
+    rdf:_23 promolg:right_round ;
+    rdf:_24 promolg:right_round .
+
+promo:expression_list_131 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "reactions >>> macroscopic" ;
+    rdf:_00 promo:nProd .
+
+promo:expression_list_14 a rdf:List ;
+    promo:doc "electrical potential -- voltage" ;
+    promo:equation_class "generic" ;
+    promo:network "physical" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:ElectricCharge ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 qudt:InternalEnergy .
+
+promo:expression_list_15 a rdf:List ;
+    promo:doc "velocitiy in x-direction" ;
+    promo:equation_class "generic" ;
+    promo:network "physical" ;
+    rdf:_00 promolg:ParDiff ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:r_x ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 qudt:Time ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_16 a rdf:List ;
+    promo:doc "velocity in y direction" ;
+    promo:equation_class "generic" ;
+    promo:network "physical" ;
+    rdf:_00 promolg:ParDiff ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:r_y ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 qudt:Time ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_17 a rdf:List ;
+    promo:doc "velocity in z-direction" ;
+    promo:equation_class "generic" ;
+    promo:network "physical" ;
+    rdf:_00 promolg:ParDiff ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:r_z ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 qudt:Time ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_2 a rdf:List ;
+    promo:doc "numerical value zero" ;
+    promo:equation_class "instantiate" ;
+    promo:network "root" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:value ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_20 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:Mm .
+
+promo:expression_list_21 a rdf:List ;
+    promo:doc "total heat capacity at constant pressure" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:ParDiff ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:Enthalpy ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 qudt:Temperature ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_22 a rdf:List ;
+    promo:doc "total heat capacity at constant volume" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:ParDiff ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:InternalEnergy ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 qudt:Temperature ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_23 a rdf:List ;
+    promo:doc "thermal conductivity in x-direction" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:Volume ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 promolg:ParDiff ;
+    rdf:_06 promolg:left_round ;
+    rdf:_07 qudt:InternalEnergy ;
+    rdf:_08 promolg:comma ;
+    rdf:_09 qudt:Temperature ;
+    rdf:_10 promolg:right_round ;
+    rdf:_11 promolg:expandProduct ;
+    rdf:_12 promo:v_x .
+
+promo:expression_list_24 a rdf:List ;
+    promo:doc "thermal conductivity in y-direction" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:Volume ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 promolg:ParDiff ;
+    rdf:_06 promolg:left_round ;
+    rdf:_07 qudt:InternalEnergy ;
+    rdf:_08 promolg:comma ;
+    rdf:_09 qudt:Temperature ;
+    rdf:_10 promolg:right_round ;
+    rdf:_11 promolg:expandProduct ;
+    rdf:_12 promo:v_y .
+
+promo:expression_list_25 a rdf:List ;
+    promo:doc "thermal conductivity in z-direction'" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:Volume ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 promolg:ParDiff ;
+    rdf:_06 promolg:left_round ;
+    rdf:_07 qudt:InternalEnergy ;
+    rdf:_08 promolg:comma ;
+    rdf:_09 qudt:Temperature ;
+    rdf:_10 promolg:right_round ;
+    rdf:_11 promolg:expandProduct ;
+    rdf:_12 promo:v_z .
+
+promo:expression_list_26 a rdf:List ;
+    promo:doc "thermal conductivity" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:Stack ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:kq_x ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:kq_y ;
+    rdf:_05 promolg:comma ;
+    rdf:_06 promo:kq_z ;
+    rdf:_07 promolg:right_round .
+
+promo:expression_list_27 a rdf:List ;
+    promo:doc "convecitve mass conductivity in x-direction" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:left_round ;
+    rdf:_01 promo:Mm ;
+    rdf:_02 promolg:reduceProduct ;
+    rdf:_03 promo:species ;
+    rdf:_04 promolg:in ;
+    rdf:_05 promo:node_x_species ;
+    rdf:_06 promolg:reduceProduct ;
+    rdf:_07 promolg:inv ;
+    rdf:_08 promolg:left_round ;
+    rdf:_09 qudt:ChemicalPotential ;
+    rdf:_10 promolg:right_round ;
+    rdf:_11 promolg:right_round ;
+    rdf:_12 promolg:expandProduct ;
+    rdf:_13 promolg:inv ;
+    rdf:_14 promolg:left_round ;
+    rdf:_15 qudt:Volume ;
+    rdf:_16 promolg:right_round ;
+    rdf:_17 promolg:expandProduct ;
+    rdf:_18 promolg:ParDiff ;
+    rdf:_19 promolg:left_round ;
+    rdf:_20 qudt:InternalEnergy ;
+    rdf:_21 promolg:comma ;
+    rdf:_22 qudt:Pressure ;
+    rdf:_23 promolg:right_round ;
+    rdf:_24 promolg:expandProduct ;
+    rdf:_25 promo:v_x .
+
+promo:expression_list_28 a rdf:List ;
+    promo:doc "convecitve mass conductivity in y-direction" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:left_round ;
+    rdf:_01 promo:Mm ;
+    rdf:_02 promolg:reduceProduct ;
+    rdf:_03 promo:species ;
+    rdf:_04 promolg:in ;
+    rdf:_05 promo:node_x_species ;
+    rdf:_06 promolg:reduceProduct ;
+    rdf:_07 promolg:inv ;
+    rdf:_08 promolg:left_round ;
+    rdf:_09 qudt:ChemicalPotential ;
+    rdf:_10 promolg:right_round ;
+    rdf:_11 promolg:right_round ;
+    rdf:_12 promolg:expandProduct ;
+    rdf:_13 promolg:inv ;
+    rdf:_14 promolg:left_round ;
+    rdf:_15 qudt:Volume ;
+    rdf:_16 promolg:right_round ;
+    rdf:_17 promolg:expandProduct ;
+    rdf:_18 promolg:ParDiff ;
+    rdf:_19 promolg:left_round ;
+    rdf:_20 qudt:InternalEnergy ;
+    rdf:_21 promolg:comma ;
+    rdf:_22 qudt:Pressure ;
+    rdf:_23 promolg:right_round ;
+    rdf:_24 promolg:expandProduct ;
+    rdf:_25 promo:v_y .
+
+promo:expression_list_29 a rdf:List ;
+    promo:doc "convecitve mass conductivity in z-direction" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:left_round ;
+    rdf:_01 promo:Mm ;
+    rdf:_02 promolg:reduceProduct ;
+    rdf:_03 promo:species ;
+    rdf:_04 promolg:in ;
+    rdf:_05 promo:node_x_species ;
+    rdf:_06 promolg:reduceProduct ;
+    rdf:_07 promolg:inv ;
+    rdf:_08 promolg:left_round ;
+    rdf:_09 qudt:ChemicalPotential ;
+    rdf:_10 promolg:right_round ;
+    rdf:_11 promolg:right_round ;
+    rdf:_12 promolg:expandProduct ;
+    rdf:_13 promolg:inv ;
+    rdf:_14 promolg:left_round ;
+    rdf:_15 qudt:Volume ;
+    rdf:_16 promolg:right_round ;
+    rdf:_17 promolg:expandProduct ;
+    rdf:_18 promolg:ParDiff ;
+    rdf:_19 promolg:left_round ;
+    rdf:_20 qudt:InternalEnergy ;
+    rdf:_21 promolg:comma ;
+    rdf:_22 qudt:Pressure ;
+    rdf:_23 promolg:right_round ;
+    rdf:_24 promolg:expandProduct ;
+    rdf:_25 promo:v_z .
+
+promo:expression_list_3 a rdf:List ;
+    promo:doc "numerical value one half" ;
+    promo:equation_class "instantiate" ;
+    promo:network "root" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:value ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_30 a rdf:List ;
+    promo:doc "convective mass conductivity" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:Stack ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:kc_x ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:kc_y ;
+    rdf:_05 promolg:comma ;
+    rdf:_06 promo:kc_z ;
+    rdf:_07 promolg:right_round .
+
+promo:expression_list_31 a rdf:List ;
+    promo:doc "diffusional mass conductivity in x-direction" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:ChemicalPotential ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 promolg:left_round ;
+    rdf:_06 promo:v_x ;
+    rdf:_07 promolg:KR ;
+    rdf:_08 promolg:left_round ;
+    rdf:_09 promolg:inv ;
+    rdf:_10 promolg:left_round ;
+    rdf:_11 qudt:Volume ;
+    rdf:_12 promolg:right_round ;
+    rdf:_13 promolg:KR ;
+    rdf:_14 promolg:ParDiff ;
+    rdf:_15 promolg:left_round ;
+    rdf:_16 qudt:InternalEnergy ;
+    rdf:_17 promolg:comma ;
+    rdf:_18 qudt:ChemicalPotential ;
+    rdf:_19 promolg:right_round ;
+    rdf:_20 promolg:right_round ;
+    rdf:_21 promolg:right_round .
+
+promo:expression_list_32 a rdf:List ;
+    promo:doc "diffusional mass conductivity in y-direction" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:ChemicalPotential ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 promolg:left_round ;
+    rdf:_06 promo:v_y ;
+    rdf:_07 promolg:KR ;
+    rdf:_08 promolg:left_round ;
+    rdf:_09 promolg:inv ;
+    rdf:_10 promolg:left_round ;
+    rdf:_11 qudt:Volume ;
+    rdf:_12 promolg:right_round ;
+    rdf:_13 promolg:KR ;
+    rdf:_14 promolg:ParDiff ;
+    rdf:_15 promolg:left_round ;
+    rdf:_16 qudt:InternalEnergy ;
+    rdf:_17 promolg:comma ;
+    rdf:_18 qudt:ChemicalPotential ;
+    rdf:_19 promolg:right_round ;
+    rdf:_20 promolg:right_round ;
+    rdf:_21 promolg:right_round .
+
+promo:expression_list_33 a rdf:List ;
+    promo:doc "diffusional mass conductivity in z-direction" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:ChemicalPotential ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 promolg:left_round ;
+    rdf:_06 promo:v_z ;
+    rdf:_07 promolg:KR ;
+    rdf:_08 promolg:left_round ;
+    rdf:_09 promolg:inv ;
+    rdf:_10 promolg:left_round ;
+    rdf:_11 qudt:Volume ;
+    rdf:_12 promolg:right_round ;
+    rdf:_13 promolg:KR ;
+    rdf:_14 promolg:ParDiff ;
+    rdf:_15 promolg:left_round ;
+    rdf:_16 qudt:InternalEnergy ;
+    rdf:_17 promolg:comma ;
+    rdf:_18 qudt:ChemicalPotential ;
+    rdf:_19 promolg:right_round ;
+    rdf:_20 promolg:right_round ;
+    rdf:_21 promolg:right_round .
+
+promo:expression_list_34 a rdf:List ;
+    promo:doc "diffusional mass condctivity" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:Stack ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:kd_x ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:kd_y ;
+    rdf:_05 promolg:comma ;
+    rdf:_06 promo:kd_z ;
+    rdf:_07 promolg:right_round .
+
+promo:expression_list_35 a rdf:List ;
+    promo:doc "partial molar enthalpies" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 qudt:Enthalpy ;
+    rdf:_01 promolg:KR ;
+    rdf:_02 promolg:inv ;
+    rdf:_03 promolg:left_round ;
+    rdf:_04 qudt:AmountOfSubstance ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_36 a rdf:List ;
+    promo:doc "total mass" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:_Mm ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:species ;
+    rdf:_03 promolg:in ;
+    rdf:_04 promo:node_x_species ;
+    rdf:_05 promolg:reduceProduct ;
+    rdf:_06 qudt:AmountOfSubstance .
+
+promo:expression_list_37 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "macroscopic >>> material" ;
+    rdf:_00 qudt:Mass .
+
+promo:expression_list_38 a rdf:List ;
+    promo:doc "density" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promo:_m ;
+    rdf:_01 promolg:expandProduct ;
+    rdf:_02 promolg:inv ;
+    rdf:_03 promolg:left_round ;
+    rdf:_04 qudt:Volume ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_39 a rdf:List ;
+    promo:doc "temperature of the reactive system" ;
+    promo:equation_class "generic" ;
+    promo:network "reactions" ;
+    rdf:_00 promo:P_N_NK ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:node ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 qudt:Temperature .
+
+promo:expression_list_4 a rdf:List ;
+    promo:doc "starting time" ;
+    promo:equation_class "instantiate" ;
+    promo:network "root" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:Time ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_41 a rdf:List ;
+    promo:doc "Arrhenius activation energy" ;
+    promo:equation_class "instantiate" ;
+    promo:network "reactions" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:GasConstant ;
+    rdf:_03 promolg:expandProduct ;
+    rdf:_04 promo:T_NK ;
+    rdf:_05 promolg:comma ;
+    rdf:_06 promo:value ;
+    rdf:_07 promolg:right_round .
+
+promo:expression_list_42 a rdf:List ;
+    promo:doc "Arrhenius reaction 'constant'" ;
+    promo:equation_class "generic" ;
+    promo:network "reactions" ;
+    rdf:_00 promo:Ko ;
+    rdf:_01 promolg:KR ;
+    rdf:_02 promolg:exp ;
+    rdf:_03 promolg:left_round ;
+    rdf:_04 promolg:neg ;
+    rdf:_05 promolg:left_round ;
+    rdf:_06 promo:Ea ;
+    rdf:_07 promolg:right_round ;
+    rdf:_08 promolg:expandProduct ;
+    rdf:_09 promolg:inv ;
+    rdf:_10 promolg:left_round ;
+    rdf:_11 promo:GasConstant ;
+    rdf:_12 promolg:expandProduct ;
+    rdf:_13 promo:T_NK ;
+    rdf:_14 promolg:right_round ;
+    rdf:_15 promolg:right_round .
+
+promo:expression_list_44 a rdf:List ;
+    promo:doc "molar composition" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:Volume ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:KR ;
+    rdf:_05 qudt:AmountOfSubstance .
+
+promo:expression_list_45 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "macroscopic >>> reactions" ;
+    rdf:_00 qudt:Concentration .
+
+promo:expression_list_48 a rdf:List ;
+    promo:doc "cross sectional area yz" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:r_y ;
+    rdf:_01 promolg:expandProduct ;
+    rdf:_02 promo:r_z .
+
+promo:expression_list_49 a rdf:List ;
+    promo:doc "cross sectional area xz" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:r_x ;
+    rdf:_01 promolg:expandProduct ;
+    rdf:_02 promo:r_z .
+
+promo:expression_list_5 a rdf:List ;
+    promo:doc "end time" ;
+    promo:equation_class "instantiate" ;
+    promo:network "root" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:Time ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_50 a rdf:List ;
+    promo:doc "cross sectional area xy" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:r_x ;
+    rdf:_01 promolg:expandProduct ;
+    rdf:_02 promo:r_y .
+
+promo:expression_list_51 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:density .
+
+promo:expression_list_52 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:h .
+
+promo:expression_list_53 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:kq_x .
+
+promo:expression_list_54 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:Cv .
+
+promo:expression_list_55 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:kq_y .
+
+promo:expression_list_56 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:kq_z .
+
+promo:expression_list_57 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:kq .
+
+promo:expression_list_58 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:kc_x .
+
+promo:expression_list_59 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:Cp .
+
+promo:expression_list_6 a rdf:List ;
+    promo:doc "thermodynamic pressure" ;
+    promo:equation_class "generic" ;
+    promo:network "physical" ;
+    rdf:_00 promolg:neg ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promolg:ParDiff ;
+    rdf:_03 promolg:left_round ;
+    rdf:_04 qudt:InternalEnergy ;
+    rdf:_05 promolg:comma ;
+    rdf:_06 qudt:Volume ;
+    rdf:_07 promolg:right_round ;
+    rdf:_08 promolg:right_round .
+
+promo:expression_list_60 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:kc_y .
+
+promo:expression_list_61 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:kc_z .
+
+promo:expression_list_62 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:kc .
+
+promo:expression_list_63 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:kd_x .
+
+promo:expression_list_64 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:kd_y .
+
+promo:expression_list_65 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:kd_z .
+
+promo:expression_list_66 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:kd .
+
+promo:expression_list_67 a rdf:List ;
+    promo:doc "volumetric flow" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:_density ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 promo:_kc_x ;
+    rdf:_06 promolg:expandProduct ;
+    rdf:_07 promo:Ayz ;
+    rdf:_08 promolg:expandProduct ;
+    rdf:_09 promo:D ;
+    rdf:_10 promolg:reduceProduct ;
+    rdf:_11 promo:node ;
+    rdf:_12 promolg:reduceProduct ;
+    rdf:_13 qudt:Pressure .
+
+promo:expression_list_68 a rdf:List ;
+    promo:doc "diffusional mass flow in a given stream" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:Ayz ;
+    rdf:_01 promolg:KR ;
+    rdf:_02 promolg:neg ;
+    rdf:_03 promolg:left_round ;
+    rdf:_04 promo:_kd_x ;
+    rdf:_05 promolg:right_round ;
+    rdf:_06 promolg:expandProduct ;
+    rdf:_07 promo:D_NS_AS ;
+    rdf:_08 promolg:reduceProduct ;
+    rdf:_09 promo:node_x_species ;
+    rdf:_10 promolg:reduceProduct ;
+    rdf:_11 qudt:ChemicalPotential .
+
+promo:expression_list_69 a rdf:List ;
+    promo:doc "net diffusional mass flow" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:F_NS_AS ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:arc_x_species ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 promo:fnd_AS .
+
+promo:expression_list_7 a rdf:List ;
+    promo:doc "temperature" ;
+    promo:equation_class "generic" ;
+    promo:network "physical" ;
+    rdf:_00 promolg:ParDiff ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:InternalEnergy ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 qudt:Entropy ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_70 a rdf:List ;
+    promo:doc "enthalpy flow per diffusional mass stream" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:left_round ;
+    rdf:_01 promo:F_NS_AS ;
+    rdf:_02 promolg:reduceProduct ;
+    rdf:_03 promo:node_x_species ;
+    rdf:_04 promolg:reduceProduct ;
+    rdf:_05 promo:_h ;
+    rdf:_06 promolg:right_round ;
+    rdf:_07 promolg:reduceProduct ;
+    rdf:_08 promo:species ;
+    rdf:_09 promolg:in ;
+    rdf:_10 promo:arc_x_species ;
+    rdf:_11 promolg:reduceProduct ;
+    rdf:_12 promo:fnd_AS .
+
+promo:expression_list_71 a rdf:List ;
+    promo:doc "net enthaply stream due to diffusion" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:F_N_A ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:arc ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 promo:fHd_A .
+
+promo:expression_list_72 a rdf:List ;
+    promo:doc "flow direction of convectional flow" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:sign ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:F_N_A ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 promo:node ;
+    rdf:_05 promolg:reduceProduct ;
+    rdf:_06 qudt:Pressure ;
+    rdf:_07 promolg:right_round .
+
+promo:expression_list_73 a rdf:List ;
+    promo:doc "concentration in convectional flow" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:left_round ;
+    rdf:_01 promo:onehalf ;
+    rdf:_02 promolg:expandProduct ;
+    rdf:_03 promolg:left_round ;
+    rdf:_04 promo:F_NS_AS ;
+    rdf:_05 promolg:minus ;
+    rdf:_06 promo:d ;
+    rdf:_07 promolg:KR ;
+    rdf:_08 promolg:abs ;
+    rdf:_09 promolg:left_round ;
+    rdf:_10 promo:F_NS_AS ;
+    rdf:_11 promolg:right_round ;
+    rdf:_12 promolg:right_round ;
+    rdf:_13 promolg:right_round ;
+    rdf:_14 promolg:reduceProduct ;
+    rdf:_15 promo:node_x_species ;
+    rdf:_16 promolg:reduceProduct ;
+    rdf:_17 qudt:Concentration .
+
+promo:expression_list_74 a rdf:List ;
+    promo:doc "molar convetional mass flow in the given stream" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 qudt:VolumeFlowRate ;
+    rdf:_01 promolg:KR ;
+    rdf:_02 promo:c_AS .
+
+promo:expression_list_75 a rdf:List ;
+    promo:doc "net molar convectional mass flow" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:F_NS_AS ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:arc_x_species ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 qudt:MolarFlowRate .
+
+promo:expression_list_76 a rdf:List ;
+    promo:doc "differential species balance" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:fnc ;
+    rdf:_01 promolg:plus ;
+    rdf:_02 promo:fnd ;
+    rdf:_03 promolg:plus ;
+    rdf:_04 promo:_nProd .
+
+promo:expression_list_77 a rdf:List ;
+    promo:doc "convective enthalpy flow for given stream" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:left_round ;
+    rdf:_01 promo:F_NS_AS ;
+    rdf:_02 promolg:reduceProduct ;
+    rdf:_03 promo:node_x_species ;
+    rdf:_04 promolg:reduceProduct ;
+    rdf:_05 promo:_h ;
+    rdf:_06 promolg:right_round ;
+    rdf:_07 promolg:reduceProduct ;
+    rdf:_08 promo:species ;
+    rdf:_09 promolg:in ;
+    rdf:_10 promo:arc_x_species ;
+    rdf:_11 promolg:reduceProduct ;
+    rdf:_12 qudt:MolarFlowRate .
+
+promo:expression_list_78 a rdf:List ;
+    promo:doc "net convectional enthalpy stream" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:F_N_A ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:arc ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 promo:fHc_A .
+
+promo:expression_list_79 a rdf:List ;
+    promo:doc "sample work stream" ;
+    promo:equation_class "instantiate" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:fHc_A ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_8 a rdf:List ;
+    promo:doc "chemical potential" ;
+    promo:equation_class "generic" ;
+    promo:network "physical" ;
+    rdf:_00 promolg:ParDiff ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:InternalEnergy ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 qudt:AmountOfSubstance ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_80 a rdf:List ;
+    promo:doc "net work stream" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:F_N_A ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:arc ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 promo:fw_A .
+
+promo:expression_list_81 a rdf:List ;
+    promo:doc "heat flow in x-direction for given stream" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:Ayz ;
+    rdf:_01 promolg:expandProduct ;
+    rdf:_02 promo:_kq_x ;
+    rdf:_03 promolg:expandProduct ;
+    rdf:_04 promo:D ;
+    rdf:_05 promolg:reduceProduct ;
+    rdf:_06 promo:node ;
+    rdf:_07 promolg:reduceProduct ;
+    rdf:_08 qudt:Temperature .
+
+promo:expression_list_82 a rdf:List ;
+    promo:doc "net heat flow" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:F_N_A ;
+    rdf:_01 promolg:reduceProduct ;
+    rdf:_02 promo:arc ;
+    rdf:_03 promolg:reduceProduct ;
+    rdf:_04 promo:fq_A_x .
+
+promo:expression_list_83 a rdf:List ;
+    promo:doc "differential enthalpy balance" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:fHc ;
+    rdf:_01 promolg:plus ;
+    rdf:_02 promo:fHd ;
+    rdf:_03 promolg:plus ;
+    rdf:_04 qudt:HeatFlowRate ;
+    rdf:_05 promolg:plus ;
+    rdf:_06 promo:fw .
+
+promo:expression_list_84 a rdf:List ;
+    promo:doc "initial enthalpy" ;
+    promo:equation_class "instantiate" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:Enthalpy ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_85 a rdf:List ;
+    promo:doc "initial species" ;
+    promo:equation_class "instantiate" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:AmountOfSubstance ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_86 a rdf:List ;
+    promo:doc "fundamental state -- molar mass" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:Integral ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:dndt ;
+    rdf:_03 promolg:double_column ;
+    rdf:_04 qudt:Time ;
+    rdf:_05 promolg:in ;
+    rdf:_06 promolg:left_square ;
+    rdf:_07 promo:to ;
+    rdf:_08 promolg:comma ;
+    rdf:_09 promo:te ;
+    rdf:_10 promolg:right_square ;
+    rdf:_11 promolg:right_round .
+
+promo:expression_list_87 a rdf:List ;
+    promo:doc "enthalpy" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:Integral ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:dHdt ;
+    rdf:_03 promolg:double_column ;
+    rdf:_04 qudt:Time ;
+    rdf:_05 promolg:in ;
+    rdf:_06 promolg:left_square ;
+    rdf:_07 promo:to ;
+    rdf:_08 promolg:comma ;
+    rdf:_09 promo:te ;
+    rdf:_10 promolg:right_square ;
+    rdf:_11 promolg:right_round .
+
+promo:expression_list_88 a rdf:List ;
+    promo:doc "fraction of additives" ;
+    promo:equation_class "instantiate" ;
+    promo:network "material" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:additive ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_89 a rdf:List ;
+    promo:doc "electrical current definition" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:TotalDiff ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:ElectricCharge ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 qudt:Time ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_9 a rdf:List ;
+    promo:doc "enthalpy" ;
+    promo:equation_class "generic" ;
+    promo:network "physical" ;
+    rdf:_00 qudt:InternalEnergy ;
+    rdf:_01 promolg:minus ;
+    rdf:_02 qudt:Pressure ;
+    rdf:_03 promolg:expandProduct ;
+    rdf:_04 qudt:Volume .
+
+promo:expression_list_90 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "macroscopic >>> material" ;
+    rdf:_00 qudt:TotalCurrent .
+
+promo:expression_list_91 a rdf:List ;
+    promo:doc "electrical resistant" ;
+    promo:equation_class "instantiate" ;
+    promo:network "material" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:_i ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 qudt:ElectricPotential .
+
+promo:expression_list_92 a rdf:List ;
+    promo:doc "electrical resistant" ;
+    promo:equation_class "instantiate" ;
+    promo:network "material" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:elResist ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:value ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_93 a rdf:List ;
+    promo:doc "simple model for the electrical conductivity as a function of the additive" ;
+    promo:equation_class "generic" ;
+    promo:network "material" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:elResist ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 promo:additive .
+
+promo:expression_list_94 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "material >>> macroscopic" ;
+    rdf:_00 promo:elConductC .
+
+promo:expression_list_95 a rdf:List ;
+    promo:doc "electrical potential -- voltage" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:inv ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:_elConductC ;
+    rdf:_03 promolg:right_round ;
+    rdf:_04 promolg:expandProduct ;
+    rdf:_05 qudt:TotalCurrent .
+
+promo:expression_list_96 a rdf:List ;
+    promo:doc "Kirkhoff first law" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promo:one ;
+    rdf:_01 promolg:expandProduct ;
+    rdf:_02 qudt:ElectricPotential .
+
+promo:expression_list_97 a rdf:List ;
+    promo:doc "Kirkhoff first law" ;
+    promo:equation_class "generic" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:Root ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 qudt:ElectricPotential ;
+    rdf:_03 promolg:right_round .
+
+promo:expression_list_98 a rdf:List ;
+    promo:doc "Kirkhoff first law" ;
+    promo:equation_class "instantiate" ;
+    promo:network "macroscopic" ;
+    rdf:_00 promolg:Instantiate ;
+    rdf:_01 promolg:left_round ;
+    rdf:_02 promo:dUedt ;
+    rdf:_03 promolg:comma ;
+    rdf:_04 promo:zero ;
+    rdf:_05 promolg:right_round .
+
+promo:expression_list_99 a rdf:List ;
+    promo:doc "interface equation" ;
+    promo:equation_class "interface_link_equation" ;
+    promo:network "macroscopic >>> control" ;
+    rdf:_00 qudt:TotalCurrent .
+
+promo:global_index_list rdf:_1 promo:node ;
+    rdf:_2 promo:arc ;
+    rdf:_3 promo:species ;
+    rdf:_4 promo:species_conversion ;
+    rdf:_5 promo:node_x_species ;
+    rdf:_6 promo:arc_x_species ;
+    rdf:_7 promo:node_x_species_conversion ;
+    rdf:_8 promo:species_conversion_x_species ;
+    rdf:_9 promo:diffSpace .
+
+promo:has_index a rdfs:property .
+
+promo:index_structures a rdf:Property ;
+    rdfs:domain promo:variable ;
+    rdfs:range rdfs:List .
+
+promo:indices a rdf:Property ;
+    rdfs:domain promo:blockIndex ;
+    rdfs:range rdfs:List .
+
+promo:label a rdf:Property ;
+    rdfs:domain rdfs:blockIndex,
+        rdfs:index ;
+    rdfs:range rdfs:Literal .
+
+promo:mass a promo:token .
+
+promo:name a rdf:Property ;
+    rdfs:range rdfs:Literal .
+
+promo:network a rdf:Property ;
+    rdfs:domain promo:blockIndex,
+        promo:index,
+        promo:variable ;
+    rdfs:range rdfs:Literal .
+
+promo:signal a promo:token .
+
+promo:token_list a rdf:Property ;
+    rdfs:domain promo:variable ;
+    rdfs:range rdfs:List .
+
+promo:tokens a rdf:Property ;
+    rdfs:domain promo:variable ;
+    rdfs:range rdfs:List .
+
+promo:units a rdf:Property ;
+    rdfs:domain promo:variable ;
+    rdfs:range rdfs:List .
+
+promolg:BlockReduce rdfs:label "BlockReduce" ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:MakeIndex rdfs:label "MakeIndex" ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:acos rdfs:label "acos" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:ampersand rdfs:label "&" ;
+    rdfs:subClassOf promolg:delimiter .
+
+promolg:asin rdfs:label "asin" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:atan rdfs:label "atan" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:blockProd rdfs:label "blockProd" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:cos rdfs:label "cos" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:diffSpace rdfs:label "diffSpace" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:left rdfs:label "left" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:left_wiggled rdfs:label "{" ;
+    rdfs:subClassOf promolg:delimiter .
+
+promolg:ln rdfs:label "ln" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:log rdfs:label "log" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:max rdfs:label "max" ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:min rdfs:label "min" ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:or rdfs:label "|" ;
+    rdfs:subClassOf promolg:delimiter .
+
+promolg:right rdfs:label "right" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:right_wiggled rdfs:label "}" ;
+    rdfs:subClassOf promolg:delimiter .
+
+promolg:sin rdfs:label "sin" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:sqrt rdfs:label "sqrt" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:tan rdfs:label "tan" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:underline rdfs:label "_" ;
+    rdfs:subClassOf promolg:delimiter .
+
+promolg:Product rdfs:label "Product" ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:Root rdfs:label "Root" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:TotalDiff rdfs:label "TotalDiff" ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:abs rdfs:label "abs" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:exp rdfs:label "exp" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:power rdfs:label "^" ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:sign rdfs:label "sign" ;
+    rdfs:subClassOf promolg:function .
+
+promo:diffSpace a promo:index ;
+    promo:label "diffSpace" ;
+    promo:network "['control']" .
+
+promo:node_x_species_conversion a promo:blockIndex ;
+    promo:has_index promo:node,
+        promo:species_conversion ;
+    promo:label "node & species_conversion" ;
+    promo:network "['physical', 'reactions', 'material', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas']" .
+
+promolg:MixedStack rdfs:label "MixedStack" ;
+    rdfs:subClassOf promolg:function .
+
+promo:species_conversion_x_species a promo:blockIndex ;
+    promo:has_index promo:species,
+        promo:species_conversion ;
+    promo:label "species_conversion & species" ;
+    promo:network "['physical', 'reactions', 'material', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas']" .
+
+promolg:Integral rdfs:label "Integral" ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:Stack rdfs:label "Stack" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:double_column rdfs:label "::" ;
+    rdfs:subClassOf promolg:delimiter .
+
+promolg:left_square rdfs:label "[" ;
+    rdfs:subClassOf promolg:delimiter .
+
+promolg:neg rdfs:label "neg" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:right_square rdfs:label "]" ;
+    rdfs:subClassOf promolg:delimiter .
+
+promo:species_conversion a promo:index ;
+    promo:label "species_conversion" ;
+    promo:network "['physical', 'reactions', 'material', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas']" .
+
+promo:token a rdfs:class .
+
+promo:arc_x_species a promo:blockIndex ;
+    promo:has_index promo:arc,
+        promo:species ;
+    promo:label "arc & species" ;
+    promo:network "['physical', 'reactions', 'material', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas']" .
+
+promolg:minus rdfs:label "-" ;
+    rdfs:subClassOf promolg:operator .
+
+promo:blockIndex a rdfs:class .
+
+promo:index a rdfs:class .
+
+promo:arc a promo:index ;
+    promo:label "arc" ;
+    promo:network "['root', 'physical', 'reactions', 'material', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'control']" .
+
+promo:variable a rdfs:class .
+
+promolg:plus rdfs:label "+" ;
+    rdfs:subClassOf promolg:operator .
+
+promo:node a promo:index ;
+    promo:label "node" ;
+    promo:network "['root', 'physical', 'reactions', 'material', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'control']" .
+
+promolg:in rdfs:label "in" ;
+    rdfs:subClassOf promolg:operator .
+
+promo:node_x_species a promo:blockIndex ;
+    promo:has_index promo:node,
+        promo:species ;
+    promo:label "node & species" ;
+    promo:network "['physical', 'reactions', 'material', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas']" .
+
+promo:species a promo:index ;
+    promo:label "species" ;
+    promo:network "['physical', 'reactions', 'material', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas']" .
+
+promolg:KR rdfs:label ":" ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:Instantiate rdfs:label "Instantiate" ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:ParDiff rdfs:label "ParDiff" ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:inv rdfs:label "inv" ;
+    rdfs:subClassOf promolg:function .
+
+promolg:expandProduct rdfs:label "." ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:comma rdfs:label "," ;
+    rdfs:subClassOf promolg:delimiter .
+
+promolg:reduceProduct rdfs:label "|" ;
+    rdfs:subClassOf promolg:operator .
+
+promolg:left_round rdfs:label "(" ;
+    rdfs:subClassOf promolg:delimiter .
+
+promolg:right_round rdfs:label ")" ;
+    rdfs:subClassOf promolg:delimiter .
+

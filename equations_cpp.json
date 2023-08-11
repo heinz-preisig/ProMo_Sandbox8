@@ -159,19 +159,19 @@
     "variable_ID": 52,
     "lhs": "kd_x",
     "network": "material",
-    "rhs": "ganger(np.reciprocal(chemPot), (khatriRao(v_x, [N], (khatriRao(np.reciprocal(V), [N], ParDiff(U, chemPot), [N_x_S])), [N_x_S])))"
+    "rhs": "ganger(np.reciprocal(chemPot), (khatriRao(v_x, (khatriRao(np.reciprocal(V), ParDiff(U, chemPot))))))"
   },
   "32": {
     "variable_ID": 53,
     "lhs": "kd_y",
     "network": "material",
-    "rhs": "ganger(np.reciprocal(chemPot), (khatriRao(v_y, [N], (khatriRao(np.reciprocal(V), [N], ParDiff(U, chemPot), [N_x_S])), [N_x_S])))"
+    "rhs": "ganger(np.reciprocal(chemPot), (khatriRao(v_y, (khatriRao(np.reciprocal(V), ParDiff(U, chemPot))))))"
   },
   "33": {
     "variable_ID": 54,
     "lhs": "kd_z",
     "network": "material",
-    "rhs": "ganger(np.reciprocal(chemPot), (khatriRao(v_z, [N], (khatriRao(np.reciprocal(V), [N], ParDiff(U, chemPot), [N_x_S])), [N_x_S])))"
+    "rhs": "ganger(np.reciprocal(chemPot), (khatriRao(v_z, (khatriRao(np.reciprocal(V), ParDiff(U, chemPot))))))"
   },
   "34": {
     "variable_ID": 55,
@@ -183,7 +183,7 @@
     "variable_ID": 56,
     "lhs": "h",
     "network": "material",
-    "rhs": "khatriRao(H, [N], np.reciprocal(n), [N_x_S])"
+    "rhs": "khatriRao(H, np.reciprocal(n))"
   },
   "36": {
     "variable_ID": 57,
@@ -207,7 +207,7 @@
     "variable_ID": 60,
     "lhs": "T_NK",
     "network": "reactions",
-    "rhs": "np.dot(np.transpose(P_N_NK), T)"
+    "rhs": "..."
   },
   "41": {
     "variable_ID": 62,
@@ -219,13 +219,13 @@
     "variable_ID": 63,
     "lhs": "K_NK",
     "network": "reactions",
-    "rhs": "khatriRao(Ko, [K], np.exp(ganger(np.negative(Ea), np.reciprocal(ganger(GasConstant, T_NK)))), [N_x_K])"
+    "rhs": "khatriRao(Ko, np.exp(ganger(np.negative(Ea), np.reciprocal(ganger(GasConstant, T_NK)))))"
   },
   "44": {
     "variable_ID": 66,
     "lhs": "c",
     "network": "macroscopic",
-    "rhs": "khatriRao(np.reciprocal(V), [N], n, [N_x_S])"
+    "rhs": "khatriRao(np.reciprocal(V), n)"
   },
   "45": {
     "variable_ID": 67,
@@ -351,55 +351,55 @@
     "variable_ID": 92,
     "lhs": "fV",
     "network": "macroscopic",
-    "rhs": "np.dot(np.transpose(ganger(ganger(ganger(np.reciprocal(_density), _kc_x), Ayz), D)), p)"
+    "rhs": "..."
   },
   "68": {
     "variable_ID": 93,
     "lhs": "fnd_AS",
     "network": "macroscopic",
-    "rhs": "np.dot(np.transpose(ganger(khatriRao(Ayz, [N], np.negative(_kd_x), [N_x_S]), D_NS_AS)), chemPot)"
+    "rhs": "..."
   },
   "69": {
     "variable_ID": 94,
     "lhs": "fnd",
     "network": "macroscopic",
-    "rhs": "np.dot(F_NS_AS, fnd_AS)"
+    "rhs": "..."
   },
   "70": {
     "variable_ID": 95,
     "lhs": "fHd_A",
     "network": "macroscopic",
-    "rhs": "blockReduce((np.dot(np.transpose(F_NS_AS), _h)), S, A_x_S, fnd_AS)"
+    "rhs": "blockReduce((...), S, A_x_S, fnd_AS)"
   },
   "71": {
     "variable_ID": 96,
     "lhs": "fHd",
     "network": "macroscopic",
-    "rhs": "np.dot(F_N_A, fHd_A)"
+    "rhs": "..."
   },
   "72": {
     "variable_ID": 97,
     "lhs": "d",
     "network": "macroscopic",
-    "rhs": "np.sign(np.dot(np.transpose(F_N_A), p))"
+    "rhs": "np.sign(...)"
   },
   "73": {
     "variable_ID": 98,
     "lhs": "c_AS",
     "network": "macroscopic",
-    "rhs": "np.dot(np.transpose((ganger(onehalf, (np.subtract(F_NS_AS, khatriRao(d, [A], np.abs(F_NS_AS ), [N_x_S, A_x_S])))))), c)"
+    "rhs": "..."
   },
   "74": {
     "variable_ID": 99,
     "lhs": "fnc_AS",
     "network": "macroscopic",
-    "rhs": "khatriRao(fV, [A], c_AS, [A_x_S])"
+    "rhs": "khatriRao(fV, c_AS)"
   },
   "75": {
     "variable_ID": 100,
     "lhs": "fnc",
     "network": "macroscopic",
-    "rhs": "np.dot(F_NS_AS, fnc_AS)"
+    "rhs": "..."
   },
   "76": {
     "variable_ID": 101,
@@ -411,13 +411,13 @@
     "variable_ID": 102,
     "lhs": "fHc_A",
     "network": "macroscopic",
-    "rhs": "blockReduce((np.dot(np.transpose(F_NS_AS), _h)), S, A_x_S, fnc_AS)"
+    "rhs": "blockReduce((...), S, A_x_S, fnc_AS)"
   },
   "78": {
     "variable_ID": 103,
     "lhs": "fHc",
     "network": "macroscopic",
-    "rhs": "np.dot(F_N_A, fHc_A)"
+    "rhs": "..."
   },
   "79": {
     "variable_ID": 104,
@@ -429,19 +429,19 @@
     "variable_ID": 105,
     "lhs": "fw",
     "network": "macroscopic",
-    "rhs": "np.dot(F_N_A, fw_A)"
+    "rhs": "..."
   },
   "81": {
     "variable_ID": 106,
     "lhs": "fq_A_x",
     "network": "macroscopic",
-    "rhs": "np.dot(np.transpose(ganger(ganger(Ayz, _kq_x), D)), T)"
+    "rhs": "..."
   },
   "82": {
     "variable_ID": 107,
     "lhs": "fq",
     "network": "macroscopic",
-    "rhs": "np.dot(F_N_A, fq_A_x)"
+    "rhs": "..."
   },
   "83": {
     "variable_ID": 108,
@@ -585,13 +585,13 @@
     "variable_ID": 138,
     "lhs": "dxdt",
     "network": "control",
-    "rhs": "np.add(np.dot(np.transpose(A), x), np.dot(np.transpose(B), e))"
+    "rhs": "np.add(..., ...)"
   },
   "111": {
     "variable_ID": 136,
     "lhs": "x",
     "network": "control",
-    "rhs": "integral(np.dot(I_N_D, dxdt),t,to,te)"
+    "rhs": "integral(...,t,to,te)"
   },
   "112": {
     "variable_ID": 140,
@@ -645,7 +645,7 @@
     "variable_ID": 151,
     "lhs": "c",
     "network": "reactions",
-    "rhs": "ganger(P_NK, (np.dot(np.transpose(P_NS_KS), _c)))"
+    "rhs": "ganger(P_NK, (...))"
   },
   "124": {
     "variable_ID": 152,
@@ -663,7 +663,7 @@
     "variable_ID": 154,
     "lhs": "y",
     "network": "control",
-    "rhs": "np.add(np.dot(np.transpose(C), x), ganger(D, e))"
+    "rhs": "np.add(..., ganger(D, e))"
   },
   "127": {
     "variable_ID": 157,
@@ -675,7 +675,7 @@
     "variable_ID": 159,
     "lhs": "N_NK_KS",
     "network": "reactions",
-    "rhs": "np.dot(np.transpose(P_K_NK), N_K_KS)"
+    "rhs": "..."
   },
   "129": {
     "variable_ID": 160,
@@ -687,7 +687,7 @@
     "variable_ID": 163,
     "lhs": "nProd",
     "network": "reactions",
-    "rhs": "np.transpose(np.dot(np.transpose(V), (np.dot(P_N_NK, np.transpose((ganger(np.transpose((ganger(K_NK, phi))), (np.dot(P_NS_KS, np.transpose(N_NK_KS))))))))))"
+    "rhs": "..."
   },
   "131": {
     "variable_ID": 164,
@@ -717,13 +717,13 @@
     "variable_ID": 169,
     "lhs": "xi",
     "network": "macroscopic",
-    "rhs": "khatriRao(np.reciprocal(nt), [N], n, [N_x_S])"
+    "rhs": "khatriRao(np.reciprocal(nt), n)"
   },
   "136": {
     "variable_ID": 19,
     "lhs": "chemPot",
     "network": "macroscopic",
-    "rhs": "khatriRao((ganger(R, T)), [N], np.log(xi), [N_x_S])"
+    "rhs": "khatriRao((ganger(R, T)), np.log(xi))"
   },
   "137": {
     "variable_ID": 170,
@@ -759,6 +759,6 @@
     "variable_ID": 101,
     "lhs": "dndt",
     "network": "macroscopic",
-    "rhs": "np.dot(F_NS_AS, Stack(fnc_AS,fnc_AS_controlled))"
+    "rhs": "..."
   }
 }
