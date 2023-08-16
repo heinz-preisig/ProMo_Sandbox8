@@ -322,7 +322,7 @@
   "73": {
     "lhs": "c_AS",
     "network": "macroscopic",
-    "rhs": " ( onehalf . ( F_NS_AS - d : abs ( F_NS_AS ) ) ) | N & S | c"
+    "rhs": " ( onehalf . ( D_NS_AS - d : abs ( D_NS_AS ) ) ) | N & S | c"
   },
   "74": {
     "lhs": "fnc_AS",

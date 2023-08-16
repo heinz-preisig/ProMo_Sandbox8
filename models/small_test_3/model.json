@@ -152,7 +152,9 @@
         "V_94": 0.0
       },
       "tokens": {
-        "mass": []
+        "mass": [
+          "A"
+        ]
       },
       "conversions": {},
       "mass": []
@@ -193,7 +195,8 @@
           "A"
         ]
       },
-      "conversions": {}
+      "conversions": {},
+      "mass": []
     }
   },
   "domains": {},
@@ -238,7 +241,9 @@
       "source": 2,
       "sink": 4,
       "token": "mass",
-      "typed_tokens": [],
+      "typed_tokens": [
+        "A"
+      ],
       "network": "liquid",
       "named_network": "A-liquid",
       "mechanism": "convection",

@@ -387,7 +387,7 @@
     "variable_ID": 98,
     "lhs": " V_98",
     "network": "macroscopic",
-    "rhs": " D_0 V_4 O_4 D_0 V_70 O_1 V_97 O_3 F_10 D_0 V_70 D_1 D_1 D_1  O_5  I_5 O_5  V_66"
+    "rhs": " D_0 V_4 O_4 D_0 V_91 O_1 V_97 O_3 F_10 D_0 V_91 D_1 D_1 D_1  O_5  I_5 O_5  V_66"
   },
   "74": {
     "variable_ID": 99,
