@@ -189,7 +189,14 @@
       "class": "node_simple",
       "type": "dynamic|lumped",
       "variant": "MassControlVolume",
-      "instantiated_variables": {},
+      "instantiated_variables": {
+        "V_100": 2.0,
+        "V_110": 0.0,
+        "V_164": 0.0,
+        "V_6": 0.0,
+        "V_7": 100.0,
+        "V_94": 0.0
+      },
       "tokens": {
         "mass": [
           "A"
@@ -215,7 +222,11 @@
       "nature": "lumped",
       "variant": "MassDiffusion",
       "instantiated_variables": {
-        "V_165": 5.0
+        "V_165": 5.0,
+        "V_127": 1.0,
+        "V_18": 275.0,
+        "V_24": 3.0,
+        "V_71": 2.0
       }
     },
     "1": {
@@ -249,7 +260,10 @@
       "mechanism": "convection",
       "nature": "lumped",
       "variant": "ConvectiveFlow",
-      "instantiated_variables": {}
+      "instantiated_variables": {
+        "V_92": 1.0,
+        "V_98": 2.0
+      }
     }
   },
   "scenes": {

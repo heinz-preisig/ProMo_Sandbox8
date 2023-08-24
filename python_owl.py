@@ -4252,9 +4252,9 @@ V_97.has_function.append( F_72 )
 V_98.has_function = []
 incidence_list = []
 incidence_list.append( V_4 )
-incidence_list.append( V_91 )
+incidence_list.append( V_70 )
 incidence_list.append( V_97 )
-incidence_list.append( V_91 )
+incidence_list.append( V_70 )
 incidence_list.append( V_66 )
 F_ID = "F_73"
 F_73 = onto.function( F_ID )

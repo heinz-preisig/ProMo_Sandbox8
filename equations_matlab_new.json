@@ -33,7 +33,7 @@
         "variable_ID": 17,
         "lhs": "p",
         "network": "physical",
-        "rhs": "(- ParDiff(U,V))"
+        "rhs": "- ParDiff(U,V)"
     },
     "E_7": {
         "variable_ID": 18,
@@ -51,25 +51,25 @@
         "variable_ID": 20,
         "lhs": "H",
         "network": "physical",
-        "rhs": "minus(U, expandproduct(p, V))"
+        "rhs": "U - p .* V"
     },
     "E_10": {
         "variable_ID": 21,
         "lhs": "A",
         "network": "physical",
-        "rhs": "minus(U, expandproduct(T, S))"
+        "rhs": "U - T .* S"
     },
     "E_11": {
         "variable_ID": 22,
         "lhs": "G",
         "network": "physical",
-        "rhs": "minus(plus(U, expandproduct(p, V)), expandproduct(T, S))"
+        "rhs": "U + p .* V - T .* S"
     },
     "E_14": {
         "variable_ID": 27,
         "lhs": "Ue",
         "network": "physical",
-        "rhs": "expandproduct(reciprocal(charge), U)"
+        "rhs": "1 ./ charge .* U"
     },
     "E_15": {
         "variable_ID": 28,
@@ -111,19 +111,19 @@
         "variable_ID": 44,
         "lhs": "kq_x",
         "network": "material",
-        "rhs": "expandproduct(expandproduct(reciprocal(V), ParDiff(U,T)), v_x)"
+        "rhs": "1 ./ V .* ParDiff(U,T) .* v_x"
     },
     "E_24": {
         "variable_ID": 45,
         "lhs": "kq_y",
         "network": "material",
-        "rhs": "expandproduct(expandproduct(reciprocal(V), ParDiff(U,T)), v_y)"
+        "rhs": "1 ./ V .* ParDiff(U,T) .* v_y"
     },
     "E_25": {
         "variable_ID": 46,
         "lhs": "kq_z",
         "network": "material",
-        "rhs": "expandproduct(expandproduct(reciprocal(V), ParDiff(U,T)), v_z)"
+        "rhs": "1 ./ V .* ParDiff(U,T) .* v_z"
     },
     "E_26": {
         "variable_ID": 47,
@@ -135,19 +135,19 @@
         "variable_ID": 48,
         "lhs": "kc_x",
         "network": "material",
-        "rhs": "expandproduct(expandproduct(expandproduct((blockReduce(Mm, S, N_x_S, reciprocal(chemPot))), reciprocal(V)), ParDiff(U,p)), v_x)"
+        "rhs": "(blockReduce(Mm, S, N_x_S, 1 ./ chemPot)) .* 1 ./ V .* ParDiff(U,p) .* v_x"
     },
     "E_28": {
         "variable_ID": 49,
         "lhs": "kc_y",
         "network": "material",
-        "rhs": "expandproduct(expandproduct(expandproduct((blockReduce(Mm, S, N_x_S, reciprocal(chemPot))), reciprocal(V)), ParDiff(U,p)), v_y)"
+        "rhs": "(blockReduce(Mm, S, N_x_S, 1 ./ chemPot)) .* 1 ./ V .* ParDiff(U,p) .* v_y"
     },
     "E_29": {
         "variable_ID": 50,
         "lhs": "kc_z",
         "network": "material",
-        "rhs": "expandproduct(expandproduct(expandproduct((blockReduce(Mm, S, N_x_S, reciprocal(chemPot))), reciprocal(V)), ParDiff(U,p)), v_z)"
+        "rhs": "(blockReduce(Mm, S, N_x_S, 1 ./ chemPot)) .* 1 ./ V .* ParDiff(U,p) .* v_z"
     },
     "E_30": {
         "variable_ID": 51,
@@ -159,19 +159,19 @@
         "variable_ID": 52,
         "lhs": "kd_x",
         "network": "material",
-        "rhs": "expandproduct(reciprocal(chemPot), (khatrirao(v_x, (khatrirao(reciprocal(V), ParDiff(U,chemPot))))))"
+        "rhs": "1 ./ chemPot .* (KhatriRaoProduct(v_x, (KhatriRaoProduct(1 ./ V, ParDiff(U,chemPot)))))"
     },
     "E_32": {
         "variable_ID": 53,
         "lhs": "kd_y",
         "network": "material",
-        "rhs": "expandproduct(reciprocal(chemPot), (khatrirao(v_y, (khatrirao(reciprocal(V), ParDiff(U,chemPot))))))"
+        "rhs": "1 ./ chemPot .* (KhatriRaoProduct(v_y, (KhatriRaoProduct(1 ./ V, ParDiff(U,chemPot)))))"
     },
     "E_33": {
         "variable_ID": 54,
         "lhs": "kd_z",
         "network": "material",
-        "rhs": "expandproduct(reciprocal(chemPot), (khatrirao(v_z, (khatrirao(reciprocal(V), ParDiff(U,chemPot))))))"
+        "rhs": "1 ./ chemPot .* (KhatriRaoProduct(v_z, (KhatriRaoProduct(1 ./ V, ParDiff(U,chemPot)))))"
     },
     "E_34": {
         "variable_ID": 55,
@@ -183,7 +183,7 @@
         "variable_ID": 56,
         "lhs": "h",
         "network": "material",
-        "rhs": "khatrirao(H, reciprocal(n))"
+        "rhs": "KhatriRaoProduct(H, 1 ./ n)"
     },
     "E_36": {
         "variable_ID": 57,
@@ -201,31 +201,31 @@
         "variable_ID": 59,
         "lhs": "density",
         "network": "material",
-        "rhs": "expandproduct(_m, reciprocal(V))"
+        "rhs": "_m .* 1 ./ V"
     },
     "E_39": {
         "variable_ID": 60,
         "lhs": "T_NK",
         "network": "reactions",
-        "rhs": "reduceproduct(P_N_NK,N,T)"
+        "rhs": "..."
     },
     "E_41": {
         "variable_ID": 62,
         "lhs": "Ea",
         "network": "reactions",
-        "rhs": "Instantiate(expandproduct(GasConstant, T_NK), value)"
+        "rhs": "Instantiate(GasConstant .* T_NK, value)"
     },
     "E_42": {
         "variable_ID": 63,
         "lhs": "K_NK",
         "network": "reactions",
-        "rhs": "khatrirao(Ko, exp(expandproduct((- Ea), reciprocal(expandproduct(GasConstant, T_NK)))))"
+        "rhs": "KhatriRaoProduct(Ko, exp(- Ea .* 1 ./ GasConstant .* T_NK))"
     },
     "E_44": {
         "variable_ID": 66,
         "lhs": "c",
         "network": "macroscopic",
-        "rhs": "khatrirao(reciprocal(V), n)"
+        "rhs": "KhatriRaoProduct(1 ./ V, n)"
     },
     "E_45": {
         "variable_ID": 67,
@@ -237,19 +237,19 @@
         "variable_ID": 71,
         "lhs": "Ayz",
         "network": "macroscopic",
-        "rhs": "expandproduct(r_y, r_z)"
+        "rhs": "r_y .* r_z"
     },
     "E_49": {
         "variable_ID": 72,
         "lhs": "Axz",
         "network": "macroscopic",
-        "rhs": "expandproduct(r_x, r_z)"
+        "rhs": "r_x .* r_z"
     },
     "E_50": {
         "variable_ID": 73,
         "lhs": "Axy",
         "network": "macroscopic",
-        "rhs": "expandproduct(r_x, r_y)"
+        "rhs": "r_x .* r_y"
     },
     "E_51": {
         "variable_ID": 74,
@@ -351,73 +351,73 @@
         "variable_ID": 92,
         "lhs": "fV",
         "network": "macroscopic",
-        "rhs": "reduceproduct(expandproduct(expandproduct(expandproduct(reciprocal(_density), _kc_x), Ayz), D),N,p)"
+        "rhs": "..."
     },
     "E_68": {
         "variable_ID": 93,
         "lhs": "fnd_AS",
         "network": "macroscopic",
-        "rhs": "reduceproduct(expandproduct(khatrirao(Ayz, (- _kd_x)), D_NS_AS),N_x_S,chemPot)"
+        "rhs": "..."
     },
     "E_69": {
         "variable_ID": 94,
         "lhs": "fnd",
         "network": "macroscopic",
-        "rhs": "reduceproduct(F_NS_AS,A_x_S,fnd_AS)"
+        "rhs": "..."
     },
     "E_70": {
         "variable_ID": 95,
         "lhs": "fHd_A",
         "network": "macroscopic",
-        "rhs": "blockReduce((reduceproduct(F_NS_AS,N_x_S,_h)), S, A_x_S, fnd_AS)"
+        "rhs": "blockReduce((...), S, A_x_S, fnd_AS)"
     },
     "E_71": {
         "variable_ID": 96,
         "lhs": "fHd",
         "network": "macroscopic",
-        "rhs": "reduceproduct(F_N_A,A,fHd_A)"
+        "rhs": "..."
     },
     "E_72": {
         "variable_ID": 97,
         "lhs": "d",
         "network": "macroscopic",
-        "rhs": "sign(reduceproduct(F_N_A,N,p))"
+        "rhs": "sign(...)"
     },
     "E_73": {
         "variable_ID": 98,
         "lhs": "c_AS",
         "network": "macroscopic",
-        "rhs": "reduceproduct((expandproduct(onehalf, (minus(F_NS_AS, khatrirao(d, abs(F_NS_AS)))))),N_x_S,c)"
+        "rhs": "..."
     },
     "E_74": {
         "variable_ID": 99,
         "lhs": "fnc_AS",
         "network": "macroscopic",
-        "rhs": "khatrirao(fV, c_AS)"
+        "rhs": "KhatriRaoProduct(fV, c_AS)"
     },
     "E_75": {
         "variable_ID": 100,
         "lhs": "fnc",
         "network": "macroscopic",
-        "rhs": "reduceproduct(F_NS_AS,A_x_S,fnc_AS)"
+        "rhs": "..."
     },
     "E_76": {
         "variable_ID": 101,
         "lhs": "dndt",
         "network": "macroscopic",
-        "rhs": "plus(plus(fnc, fnd), _nProd)"
+        "rhs": "fnc + fnd + _nProd"
     },
     "E_77": {
         "variable_ID": 102,
         "lhs": "fHc_A",
         "network": "macroscopic",
-        "rhs": "blockReduce((reduceproduct(F_NS_AS,N_x_S,_h)), S, A_x_S, fnc_AS)"
+        "rhs": "blockReduce((...), S, A_x_S, fnc_AS)"
     },
     "E_78": {
         "variable_ID": 103,
         "lhs": "fHc",
         "network": "macroscopic",
-        "rhs": "reduceproduct(F_N_A,A,fHc_A)"
+        "rhs": "..."
     },
     "E_79": {
         "variable_ID": 104,
@@ -429,25 +429,25 @@
         "variable_ID": 105,
         "lhs": "fw",
         "network": "macroscopic",
-        "rhs": "reduceproduct(F_N_A,A,fw_A)"
+        "rhs": "..."
     },
     "E_81": {
         "variable_ID": 106,
         "lhs": "fq_A_x",
         "network": "macroscopic",
-        "rhs": "reduceproduct(expandproduct(expandproduct(Ayz, _kq_x), D),N,T)"
+        "rhs": "..."
     },
     "E_82": {
         "variable_ID": 107,
         "lhs": "fq",
         "network": "macroscopic",
-        "rhs": "reduceproduct(F_N_A,A,fq_A_x)"
+        "rhs": "..."
     },
     "E_83": {
         "variable_ID": 108,
         "lhs": "dHdt",
         "network": "macroscopic",
-        "rhs": "plus(plus(plus(fHc, fHd), fq), fw)"
+        "rhs": "fHc + fHd + fq + fw"
     },
     "E_84": {
         "variable_ID": 109,
@@ -465,7 +465,7 @@
         "variable_ID": 16,
         "lhs": "n",
         "network": "macroscopic",
-        "rhs": "plus(Integral(dndt,t,to,te), no)"
+        "rhs": "Integral(dndt,t,to,te) + no"
     },
     "E_87": {
         "variable_ID": 20,
@@ -495,7 +495,7 @@
         "variable_ID": 115,
         "lhs": "elResist",
         "network": "material",
-        "rhs": "expandproduct(reciprocal(_i), Ue)"
+        "rhs": "1 ./ _i .* Ue"
     },
     "E_92": {
         "variable_ID": 115,
@@ -507,7 +507,7 @@
         "variable_ID": 116,
         "lhs": "elConductC",
         "network": "material",
-        "rhs": "expandproduct(reciprocal(elResist), additive)"
+        "rhs": "1 ./ elResist .* additive"
     },
     "E_94": {
         "variable_ID": 117,
@@ -519,13 +519,13 @@
         "variable_ID": 27,
         "lhs": "Ue",
         "network": "macroscopic",
-        "rhs": "expandproduct(reciprocal(_elConductC), i)"
+        "rhs": "1 ./ _elConductC .* i"
     },
     "E_96": {
         "variable_ID": 118,
         "lhs": "dUedt",
         "network": "macroscopic",
-        "rhs": "expandproduct(one, Ue)"
+        "rhs": "one .* Ue"
     },
     "E_97": {
         "variable_ID": 118,
@@ -573,7 +573,7 @@
         "variable_ID": 135,
         "lhs": "e",
         "network": "control",
-        "rhs": "minus(meas, setPoint)"
+        "rhs": "meas - setPoint"
     },
     "E_109": {
         "variable_ID": 137,
@@ -585,13 +585,13 @@
         "variable_ID": 138,
         "lhs": "dxdt",
         "network": "control",
-        "rhs": "plus(reduceproduct(A,N,x), reduceproduct(B,A,e))"
+        "rhs": "... + ..."
     },
     "E_111": {
         "variable_ID": 136,
         "lhs": "x",
         "network": "control",
-        "rhs": "Integral(reduceproduct(I_N_D,D,dxdt),t,to,te)"
+        "rhs": "Integral(...,t,to,te)"
     },
     "E_112": {
         "variable_ID": 140,
@@ -627,7 +627,7 @@
         "variable_ID": 145,
         "lhs": "RComputed",
         "network": "control",
-        "rhs": "expandproduct(reciprocal(Imeasured), UeMeasured)"
+        "rhs": "1 ./ Imeasured .* UeMeasured"
     },
     "E_118": {
         "variable_ID": 146,
@@ -645,7 +645,7 @@
         "variable_ID": 151,
         "lhs": "c",
         "network": "reactions",
-        "rhs": "expandproduct(P_NK, (reduceproduct(P_NS_KS,N_x_S,_c)))"
+        "rhs": "P_NK .* (...)"
     },
     "E_124": {
         "variable_ID": 152,
@@ -657,37 +657,37 @@
         "variable_ID": 153,
         "lhs": "x",
         "network": "reactions",
-        "rhs": "expandproduct(reciprocal(co), c)"
+        "rhs": "1 ./ co .* c"
     },
     "E_126": {
         "variable_ID": 154,
         "lhs": "y",
         "network": "control",
-        "rhs": "plus(reduceproduct(C,N,x), expandproduct(D, e))"
+        "rhs": "... + D .* e"
     },
     "E_127": {
         "variable_ID": 157,
         "lhs": "GasConstant",
         "network": "reactions",
-        "rhs": "expandproduct(Avogadro, Boltzmann)"
+        "rhs": "Avogadro .* Boltzmann"
     },
     "E_128": {
         "variable_ID": 159,
         "lhs": "N_NK_KS",
         "network": "reactions",
-        "rhs": "reduceproduct(P_K_NK,K,N_K_KS)"
+        "rhs": "..."
     },
     "E_129": {
         "variable_ID": 160,
         "lhs": "phi",
         "network": "reactions",
-        "rhs": "product( power(x,N_NK_KS) \\, K_x_S )"
+        "rhs": "Product( x ** (N_NK_KS) \\, K_x_S )"
     },
     "E_130": {
         "variable_ID": 163,
         "lhs": "nProd",
         "network": "reactions",
-        "rhs": "reduceproduct(V,N,(reduceproduct(P_N_NK,N_x_K,(expandproduct((expandproduct(K_NK, phi)), (reduceproduct(P_NS_KS,K_x_S,N_NK_KS)))))))"
+        "rhs": "..."
     },
     "E_131": {
         "variable_ID": 164,
@@ -705,7 +705,7 @@
         "variable_ID": 166,
         "lhs": "R",
         "network": "physical",
-        "rhs": "expandproduct(Avogadro, Bo)"
+        "rhs": "Avogadro .* Bo"
     },
     "E_134": {
         "variable_ID": 168,
@@ -717,13 +717,13 @@
         "variable_ID": 169,
         "lhs": "xi",
         "network": "macroscopic",
-        "rhs": "khatrirao(reciprocal(nt), n)"
+        "rhs": "KhatriRaoProduct(1 ./ nt, n)"
     },
     "E_136": {
         "variable_ID": 19,
         "lhs": "chemPot",
         "network": "macroscopic",
-        "rhs": "khatrirao((expandproduct(R, T)), ln(xi))"
+        "rhs": "KhatriRaoProduct((R .* T), ln(xi))"
     },
     "E_137": {
         "variable_ID": 170,
@@ -735,7 +735,7 @@
         "variable_ID": 171,
         "lhs": "switch",
         "network": "control",
-        "rhs": "expandproduct(onehalf, (plus(one, sign(to))))"
+        "rhs": "onehalf .* (one + sign(to))"
     },
     "E_139": {
         "variable_ID": 172,
@@ -753,12 +753,12 @@
         "variable_ID": 173,
         "lhs": "fnc_AS_controlled",
         "network": "macroscopic",
-        "rhs": "expandproduct(_switch, fnc_AS)"
+        "rhs": "_switch .* fnc_AS"
     },
     "E_142": {
         "variable_ID": 101,
         "lhs": "dndt",
         "network": "macroscopic",
-        "rhs": "reduceproduct(F_NS_AS,A_x_S,Stack(fnc_AS,fnc_AS_controlled))"
+        "rhs": "..."
     }
 }

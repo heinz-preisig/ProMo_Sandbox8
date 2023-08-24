@@ -62,7 +62,7 @@
 70 :: fHd_A =  ( F_NS_AS | N & S | _h ) | S in A & S | fnd_AS
 71 :: fHd =  F_N_A | A | fHd_A
 72 :: d =  sign ( F_N_A | N | p )
-73 :: c_AS =  ( onehalf . ( D_NS_AS - d : abs ( D_NS_AS ) ) ) | N & S | c
+73 :: c_AS =  ( onehalf . ( F_NS_AS - d : abs ( F_NS_AS ) ) ) | N & S | c
 74 :: fnc_AS =  fV : c_AS
 75 :: fnc =  F_NS_AS | A & S | fnc_AS
 76 :: dndt =  fnc + fnd + _nProd

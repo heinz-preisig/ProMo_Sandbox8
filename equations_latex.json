@@ -387,7 +387,7 @@
     "variable_ID": 98,
     "lhs": "{c}{_{{A S}}}",
     "network": "macroscopic",
-    "rhs": "\\left({0.5}{_{}} \\, . \\, \\left({D}{_{{N S}, {A S}}}  - {d}{_{A}} \\, {\\odot} \\, |{D}{_{{N S}, {A S}}}|\\right)\\right) \\stackrel{{N S}}{\\,\\star\\,} {c}{_{{N S}}}"
+    "rhs": "\\left({0.5}{_{}} \\, . \\, \\left({F}{_{{N S}, {A S}}}  - {d}{_{A}} \\, {\\odot} \\, |{F}{_{{N S}, {A S}}}|\\right)\\right) \\stackrel{{N S}}{\\,\\star\\,} {c}{_{{N S}}}"
   },
   "74": {
     "variable_ID": 99,

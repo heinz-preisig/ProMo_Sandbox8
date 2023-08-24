@@ -95,7 +95,7 @@
     "8": {
       "IRI": "promo:F_N_A",
       "aliases": "{'global_ID': ' V_8', 'python': 'F_N_A', 'cpp': 'F_N_A', 'matlab': 'F_N_A', 'latex': 'F', 'internal_code': 'F_N_A'}",
-      "doc": "fundamental incidence matrix",
+      "doc": "fudamental incidence matrix",
       "equations": "{}",
       "index_structures": "[1, 2]",
       "label": "F_N_A",
@@ -329,7 +329,7 @@
     "28": {
       "IRI": "promo:v_x",
       "aliases": "{'global_ID': ' V_28', 'python': 'v_x', 'cpp': 'v_x', 'matlab': 'v_x', 'latex': '{v_x}', 'internal_code': 'v_x'}",
-      "doc": "velocity in x-direction",
+      "doc": "velocitiy in x-direction",
       "equations": "{15: {'rhs': ' O_7 D_0 V_10 D_7 V_5 D_1', 'type': 'generic', 'doc': 'velocitiy in x-direction', 'network': 'physical', 'incidence_list': ['10', '5']}}",
       "index_structures": "[1]",
       "label": "v_x",
@@ -563,7 +563,7 @@
     "48": {
       "IRI": "promo:kc_x",
       "aliases": "{'global_ID': ' V_48', 'python': 'kc_x', 'cpp': 'kc_x', 'matlab': 'kc_x', 'latex': '{k^c_x}', 'internal_code': 'kc_x'}",
-      "doc": "convective mass conductivity in x-direction",
+      "doc": "convecitve mass conductivity in x-direction",
       "equations": "{27: {'rhs': ' D_0 V_40 O_5 I_3 O_14 I_5 O_5 F_15 D_0 V_19 D_1 D_1 O_4 F_15 D_0 V_15 D_1 O_4 O_7 D_0 V_13 D_7 V_17 D_1 O_4 V_28', 'type': 'generic', 'doc': 'convecitve mass conductivity in x-direction', 'network': 'material', 'incidence_list': ['13', '15', '17', '19', '28', '40']}}",
       "index_structures": "[1]",
       "label": "kc_x",
@@ -576,7 +576,7 @@
     "49": {
       "IRI": "promo:kc_y",
       "aliases": "{'global_ID': ' V_49', 'python': 'kc_y', 'cpp': 'kc_y', 'matlab': 'kc_y', 'latex': '{k^c_y}', 'internal_code': 'kc_y'}",
-      "doc": "convective mass conductivity in y-direction",
+      "doc": "convecitve mass conductivity in y-direction",
       "equations": "{28: {'rhs': ' D_0 V_40 O_5 I_3 O_14 I_5 O_5 F_15 D_0 V_19 D_1 D_1 O_4 F_15 D_0 V_15 D_1 O_4 O_7 D_0 V_13 D_7 V_17 D_1 O_4 V_29', 'type': 'generic', 'doc': 'convecitve mass conductivity in y-direction', 'network': 'material', 'incidence_list': ['13', '15', '17', '19', '29', '40']}}",
       "index_structures": "[1]",
       "label": "kc_y",
@@ -589,7 +589,7 @@
     "50": {
       "IRI": "promo:kc_z",
       "aliases": "{'global_ID': ' V_50', 'python': 'kc_z', 'cpp': 'kc_z', 'matlab': 'kc_z', 'latex': '{k^c_z}', 'internal_code': 'kc_z'}",
-      "doc": "convective mass conductivity in z-direction",
+      "doc": "convecitve mass conductivity in z-direction",
       "equations": "{29: {'rhs': ' D_0 V_40 O_5 I_3 O_14 I_5 O_5 F_15 D_0 V_19 D_1 D_1 O_4 F_15 D_0 V_15 D_1 O_4 O_7 D_0 V_13 D_7 V_17 D_1 O_4 V_30', 'type': 'generic', 'doc': 'convecitve mass conductivity in z-direction', 'network': 'material', 'incidence_list': ['13', '15', '17', '19', '30', '40']}}",
       "index_structures": "[1]",
       "label": "kc_z",
@@ -654,7 +654,7 @@
     "55": {
       "IRI": "promo:kd",
       "aliases": "{'global_ID': ' V_55', 'python': 'kd', 'cpp': 'kd', 'matlab': 'kd', 'latex': '{k^d}', 'internal_code': 'kd'}",
-      "doc": "diffusional mass conductivity",
+      "doc": "diffusional mass condctivity",
       "equations": "{34: {'rhs': ' F_20 D_0 V_52 D_7 V_53 D_7 V_54 D_1', 'type': 'generic', 'doc': 'diffusional mass condctivity', 'network': 'material', 'incidence_list': ['52', '53', '54']}}",
       "index_structures": "[5]",
       "label": "kd",
@@ -1135,7 +1135,7 @@
     "96": {
       "IRI": "promo:fHd",
       "aliases": "{'global_ID': ' V_96', 'python': 'fHd', 'cpp': 'fHd', 'matlab': 'fHd', 'latex': '{\\\\hat{H}^d}', 'internal_code': 'fHd'}",
-      "doc": "net enthalpy stream due to diffusion",
+      "doc": "net enthaply stream due to diffusion",
       "equations": "{71: {'rhs': ' V_8  O_5  I_2 O_5  V_95', 'type': 'generic', 'doc': 'net enthaply stream due to diffusion', 'network': 'macroscopic', 'incidence_list': ['8', '95']}}",
       "index_structures": "[1]",
       "label": "fHd",
@@ -1174,7 +1174,7 @@
     "99": {
       "IRI": "qudt:MolarFlowRate",
       "aliases": "{'global_ID': ' V_99', 'python': 'fnc_AS', 'cpp': 'fnc_AS', 'matlab': 'fnc_AS', 'latex': '{\\\\hat{n}^c}', 'internal_code': 'fnc_AS'}",
-      "doc": "molar convectional mass flow in the given stream",
+      "doc": "molar convetional mass flow in the given stream",
       "equations": "{74: {'rhs': ' V_92 O_3 V_98', 'type': 'generic', 'doc': 'molar convetional mass flow in the given stream', 'network': 'macroscopic', 'incidence_list': ['92', '98']}}",
       "index_structures": "[6]",
       "label": "fnc_AS",
@@ -1408,7 +1408,7 @@
     "118": {
       "IRI": "promo:dUedt",
       "aliases": "{'global_ID': ' V_118', 'python': 'dUedt', 'cpp': 'dUedt', 'matlab': 'dUedt', 'latex': '{\\\\dot{U}^e}', 'internal_code': 'dUedt'}",
-      "doc": "Kirkhoffs first law",
+      "doc": "Kirkhoff first law",
       "equations": "{96: {'rhs': ' V_2 O_4 V_27', 'type': 'generic', 'doc': 'Kirkhoff first law', 'network': 'macroscopic', 'incidence_list': ['2', '27']}, 97: {'rhs': ' F_18 D_0 V_27 D_1', 'type': 'generic', 'doc': 'Kirkhoff first law', 'network': 'macroscopic', 'incidence_list': ['27']}, 98: {'rhs': ' O_11 D_0 V_118 D_7 V_3 D_1', 'type': 'instantiate', 'doc': 'Kirkhoff first law', 'network': 'macroscopic', 'incidence_list': ['118', '3']}}",
       "index_structures": "[1]",
       "label": "dUedt",
@@ -1837,7 +1837,7 @@
     "159": {
       "IRI": "promo:N_NK_KS",
       "aliases": "{'global_ID': ' V_159', 'python': 'N_NK_KS', 'cpp': 'N_NK_KS', 'matlab': 'N_NK_KS', 'latex': 'N', 'internal_code': 'N_NK_KS'}",
-      "doc": "extended stoichiometric matrix",
+      "doc": "extended stoichiometrix matrix",
       "equations": "{128: {'rhs': ' V_33  O_5  I_4 O_5  V_158', 'type': 'generic', 'doc': 'extended stoichiometrix matrix', 'network': 'reactions', 'incidence_list': ['158', '33']}}",
       "index_structures": "[7, 8]",
       "label": "N_NK_KS",
