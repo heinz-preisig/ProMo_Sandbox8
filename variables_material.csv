@@ -1,4 +1,7 @@
 label,type,network,doc,units,IRI
+additive,constant,material,fraction of additives,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:additive
+elResist,property,material,electrical resistant,"[-3, 2, 0, 1, 0, -2, 0, 0]",promo:elResist
+elConductC,property,material,simple model for the electrical conductivity as a function of the additive,"[3, -2, 0, -1, 0, 2, 0, 0]",promo:elConductC
 Mm,constant,material,species molecular mass,"[0, 0, -1, 1, 0, 0, 0, 0]",promo:Mm
 Cp,property,material,total heat capacity at constant pressure,"[-2, 2, 0, 1, -1, 0, 0, 0]",promo:Cp
 Cv,property,material,total heat capacity at constant volume,"[-2, 2, 0, 1, -1, 0, 0, 0]",promo:Cv
@@ -16,6 +19,3 @@ kd_z,property,material,diffusional mass conductivity in z-direction,"[1, -4, 2, 
 kd,property,material,diffusional mass conductivity,"[1, -4, 2, -1, 0, 0, 0, 0]",promo:kd
 h,property,material,partial molar enthalpies,"[-2, 2, -1, 1, 0, 0, 0, 0]",promo:h
 density,property,material,density,"[0, -3, 0, 1, 0, 0, 0, 0]",promo:density
-additive,constant,material,fraction of additives,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:additive
-elResist,property,material,electrical resistant,"[-3, 2, 0, 1, 0, -2, 0, 0]",promo:elResist
-elConductC,property,material,simple model for the electrical conductivity as a function of the additive,"[3, -2, 0, -1, 0, 2, 0, 0]",promo:elConductC

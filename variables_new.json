@@ -28,246 +28,6 @@
             ],
             "equations": []
         },
-        "V_2": {
-            "aliases": {
-                "global_ID": " V_2",
-                "python": "one",
-                "cpp": "one",
-                "matlab": "one",
-                "latex": "1",
-                "internal_code": "one"
-            },
-            "doc": "numerical value one",
-            "index_structures": [],
-            "label": "one",
-            "network": "root",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_1"
-            ]
-        },
-        "V_3": {
-            "aliases": {
-                "global_ID": " V_3",
-                "python": "zero",
-                "cpp": "zero",
-                "matlab": "zero",
-                "latex": "0",
-                "internal_code": "zero"
-            },
-            "doc": "numerical value zero",
-            "index_structures": [],
-            "label": "zero",
-            "network": "root",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_2"
-            ]
-        },
-        "V_4": {
-            "aliases": {
-                "global_ID": " V_4",
-                "python": "onehalf",
-                "cpp": "onehalf",
-                "matlab": "onehalf",
-                "latex": "0.5",
-                "internal_code": "onehalf"
-            },
-            "doc": "numerical value one half",
-            "index_structures": [],
-            "label": "onehalf",
-            "network": "root",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_3"
-            ]
-        },
-        "V_5": {
-            "aliases": {
-                "global_ID": " V_5",
-                "python": "t",
-                "cpp": "t",
-                "matlab": "t",
-                "latex": "t",
-                "internal_code": "t"
-            },
-            "doc": "time",
-            "index_structures": [],
-            "label": "t",
-            "network": "root",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "frame",
-            "units": [
-                1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_6": {
-            "aliases": {
-                "global_ID": " V_6",
-                "python": "to",
-                "cpp": "to",
-                "matlab": "to",
-                "latex": "{t^o}",
-                "internal_code": "to"
-            },
-            "doc": "starting time",
-            "index_structures": [],
-            "label": "to",
-            "network": "root",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "frame",
-            "units": [
-                1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_4"
-            ]
-        },
-        "V_7": {
-            "aliases": {
-                "global_ID": " V_7",
-                "python": "te",
-                "cpp": "te",
-                "matlab": "te",
-                "latex": "{t^e}",
-                "internal_code": "te"
-            },
-            "doc": "end time",
-            "index_structures": [],
-            "label": "te",
-            "network": "root",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "frame",
-            "units": [
-                1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_5"
-            ]
-        },
-        "V_8": {
-            "aliases": {
-                "global_ID": " V_8",
-                "python": "F_N_A",
-                "cpp": "F_N_A",
-                "matlab": "F_N_A",
-                "latex": "F",
-                "internal_code": "F_N_A"
-            },
-            "doc": "fudamental incidence matrix",
-            "index_structures": [
-                "I_1",
-                "I_2"
-            ],
-            "label": "F_N_A",
-            "network": "root",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "network",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_9": {
-            "aliases": {
-                "global_ID": " V_9",
-                "python": "P_N_A",
-                "cpp": "P_N_A",
-                "matlab": "P_N_A",
-                "latex": "P",
-                "internal_code": "P_N_A"
-            },
-            "doc": "projection from node to arc for arc properties",
-            "index_structures": [
-                "I_1",
-                "I_2"
-            ],
-            "label": "P_N_A",
-            "network": "physical",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "projection",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
         "V_10": {
             "aliases": {
                 "global_ID": " V_10",
@@ -297,6 +57,327 @@
                 0
             ],
             "equations": []
+        },
+        "V_100": {
+            "aliases": {
+                "global_ID": " V_100",
+                "python": "fnc",
+                "cpp": "fnc",
+                "matlab": "fnc",
+                "latex": "{\\hat{n}^c}",
+                "internal_code": "fnc"
+            },
+            "doc": "net molar convectional mass flow",
+            "index_structures": [
+                "I_5"
+            ],
+            "label": "fnc",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "transport",
+            "units": [
+                -1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_75"
+            ]
+        },
+        "V_101": {
+            "aliases": {
+                "global_ID": " V_101",
+                "python": "dndt",
+                "cpp": "dndt",
+                "matlab": "dndt",
+                "latex": "\\dot{n}",
+                "internal_code": "dndt"
+            },
+            "doc": "differential species balance",
+            "index_structures": [
+                "I_5"
+            ],
+            "label": "dndt",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "diffState",
+            "units": [
+                -1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_76",
+                "E_E_142"
+            ]
+        },
+        "V_102": {
+            "aliases": {
+                "global_ID": " V_102",
+                "python": "fHc_A",
+                "cpp": "fHc_A",
+                "matlab": "fHc_A",
+                "latex": "{\\hat{H}^c}",
+                "internal_code": "fHc_A"
+            },
+            "doc": "convective enthalpy flow for given stream",
+            "index_structures": [
+                "I_2"
+            ],
+            "label": "fHc_A",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "transport",
+            "units": [
+                -3,
+                2,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_77"
+            ]
+        },
+        "V_103": {
+            "aliases": {
+                "global_ID": " V_103",
+                "python": "fHc",
+                "cpp": "fHc",
+                "matlab": "fHc",
+                "latex": "{\\hat{H}^c}",
+                "internal_code": "fHc"
+            },
+            "doc": "net convectional enthalpy stream",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "fHc",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "transport",
+            "units": [
+                -3,
+                2,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_78"
+            ]
+        },
+        "V_104": {
+            "aliases": {
+                "global_ID": " V_104",
+                "python": "fw_A",
+                "cpp": "fw_A",
+                "matlab": "fw_A",
+                "latex": "{\\hat{w}}",
+                "internal_code": "fw_A"
+            },
+            "doc": "sample work stream",
+            "index_structures": [
+                "I_2"
+            ],
+            "label": "fw_A",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "transport",
+            "units": [
+                -3,
+                2,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_79"
+            ]
+        },
+        "V_105": {
+            "aliases": {
+                "global_ID": " V_105",
+                "python": "fw",
+                "cpp": "fw",
+                "matlab": "fw",
+                "latex": "{\\hat{w}}",
+                "internal_code": "fw"
+            },
+            "doc": "net work stream",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "fw",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "transport",
+            "units": [
+                -3,
+                2,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_80"
+            ]
+        },
+        "V_106": {
+            "aliases": {
+                "global_ID": " V_106",
+                "python": "fq_A_x",
+                "cpp": "fq_A_x",
+                "matlab": "fq_A_x",
+                "latex": "{\\hat{q}_{x}}",
+                "internal_code": "fq_A_x"
+            },
+            "doc": "heat flow in x-direction for given stream",
+            "index_structures": [
+                "I_2"
+            ],
+            "label": "fq_A_x",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "transport",
+            "units": [
+                -3,
+                2,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_81"
+            ]
+        },
+        "V_107": {
+            "aliases": {
+                "global_ID": " V_107",
+                "python": "fq",
+                "cpp": "fq",
+                "matlab": "fq",
+                "latex": "{\\hat{q}}",
+                "internal_code": "fq"
+            },
+            "doc": "net heat flow",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "fq",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "transport",
+            "units": [
+                -3,
+                2,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_82"
+            ]
+        },
+        "V_108": {
+            "aliases": {
+                "global_ID": " V_108",
+                "python": "dHdt",
+                "cpp": "dHdt",
+                "matlab": "dHdt",
+                "latex": "{\\dot{H}}",
+                "internal_code": "dHdt"
+            },
+            "doc": "differential enthalpy balance",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "dHdt",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "diffState",
+            "units": [
+                -3,
+                2,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_83"
+            ]
+        },
+        "V_109": {
+            "aliases": {
+                "global_ID": " V_109",
+                "python": "Ho",
+                "cpp": "Ho",
+                "matlab": "Ho",
+                "latex": "{H^o}",
+                "internal_code": "Ho"
+            },
+            "doc": "initial enthalpy",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "Ho",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "state",
+            "units": [
+                -2,
+                2,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_84"
+            ]
         },
         "V_11": {
             "aliases": {
@@ -328,6 +409,295 @@
             ],
             "equations": []
         },
+        "V_110": {
+            "aliases": {
+                "global_ID": " V_110",
+                "python": "no",
+                "cpp": "no",
+                "matlab": "no",
+                "latex": "{n^o}",
+                "internal_code": "no"
+            },
+            "doc": "initial species",
+            "index_structures": [
+                "I_5"
+            ],
+            "label": "no",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "state",
+            "units": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_85"
+            ]
+        },
+        "V_112": {
+            "aliases": {
+                "global_ID": " V_112",
+                "python": "additive",
+                "cpp": "additive",
+                "matlab": "additive",
+                "latex": "\\xi",
+                "internal_code": "additive"
+            },
+            "doc": "fraction of additives",
+            "index_structures": [],
+            "label": "additive",
+            "network": "material",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_88"
+            ]
+        },
+        "V_113": {
+            "aliases": {
+                "global_ID": " V_113",
+                "python": "i",
+                "cpp": "i",
+                "matlab": "i",
+                "latex": "I",
+                "internal_code": "i"
+            },
+            "doc": "electrical current definition",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "i",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "internalTransport",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_89"
+            ]
+        },
+        "V_114": {
+            "aliases": {
+                "global_ID": " V_114",
+                "python": "_i",
+                "cpp": "_i",
+                "matlab": "_i",
+                "latex": "I",
+                "internal_code": "_i"
+            },
+            "doc": "link variable i to interface macroscopic >>> material",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "_i",
+            "network": "macroscopic >>> material",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "get",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_90"
+            ]
+        },
+        "V_115": {
+            "aliases": {
+                "global_ID": " V_115",
+                "python": "elResist",
+                "cpp": "elResist",
+                "matlab": "elResist",
+                "latex": "{R^e}",
+                "internal_code": "elResist"
+            },
+            "doc": "electrical resistant",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "elResist",
+            "network": "material",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "property",
+            "units": [
+                -3,
+                2,
+                0,
+                1,
+                0,
+                -2,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_91",
+                "E_E_92"
+            ]
+        },
+        "V_116": {
+            "aliases": {
+                "global_ID": " V_116",
+                "python": "elConductC",
+                "cpp": "elConductC",
+                "matlab": "elConductC",
+                "latex": "{k^{e,\\xi}}",
+                "internal_code": "elConductC"
+            },
+            "doc": "simple model for the electrical conductivity as a function of the additive",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "elConductC",
+            "network": "material",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "property",
+            "units": [
+                3,
+                -2,
+                0,
+                -1,
+                0,
+                2,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_93"
+            ]
+        },
+        "V_117": {
+            "aliases": {
+                "global_ID": " V_117",
+                "python": "_elConductC",
+                "cpp": "_elConductC",
+                "matlab": "_elConductC",
+                "latex": "{R^e}",
+                "internal_code": "_elConductC"
+            },
+            "doc": "link variable elConductC to interface material >>> macroscopic",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "_elConductC",
+            "network": "material >>> macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "get",
+            "units": [
+                3,
+                -2,
+                0,
+                -1,
+                0,
+                2,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_94"
+            ]
+        },
+        "V_118": {
+            "aliases": {
+                "global_ID": " V_118",
+                "python": "dUedt",
+                "cpp": "dUedt",
+                "matlab": "dUedt",
+                "latex": "{\\dot{U}^e}",
+                "internal_code": "dUedt"
+            },
+            "doc": "Kirkhoffs first law",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "dUedt",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "diffState",
+            "units": [
+                -3,
+                2,
+                0,
+                1,
+                0,
+                -1,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_96",
+                "E_E_97",
+                "E_E_98"
+            ]
+        },
+        "V_119": {
+            "aliases": {
+                "global_ID": " V_119",
+                "python": "_i",
+                "cpp": "_i",
+                "matlab": "_i",
+                "latex": "I",
+                "internal_code": "_i"
+            },
+            "doc": "link variable i to interface macroscopic >>> control",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "_i",
+            "network": "macroscopic >>> control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "get",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_99"
+            ]
+        },
         "V_12": {
             "aliases": {
                 "global_ID": " V_12",
@@ -349,6 +719,191 @@
             "units": [
                 0,
                 1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": []
+        },
+        "V_124": {
+            "aliases": {
+                "global_ID": " V_124",
+                "python": "_additive",
+                "cpp": "_additive",
+                "matlab": "_additive",
+                "latex": "\\mapsto \\xi",
+                "internal_code": "_additive"
+            },
+            "doc": "link variable additive to interface material >>> control",
+            "index_structures": [],
+            "label": "_additive",
+            "network": "material >>> control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "get",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_104"
+            ]
+        },
+        "V_125": {
+            "aliases": {
+                "global_ID": " V_125",
+                "python": "_T",
+                "cpp": "_T",
+                "matlab": "_T",
+                "latex": "T",
+                "internal_code": "_T"
+            },
+            "doc": "link variable T to interface macroscopic >>> control",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "_T",
+            "network": "macroscopic >>> control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "get",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_105"
+            ]
+        },
+        "V_126": {
+            "aliases": {
+                "global_ID": " V_126",
+                "python": "intensities",
+                "cpp": "intensities",
+                "matlab": "intensities",
+                "latex": "\\phi",
+                "internal_code": "intensities"
+            },
+            "doc": "collected intensities",
+            "index_structures": [],
+            "label": "intensities",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "secondaryState",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_106"
+            ]
+        },
+        "V_127": {
+            "aliases": {
+                "global_ID": " V_127",
+                "python": "one_S",
+                "cpp": "one_S",
+                "matlab": "one_S",
+                "latex": "{1}",
+                "internal_code": "one_S"
+            },
+            "doc": "a vector of ones with the length of the ordinal number of S",
+            "index_structures": [
+                "I_3"
+            ],
+            "label": "one_S",
+            "network": "macroscopic",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": []
+        },
+        "V_128": {
+            "aliases": {
+                "global_ID": " V_128",
+                "python": "nTotal",
+                "cpp": "nTotal",
+                "matlab": "nTotal",
+                "latex": "{n^t}",
+                "internal_code": "nTotal"
+            },
+            "doc": "total number of moles",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "nTotal",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "secondaryState",
+            "units": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_107"
+            ]
+        },
+        "V_129": {
+            "aliases": {
+                "global_ID": " V_129",
+                "python": "A",
+                "cpp": "A",
+                "matlab": "A",
+                "latex": "A",
+                "internal_code": "A"
+            },
+            "doc": "dynamic matrix",
+            "index_structures": [
+                "I_1",
+                "I_9"
+            ],
+            "label": "A",
+            "network": "control",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                -1,
+                0,
                 0,
                 0,
                 0,
@@ -388,6 +943,319 @@
             ],
             "equations": []
         },
+        "V_130": {
+            "aliases": {
+                "global_ID": " V_130",
+                "python": "B",
+                "cpp": "B",
+                "matlab": "B",
+                "latex": "B",
+                "internal_code": "B"
+            },
+            "doc": "input matrix",
+            "index_structures": [
+                "I_2",
+                "I_9"
+            ],
+            "label": "B",
+            "network": "control",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": []
+        },
+        "V_131": {
+            "aliases": {
+                "global_ID": " V_131",
+                "python": "C",
+                "cpp": "C",
+                "matlab": "C",
+                "latex": "C",
+                "internal_code": "C"
+            },
+            "doc": "measurement matrix",
+            "index_structures": [
+                "I_1",
+                "I_2"
+            ],
+            "label": "C",
+            "network": "control",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": []
+        },
+        "V_132": {
+            "aliases": {
+                "global_ID": " V_132",
+                "python": "D",
+                "cpp": "D",
+                "matlab": "D",
+                "latex": "D",
+                "internal_code": "D"
+            },
+            "doc": "diagonal event matrix (no dimensional problems)",
+            "index_structures": [
+                "I_2"
+            ],
+            "label": "D",
+            "network": "control",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": []
+        },
+        "V_133": {
+            "aliases": {
+                "global_ID": " V_133",
+                "python": "setPoint",
+                "cpp": "setPoint",
+                "matlab": "setPoint",
+                "latex": "{y^o}",
+                "internal_code": "setPoint"
+            },
+            "doc": "set point",
+            "index_structures": [
+                "I_2"
+            ],
+            "label": "setPoint",
+            "network": "control",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_119"
+            ]
+        },
+        "V_134": {
+            "aliases": {
+                "global_ID": " V_134",
+                "python": "meas",
+                "cpp": "meas",
+                "matlab": "meas",
+                "latex": "m",
+                "internal_code": "meas"
+            },
+            "doc": "measurements",
+            "index_structures": [
+                "I_2"
+            ],
+            "label": "meas",
+            "network": "control",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": []
+        },
+        "V_135": {
+            "aliases": {
+                "global_ID": " V_135",
+                "python": "e",
+                "cpp": "e",
+                "matlab": "e",
+                "latex": "e",
+                "internal_code": "e"
+            },
+            "doc": "control error",
+            "index_structures": [
+                "I_2"
+            ],
+            "label": "e",
+            "network": "control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_108"
+            ]
+        },
+        "V_136": {
+            "aliases": {
+                "global_ID": " V_136",
+                "python": "x",
+                "cpp": "x",
+                "matlab": "x",
+                "latex": "x",
+                "internal_code": "x"
+            },
+            "doc": "state",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "x",
+            "network": "control",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "state",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_111"
+            ]
+        },
+        "V_137": {
+            "aliases": {
+                "global_ID": " V_137",
+                "python": "xo",
+                "cpp": "xo",
+                "matlab": "xo",
+                "latex": "x_o",
+                "internal_code": "xo"
+            },
+            "doc": "initial state",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "xo",
+            "network": "control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "state",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_109"
+            ]
+        },
+        "V_138": {
+            "aliases": {
+                "global_ID": " V_138",
+                "python": "dxdt",
+                "cpp": "dxdt",
+                "matlab": "dxdt",
+                "latex": "{\\dot{x}}",
+                "internal_code": "dxdt"
+            },
+            "doc": "differential state (ABCD) model",
+            "index_structures": [
+                "I_9"
+            ],
+            "label": "dxdt",
+            "network": "control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "diffState",
+            "units": [
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_110"
+            ]
+        },
+        "V_139": {
+            "aliases": {
+                "global_ID": " V_139",
+                "python": "I_N_D",
+                "cpp": "I_N_D",
+                "matlab": "I_N_D",
+                "latex": "1",
+                "internal_code": "I_N_D"
+            },
+            "doc": "space transformation D to N",
+            "index_structures": [
+                "I_1",
+                "I_9"
+            ],
+            "label": "I_N_D",
+            "network": "control",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": []
+        },
         "V_14": {
             "aliases": {
                 "global_ID": " V_14",
@@ -412,6 +1280,254 @@
                 0,
                 1,
                 -1,
+                0,
+                0,
+                0
+            ],
+            "equations": []
+        },
+        "V_140": {
+            "aliases": {
+                "global_ID": " V_140",
+                "python": "_additive",
+                "cpp": "_additive",
+                "matlab": "_additive",
+                "latex": "\\xi",
+                "internal_code": "_additive"
+            },
+            "doc": "link variable additive to interface material >>> macroscopic",
+            "index_structures": [],
+            "label": "_additive",
+            "network": "material >>> macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "get",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_112"
+            ]
+        },
+        "V_141": {
+            "aliases": {
+                "global_ID": " V_141",
+                "python": "Imeasured",
+                "cpp": "Imeasured",
+                "matlab": "Imeasured",
+                "latex": "{\\check{I}}",
+                "internal_code": "Imeasured"
+            },
+            "doc": "measured current",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "Imeasured",
+            "network": "control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "algebraic",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_113"
+            ]
+        },
+        "V_142": {
+            "aliases": {
+                "global_ID": " V_142",
+                "python": "_Ue",
+                "cpp": "_Ue",
+                "matlab": "_Ue",
+                "latex": "Ue",
+                "internal_code": "_Ue"
+            },
+            "doc": "link variable Ue to interface macroscopic >>> control",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "_Ue",
+            "network": "macroscopic >>> control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "get",
+            "units": [
+                -3,
+                2,
+                0,
+                1,
+                0,
+                -1,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_114"
+            ]
+        },
+        "V_143": {
+            "aliases": {
+                "global_ID": " V_143",
+                "python": "UeMeasured",
+                "cpp": "UeMeasured",
+                "matlab": "UeMeasured",
+                "latex": "{\\check{U}^e}",
+                "internal_code": "UeMeasured"
+            },
+            "doc": "measured electrical potential",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "UeMeasured",
+            "network": "control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "algebraic",
+            "units": [
+                -3,
+                2,
+                0,
+                1,
+                0,
+                -1,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_115"
+            ]
+        },
+        "V_144": {
+            "aliases": {
+                "global_ID": " V_144",
+                "python": "addMeasured",
+                "cpp": "addMeasured",
+                "matlab": "addMeasured",
+                "latex": "{\\check{\\xi}}",
+                "internal_code": "addMeasured"
+            },
+            "doc": "measured additive fraction",
+            "index_structures": [],
+            "label": "addMeasured",
+            "network": "control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "algebraic",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_116"
+            ]
+        },
+        "V_145": {
+            "aliases": {
+                "global_ID": " V_145",
+                "python": "RComputed",
+                "cpp": "RComputed",
+                "matlab": "RComputed",
+                "latex": "R",
+                "internal_code": "RComputed"
+            },
+            "doc": "measured resistance ",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "RComputed",
+            "network": "control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "algebraic",
+            "units": [
+                -3,
+                2,
+                0,
+                1,
+                0,
+                -2,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_117"
+            ]
+        },
+        "V_146": {
+            "aliases": {
+                "global_ID": " V_146",
+                "python": "store",
+                "cpp": "store",
+                "matlab": "store",
+                "latex": "S",
+                "internal_code": "store"
+            },
+            "doc": "quantities to be stored",
+            "index_structures": [],
+            "label": "store",
+            "network": "control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "algebraic",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_118"
+            ]
+        },
+        "V_147": {
+            "aliases": {
+                "global_ID": " V_147",
+                "python": "P_NK",
+                "cpp": "P_NK",
+                "matlab": "P_NK",
+                "latex": "P",
+                "internal_code": "P_NK"
+            },
+            "doc": "reactions per node",
+            "index_structures": [
+                "I_7"
+            ],
+            "label": "P_NK",
+            "network": "reactions",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "projection",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
                 0,
                 0,
                 0
@@ -448,6 +1564,259 @@
             ],
             "equations": []
         },
+        "V_151": {
+            "aliases": {
+                "global_ID": " V_151",
+                "python": "c",
+                "cpp": "c",
+                "matlab": "c",
+                "latex": "c",
+                "internal_code": "c"
+            },
+            "doc": "concentration matrix reaction per node and species per reaction",
+            "index_structures": [
+                "I_7",
+                "I_8"
+            ],
+            "label": "c",
+            "network": "reactions",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "secondaryState",
+            "units": [
+                0,
+                -3,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_123"
+            ]
+        },
+        "V_152": {
+            "aliases": {
+                "global_ID": " V_152",
+                "python": "co",
+                "cpp": "co",
+                "matlab": "co",
+                "latex": "{c^o}",
+                "internal_code": "co"
+            },
+            "doc": "norming concentration",
+            "index_structures": [
+                "I_7",
+                "I_8"
+            ],
+            "label": "co",
+            "network": "reactions",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "secondaryState",
+            "units": [
+                0,
+                -3,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_124"
+            ]
+        },
+        "V_153": {
+            "aliases": {
+                "global_ID": " V_153",
+                "python": "x",
+                "cpp": "x",
+                "matlab": "x",
+                "latex": "x",
+                "internal_code": "x"
+            },
+            "doc": "matrix of normed, dimensionless mole fractions ",
+            "index_structures": [
+                "I_7",
+                "I_8"
+            ],
+            "label": "x",
+            "network": "reactions",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "secondaryState",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_125"
+            ]
+        },
+        "V_154": {
+            "aliases": {
+                "global_ID": " V_154",
+                "python": "y",
+                "cpp": "y",
+                "matlab": "y",
+                "latex": "y",
+                "internal_code": "y"
+            },
+            "doc": "output equation",
+            "index_structures": [
+                "I_2"
+            ],
+            "label": "y",
+            "network": "control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "algebraic",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_126"
+            ]
+        },
+        "V_155": {
+            "aliases": {
+                "global_ID": " V_155",
+                "python": "Boltzmann",
+                "cpp": "Boltzmann",
+                "matlab": "Boltzmann",
+                "latex": "B",
+                "internal_code": "Boltzmann"
+            },
+            "doc": "Boltzmann constant",
+            "index_structures": [],
+            "label": "Boltzmann",
+            "network": "reactions",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                -2,
+                2,
+                0,
+                1,
+                -1,
+                0,
+                0,
+                0
+            ],
+            "equations": []
+        },
+        "V_157": {
+            "aliases": {
+                "global_ID": " V_157",
+                "python": "GasConstant",
+                "cpp": "GasConstant",
+                "matlab": "GasConstant",
+                "latex": "R",
+                "internal_code": "GasConstant"
+            },
+            "doc": "gas constant",
+            "index_structures": [],
+            "label": "GasConstant",
+            "network": "reactions",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                -2,
+                2,
+                -1,
+                1,
+                -1,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_127"
+            ]
+        },
+        "V_158": {
+            "aliases": {
+                "global_ID": " V_158",
+                "python": "N_K_KS",
+                "cpp": "N_K_KS",
+                "matlab": "N_K_KS",
+                "latex": "N",
+                "internal_code": "N_K_KS"
+            },
+            "doc": "stoichiometry",
+            "index_structures": [
+                "I_4",
+                "I_8"
+            ],
+            "label": "N_K_KS",
+            "network": "reactions",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": []
+        },
+        "V_159": {
+            "aliases": {
+                "global_ID": " V_159",
+                "python": "N_NK_KS",
+                "cpp": "N_NK_KS",
+                "matlab": "N_NK_KS",
+                "latex": "N",
+                "internal_code": "N_NK_KS"
+            },
+            "doc": "extended stoichiometric matrix",
+            "index_structures": [
+                "I_7",
+                "I_8"
+            ],
+            "label": "N_NK_KS",
+            "network": "reactions",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_128"
+            ]
+        },
         "V_16": {
             "aliases": {
                 "global_ID": " V_16",
@@ -477,7 +1846,262 @@
                 0
             ],
             "equations": [
-                "E_86"
+                "E_E_86"
+            ]
+        },
+        "V_160": {
+            "aliases": {
+                "global_ID": " V_160",
+                "python": "phi",
+                "cpp": "phi",
+                "matlab": "phi",
+                "latex": "\\phi",
+                "internal_code": "phi"
+            },
+            "doc": "probability function for reactions",
+            "index_structures": [
+                "I_7"
+            ],
+            "label": "phi",
+            "network": "reactions",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "secondaryState",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_129"
+            ]
+        },
+        "V_162": {
+            "aliases": {
+                "global_ID": " V_162",
+                "python": "P_N_NS",
+                "cpp": "P_N_NS",
+                "matlab": "P_N_NS",
+                "latex": "P",
+                "internal_code": "P_N_NS"
+            },
+            "doc": "projection of nodes onto the node species",
+            "index_structures": [
+                "I_1",
+                "I_5"
+            ],
+            "label": "P_N_NS",
+            "network": "physical",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "projection",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": []
+        },
+        "V_163": {
+            "aliases": {
+                "global_ID": " V_163",
+                "python": "nProd",
+                "cpp": "nProd",
+                "matlab": "nProd",
+                "latex": "\\tilde{n}",
+                "internal_code": "nProd"
+            },
+            "doc": "the species production term",
+            "index_structures": [
+                "I_5"
+            ],
+            "label": "nProd",
+            "network": "reactions",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "secondaryState",
+            "units": [
+                -1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_130"
+            ]
+        },
+        "V_164": {
+            "aliases": {
+                "global_ID": " V_164",
+                "python": "_nProd",
+                "cpp": "_nProd",
+                "matlab": "_nProd",
+                "latex": "\\tilde{n}",
+                "internal_code": "_nProd"
+            },
+            "doc": "link variable nProd to interface reactions >>> macroscopic",
+            "index_structures": [
+                "I_5"
+            ],
+            "label": "_nProd",
+            "network": "reactions >>> macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "get",
+            "units": [
+                -1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_131"
+            ]
+        },
+        "V_165": {
+            "aliases": {
+                "global_ID": " V_165",
+                "python": "boz",
+                "cpp": "boz",
+                "matlab": "boz",
+                "latex": "boz",
+                "internal_code": "boz"
+            },
+            "doc": "Boltzmann constant",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "boz",
+            "network": "physical",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                -2,
+                2,
+                0,
+                1,
+                -1,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_132"
+            ]
+        },
+        "V_166": {
+            "aliases": {
+                "global_ID": " V_166",
+                "python": "R",
+                "cpp": "R",
+                "matlab": "R",
+                "latex": "R",
+                "internal_code": "R"
+            },
+            "doc": "gas constant",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "R",
+            "network": "physical",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                -2,
+                2,
+                -1,
+                1,
+                -1,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_133"
+            ]
+        },
+        "V_168": {
+            "aliases": {
+                "global_ID": " V_168",
+                "python": "nt",
+                "cpp": "nt",
+                "matlab": "nt",
+                "latex": "n_t",
+                "internal_code": "nt"
+            },
+            "doc": "total number of species in a node",
+            "index_structures": [
+                "I_1"
+            ],
+            "label": "nt",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "secondaryState",
+            "units": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_134"
+            ]
+        },
+        "V_169": {
+            "aliases": {
+                "global_ID": " V_169",
+                "python": "xi",
+                "cpp": "xi",
+                "matlab": "xi",
+                "latex": "\\xi",
+                "internal_code": "xi"
+            },
+            "doc": "mole fraction",
+            "index_structures": [
+                "I_5"
+            ],
+            "label": "xi",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "secondaryState",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_135"
             ]
         },
         "V_17": {
@@ -509,7 +2133,161 @@
                 0
             ],
             "equations": [
-                "E_6"
+                "E_E_6"
+            ]
+        },
+        "V_170": {
+            "aliases": {
+                "global_ID": " V_170",
+                "python": "nProd",
+                "cpp": "nProd",
+                "matlab": "nProd",
+                "latex": "{\\tilde n}",
+                "internal_code": "nProd"
+            },
+            "doc": "production term",
+            "index_structures": [
+                "I_5"
+            ],
+            "label": "nProd",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "conversion",
+            "units": [
+                -1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_137"
+            ]
+        },
+        "V_171": {
+            "aliases": {
+                "global_ID": " V_171",
+                "python": "switch",
+                "cpp": "switch",
+                "matlab": "switch",
+                "latex": "s",
+                "internal_code": "switch"
+            },
+            "doc": "switches at to",
+            "index_structures": [],
+            "label": "switch",
+            "network": "control",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "algebraic",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_138"
+            ]
+        },
+        "V_172": {
+            "aliases": {
+                "global_ID": " V_172",
+                "python": "_switch",
+                "cpp": "_switch",
+                "matlab": "_switch",
+                "latex": "s",
+                "internal_code": "_switch"
+            },
+            "doc": "switches at to",
+            "index_structures": [],
+            "label": "_switch",
+            "network": "control >>> macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "get",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_139"
+            ]
+        },
+        "V_173": {
+            "aliases": {
+                "global_ID": " V_173",
+                "python": "fnc_AS_controlled",
+                "cpp": "fnc_AS_controlled",
+                "matlab": "fnc_AS_controlled",
+                "latex": "\\hat{n}^{c,controlled}",
+                "internal_code": "fnc_AS_controlled"
+            },
+            "doc": "switched flow",
+            "index_structures": [
+                "I_6"
+            ],
+            "label": "fnc_AS_controlled",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "transport",
+            "units": [
+                -1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_141"
+            ]
+        },
+        "V_175": {
+            "aliases": {
+                "matlab": "gugus",
+                "latex": "gugus",
+                "internal_code": "gugus",
+                "global_ID": " V_175"
+            },
+            "doc": "",
+            "index_structures": [
+                "I_5"
+            ],
+            "label": "gugus",
+            "network": "macroscopic",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "secondaryState",
+            "units": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_144"
             ]
         },
         "V_18": {
@@ -541,7 +2319,7 @@
                 0
             ],
             "equations": [
-                "E_7"
+                "E_E_7"
             ]
         },
         "V_19": {
@@ -573,8 +2351,38 @@
                 0
             ],
             "equations": [
-                "E_8",
-                "E_136"
+                "E_E_8",
+                "E_E_136"
+            ]
+        },
+        "V_2": {
+            "aliases": {
+                "global_ID": " V_2",
+                "python": "one",
+                "cpp": "one",
+                "matlab": "one",
+                "latex": "1",
+                "internal_code": "one"
+            },
+            "doc": "numerical value one",
+            "index_structures": [],
+            "label": "one",
+            "network": "root",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_1"
             ]
         },
         "V_20": {
@@ -606,8 +2414,8 @@
                 0
             ],
             "equations": [
-                "E_9",
-                "E_87"
+                "E_E_9",
+                "E_E_87"
             ]
         },
         "V_21": {
@@ -639,7 +2447,7 @@
                 0
             ],
             "equations": [
-                "E_10"
+                "E_E_10"
             ]
         },
         "V_22": {
@@ -671,7 +2479,7 @@
                 0
             ],
             "equations": [
-                "E_11"
+                "E_E_11"
             ]
         },
         "V_23": {
@@ -761,8 +2569,8 @@
                 0
             ],
             "equations": [
-                "E_14",
-                "E_95"
+                "E_E_14",
+                "E_E_95"
             ]
         },
         "V_28": {
@@ -774,7 +2582,7 @@
                 "latex": "{v_x}",
                 "internal_code": "v_x"
             },
-            "doc": "velocitiy in x-direction",
+            "doc": "velocity in x-direction",
             "index_structures": [
                 "I_1"
             ],
@@ -794,7 +2602,7 @@
                 0
             ],
             "equations": [
-                "E_15"
+                "E_E_15"
             ]
         },
         "V_29": {
@@ -826,7 +2634,37 @@
                 0
             ],
             "equations": [
-                "E_16"
+                "E_E_16"
+            ]
+        },
+        "V_3": {
+            "aliases": {
+                "global_ID": " V_3",
+                "python": "zero",
+                "cpp": "zero",
+                "matlab": "zero",
+                "latex": "0",
+                "internal_code": "zero"
+            },
+            "doc": "numerical value zero",
+            "index_structures": [],
+            "label": "zero",
+            "network": "root",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_2"
             ]
         },
         "V_30": {
@@ -858,7 +2696,7 @@
                 0
             ],
             "equations": [
-                "E_17"
+                "E_E_17"
             ]
         },
         "V_32": {
@@ -1077,6 +2915,36 @@
             ],
             "equations": []
         },
+        "V_4": {
+            "aliases": {
+                "global_ID": " V_4",
+                "python": "onehalf",
+                "cpp": "onehalf",
+                "matlab": "onehalf",
+                "latex": "0.5",
+                "internal_code": "onehalf"
+            },
+            "doc": "numerical value one half",
+            "index_structures": [],
+            "label": "onehalf",
+            "network": "root",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "constant",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_3"
+            ]
+        },
         "V_40": {
             "aliases": {
                 "global_ID": " V_40",
@@ -1136,7 +3004,7 @@
                 0
             ],
             "equations": [
-                "E_20"
+                "E_E_20"
             ]
         },
         "V_42": {
@@ -1168,7 +3036,7 @@
                 0
             ],
             "equations": [
-                "E_21"
+                "E_E_21"
             ]
         },
         "V_43": {
@@ -1200,7 +3068,7 @@
                 0
             ],
             "equations": [
-                "E_22"
+                "E_E_22"
             ]
         },
         "V_44": {
@@ -1232,7 +3100,7 @@
                 0
             ],
             "equations": [
-                "E_23"
+                "E_E_23"
             ]
         },
         "V_45": {
@@ -1264,7 +3132,7 @@
                 0
             ],
             "equations": [
-                "E_24"
+                "E_E_24"
             ]
         },
         "V_46": {
@@ -1296,7 +3164,7 @@
                 0
             ],
             "equations": [
-                "E_25"
+                "E_E_25"
             ]
         },
         "V_47": {
@@ -1328,7 +3196,7 @@
                 0
             ],
             "equations": [
-                "E_26"
+                "E_E_26"
             ]
         },
         "V_48": {
@@ -1340,7 +3208,7 @@
                 "latex": "{k^c_x}",
                 "internal_code": "kc_x"
             },
-            "doc": "convecitve mass conductivity in x-direction",
+            "doc": "convective mass conductivity in x-direction",
             "index_structures": [
                 "I_1"
             ],
@@ -1360,7 +3228,7 @@
                 0
             ],
             "equations": [
-                "E_27"
+                "E_E_27"
             ]
         },
         "V_49": {
@@ -1372,7 +3240,7 @@
                 "latex": "{k^c_y}",
                 "internal_code": "kc_y"
             },
-            "doc": "convecitve mass conductivity in y-direction",
+            "doc": "convective mass conductivity in y-direction",
             "index_structures": [
                 "I_1"
             ],
@@ -1392,8 +3260,36 @@
                 0
             ],
             "equations": [
-                "E_28"
+                "E_E_28"
             ]
+        },
+        "V_5": {
+            "aliases": {
+                "global_ID": " V_5",
+                "python": "t",
+                "cpp": "t",
+                "matlab": "t",
+                "latex": "t",
+                "internal_code": "t"
+            },
+            "doc": "time",
+            "index_structures": [],
+            "label": "t",
+            "network": "root",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "frame",
+            "units": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": []
         },
         "V_50": {
             "aliases": {
@@ -1404,7 +3300,7 @@
                 "latex": "{k^c_z}",
                 "internal_code": "kc_z"
             },
-            "doc": "convecitve mass conductivity in z-direction",
+            "doc": "convective mass conductivity in z-direction",
             "index_structures": [
                 "I_1"
             ],
@@ -1424,7 +3320,7 @@
                 0
             ],
             "equations": [
-                "E_29"
+                "E_E_29"
             ]
         },
         "V_51": {
@@ -1456,7 +3352,7 @@
                 0
             ],
             "equations": [
-                "E_30"
+                "E_E_30"
             ]
         },
         "V_52": {
@@ -1488,7 +3384,7 @@
                 0
             ],
             "equations": [
-                "E_31"
+                "E_E_31"
             ]
         },
         "V_53": {
@@ -1520,7 +3416,7 @@
                 0
             ],
             "equations": [
-                "E_32"
+                "E_E_32"
             ]
         },
         "V_54": {
@@ -1552,7 +3448,7 @@
                 0
             ],
             "equations": [
-                "E_33"
+                "E_E_33"
             ]
         },
         "V_55": {
@@ -1564,7 +3460,7 @@
                 "latex": "{k^d}",
                 "internal_code": "kd"
             },
-            "doc": "diffusional mass condctivity",
+            "doc": "diffusional mass conductivity",
             "index_structures": [
                 "I_5"
             ],
@@ -1584,7 +3480,7 @@
                 0
             ],
             "equations": [
-                "E_34"
+                "E_E_34"
             ]
         },
         "V_56": {
@@ -1616,7 +3512,7 @@
                 0
             ],
             "equations": [
-                "E_35"
+                "E_E_35"
             ]
         },
         "V_57": {
@@ -1648,7 +3544,7 @@
                 0
             ],
             "equations": [
-                "E_36"
+                "E_E_36"
             ]
         },
         "V_58": {
@@ -1680,7 +3576,7 @@
                 0
             ],
             "equations": [
-                "E_37"
+                "E_E_37"
             ]
         },
         "V_59": {
@@ -1712,7 +3608,37 @@
                 0
             ],
             "equations": [
-                "E_38"
+                "E_E_38"
+            ]
+        },
+        "V_6": {
+            "aliases": {
+                "global_ID": " V_6",
+                "python": "to",
+                "cpp": "to",
+                "matlab": "to",
+                "latex": "{t^o}",
+                "internal_code": "to"
+            },
+            "doc": "starting time",
+            "index_structures": [],
+            "label": "to",
+            "network": "root",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "frame",
+            "units": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_4"
             ]
         },
         "V_60": {
@@ -1744,7 +3670,7 @@
                 0
             ],
             "equations": [
-                "E_39"
+                "E_E_39"
             ]
         },
         "V_62": {
@@ -1776,7 +3702,7 @@
                 0
             ],
             "equations": [
-                "E_41"
+                "E_E_41"
             ]
         },
         "V_63": {
@@ -1808,7 +3734,7 @@
                 0
             ],
             "equations": [
-                "E_42"
+                "E_E_42"
             ]
         },
         "V_65": {
@@ -1871,7 +3797,7 @@
                 0
             ],
             "equations": [
-                "E_44"
+                "E_E_44"
             ]
         },
         "V_67": {
@@ -1903,7 +3829,37 @@
                 0
             ],
             "equations": [
-                "E_45"
+                "E_E_45"
+            ]
+        },
+        "V_7": {
+            "aliases": {
+                "global_ID": " V_7",
+                "python": "te",
+                "cpp": "te",
+                "matlab": "te",
+                "latex": "{t^e}",
+                "internal_code": "te"
+            },
+            "doc": "end time",
+            "index_structures": [],
+            "label": "te",
+            "network": "root",
+            "port_variable": "False",
+            "tokens": [],
+            "type": "frame",
+            "units": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": [
+                "E_E_5"
             ]
         },
         "V_70": {
@@ -1966,7 +3922,7 @@
                 0
             ],
             "equations": [
-                "E_48"
+                "E_E_48"
             ]
         },
         "V_72": {
@@ -1998,7 +3954,7 @@
                 0
             ],
             "equations": [
-                "E_49"
+                "E_E_49"
             ]
         },
         "V_73": {
@@ -2030,7 +3986,7 @@
                 0
             ],
             "equations": [
-                "E_50"
+                "E_E_50"
             ]
         },
         "V_74": {
@@ -2062,7 +4018,7 @@
                 0
             ],
             "equations": [
-                "E_51"
+                "E_E_51"
             ]
         },
         "V_75": {
@@ -2094,7 +4050,7 @@
                 0
             ],
             "equations": [
-                "E_52"
+                "E_E_52"
             ]
         },
         "V_76": {
@@ -2126,7 +4082,7 @@
                 0
             ],
             "equations": [
-                "E_53"
+                "E_E_53"
             ]
         },
         "V_77": {
@@ -2158,7 +4114,7 @@
                 0
             ],
             "equations": [
-                "E_54"
+                "E_E_54"
             ]
         },
         "V_78": {
@@ -2190,7 +4146,7 @@
                 0
             ],
             "equations": [
-                "E_55"
+                "E_E_55"
             ]
         },
         "V_79": {
@@ -2222,8 +4178,39 @@
                 0
             ],
             "equations": [
-                "E_56"
+                "E_E_56"
             ]
+        },
+        "V_8": {
+            "aliases": {
+                "global_ID": " V_8",
+                "python": "F_N_A",
+                "cpp": "F_N_A",
+                "matlab": "F_N_A",
+                "latex": "F",
+                "internal_code": "F_N_A"
+            },
+            "doc": "fundamental incidence matrix",
+            "index_structures": [
+                "I_1",
+                "I_2"
+            ],
+            "label": "F_N_A",
+            "network": "root",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "network",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": []
         },
         "V_80": {
             "aliases": {
@@ -2254,7 +4241,7 @@
                 0
             ],
             "equations": [
-                "E_57"
+                "E_E_57"
             ]
         },
         "V_81": {
@@ -2286,7 +4273,7 @@
                 0
             ],
             "equations": [
-                "E_58"
+                "E_E_58"
             ]
         },
         "V_82": {
@@ -2318,7 +4305,7 @@
                 0
             ],
             "equations": [
-                "E_59"
+                "E_E_59"
             ]
         },
         "V_83": {
@@ -2350,7 +4337,7 @@
                 0
             ],
             "equations": [
-                "E_60"
+                "E_E_60"
             ]
         },
         "V_84": {
@@ -2382,7 +4369,7 @@
                 0
             ],
             "equations": [
-                "E_61"
+                "E_E_61"
             ]
         },
         "V_85": {
@@ -2414,7 +4401,7 @@
                 0
             ],
             "equations": [
-                "E_62"
+                "E_E_62"
             ]
         },
         "V_86": {
@@ -2446,7 +4433,7 @@
                 0
             ],
             "equations": [
-                "E_63"
+                "E_E_63"
             ]
         },
         "V_87": {
@@ -2478,7 +4465,7 @@
                 0
             ],
             "equations": [
-                "E_64"
+                "E_E_64"
             ]
         },
         "V_88": {
@@ -2510,7 +4497,7 @@
                 0
             ],
             "equations": [
-                "E_65"
+                "E_E_65"
             ]
         },
         "V_89": {
@@ -2542,8 +4529,39 @@
                 0
             ],
             "equations": [
-                "E_66"
+                "E_E_66"
             ]
+        },
+        "V_9": {
+            "aliases": {
+                "global_ID": " V_9",
+                "python": "P_N_A",
+                "cpp": "P_N_A",
+                "matlab": "P_N_A",
+                "latex": "P",
+                "internal_code": "P_N_A"
+            },
+            "doc": "projection from node to arc for arc properties",
+            "index_structures": [
+                "I_1",
+                "I_2"
+            ],
+            "label": "P_N_A",
+            "network": "physical",
+            "port_variable": "True",
+            "tokens": [],
+            "type": "projection",
+            "units": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "equations": []
         },
         "V_90": {
             "aliases": {
@@ -2636,8 +4654,8 @@
                 0
             ],
             "equations": [
-                "E_67",
-                "E_140"
+                "E_E_67",
+                "E_E_140"
             ]
         },
         "V_93": {
@@ -2669,7 +4687,7 @@
                 0
             ],
             "equations": [
-                "E_68"
+                "E_E_68"
             ]
         },
         "V_94": {
@@ -2701,7 +4719,7 @@
                 0
             ],
             "equations": [
-                "E_69"
+                "E_E_69"
             ]
         },
         "V_95": {
@@ -2733,7 +4751,7 @@
                 0
             ],
             "equations": [
-                "E_70"
+                "E_E_70"
             ]
         },
         "V_96": {
@@ -2745,7 +4763,7 @@
                 "latex": "{\\hat{H}^d}",
                 "internal_code": "fHd"
             },
-            "doc": "net enthaply stream due to diffusion",
+            "doc": "net enthalpy stream due to diffusion",
             "index_structures": [
                 "I_1"
             ],
@@ -2765,7 +4783,7 @@
                 0
             ],
             "equations": [
-                "E_71"
+                "E_E_71"
             ]
         },
         "V_97": {
@@ -2797,7 +4815,7 @@
                 0
             ],
             "equations": [
-                "E_72"
+                "E_E_72"
             ]
         },
         "V_98": {
@@ -2829,7 +4847,7 @@
                 0
             ],
             "equations": [
-                "E_73"
+                "E_E_73"
             ]
         },
         "V_99": {
@@ -2841,7 +4859,7 @@
                 "latex": "{\\hat{n}^c}",
                 "internal_code": "fnc_AS"
             },
-            "doc": "molar convetional mass flow in the given stream",
+            "doc": "molar convectional mass flow in the given stream",
             "index_structures": [
                 "I_6"
             ],
@@ -2861,1995 +4879,7 @@
                 0
             ],
             "equations": [
-                "E_74"
-            ]
-        },
-        "V_100": {
-            "aliases": {
-                "global_ID": " V_100",
-                "python": "fnc",
-                "cpp": "fnc",
-                "matlab": "fnc",
-                "latex": "{\\hat{n}^c}",
-                "internal_code": "fnc"
-            },
-            "doc": "net molar convectional mass flow",
-            "index_structures": [
-                "I_5"
-            ],
-            "label": "fnc",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "transport",
-            "units": [
-                -1,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_75"
-            ]
-        },
-        "V_101": {
-            "aliases": {
-                "global_ID": " V_101",
-                "python": "dndt",
-                "cpp": "dndt",
-                "matlab": "dndt",
-                "latex": "\\dot{n}",
-                "internal_code": "dndt"
-            },
-            "doc": "differential species balance",
-            "index_structures": [
-                "I_5"
-            ],
-            "label": "dndt",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "diffState",
-            "units": [
-                -1,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_76",
-                "E_142"
-            ]
-        },
-        "V_102": {
-            "aliases": {
-                "global_ID": " V_102",
-                "python": "fHc_A",
-                "cpp": "fHc_A",
-                "matlab": "fHc_A",
-                "latex": "{\\hat{H}^c}",
-                "internal_code": "fHc_A"
-            },
-            "doc": "convective enthalpy flow for given stream",
-            "index_structures": [
-                "I_2"
-            ],
-            "label": "fHc_A",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "transport",
-            "units": [
-                -3,
-                2,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_77"
-            ]
-        },
-        "V_103": {
-            "aliases": {
-                "global_ID": " V_103",
-                "python": "fHc",
-                "cpp": "fHc",
-                "matlab": "fHc",
-                "latex": "{\\hat{H}^c}",
-                "internal_code": "fHc"
-            },
-            "doc": "net convectional enthalpy stream",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "fHc",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "transport",
-            "units": [
-                -3,
-                2,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_78"
-            ]
-        },
-        "V_104": {
-            "aliases": {
-                "global_ID": " V_104",
-                "python": "fw_A",
-                "cpp": "fw_A",
-                "matlab": "fw_A",
-                "latex": "{\\hat{w}}",
-                "internal_code": "fw_A"
-            },
-            "doc": "sample work stream",
-            "index_structures": [
-                "I_2"
-            ],
-            "label": "fw_A",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "transport",
-            "units": [
-                -3,
-                2,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_79"
-            ]
-        },
-        "V_105": {
-            "aliases": {
-                "global_ID": " V_105",
-                "python": "fw",
-                "cpp": "fw",
-                "matlab": "fw",
-                "latex": "{\\hat{w}}",
-                "internal_code": "fw"
-            },
-            "doc": "net work stream",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "fw",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "transport",
-            "units": [
-                -3,
-                2,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_80"
-            ]
-        },
-        "V_106": {
-            "aliases": {
-                "global_ID": " V_106",
-                "python": "fq_A_x",
-                "cpp": "fq_A_x",
-                "matlab": "fq_A_x",
-                "latex": "{\\hat{q}_{x}}",
-                "internal_code": "fq_A_x"
-            },
-            "doc": "heat flow in x-direction for given stream",
-            "index_structures": [
-                "I_2"
-            ],
-            "label": "fq_A_x",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "transport",
-            "units": [
-                -3,
-                2,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_81"
-            ]
-        },
-        "V_107": {
-            "aliases": {
-                "global_ID": " V_107",
-                "python": "fq",
-                "cpp": "fq",
-                "matlab": "fq",
-                "latex": "{\\hat{q}}",
-                "internal_code": "fq"
-            },
-            "doc": "net heat flow",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "fq",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "transport",
-            "units": [
-                -3,
-                2,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_82"
-            ]
-        },
-        "V_108": {
-            "aliases": {
-                "global_ID": " V_108",
-                "python": "dHdt",
-                "cpp": "dHdt",
-                "matlab": "dHdt",
-                "latex": "{\\dot{H}}",
-                "internal_code": "dHdt"
-            },
-            "doc": "differential enthalpy balance",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "dHdt",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "diffState",
-            "units": [
-                -3,
-                2,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_83"
-            ]
-        },
-        "V_109": {
-            "aliases": {
-                "global_ID": " V_109",
-                "python": "Ho",
-                "cpp": "Ho",
-                "matlab": "Ho",
-                "latex": "{H^o}",
-                "internal_code": "Ho"
-            },
-            "doc": "initial enthalpy",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "Ho",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "state",
-            "units": [
-                -2,
-                2,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_84"
-            ]
-        },
-        "V_110": {
-            "aliases": {
-                "global_ID": " V_110",
-                "python": "no",
-                "cpp": "no",
-                "matlab": "no",
-                "latex": "{n^o}",
-                "internal_code": "no"
-            },
-            "doc": "initial species",
-            "index_structures": [
-                "I_5"
-            ],
-            "label": "no",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "state",
-            "units": [
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_85"
-            ]
-        },
-        "V_112": {
-            "aliases": {
-                "global_ID": " V_112",
-                "python": "additive",
-                "cpp": "additive",
-                "matlab": "additive",
-                "latex": "\\xi",
-                "internal_code": "additive"
-            },
-            "doc": "fraction of additives",
-            "index_structures": [],
-            "label": "additive",
-            "network": "material",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_88"
-            ]
-        },
-        "V_113": {
-            "aliases": {
-                "global_ID": " V_113",
-                "python": "i",
-                "cpp": "i",
-                "matlab": "i",
-                "latex": "I",
-                "internal_code": "i"
-            },
-            "doc": "electrical current definition",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "i",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "internalTransport",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                1,
-                0,
-                0
-            ],
-            "equations": [
-                "E_89"
-            ]
-        },
-        "V_114": {
-            "aliases": {
-                "global_ID": " V_114",
-                "python": "_i",
-                "cpp": "_i",
-                "matlab": "_i",
-                "latex": "I",
-                "internal_code": "_i"
-            },
-            "doc": "link variable i to interface macroscopic >>> material",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "_i",
-            "network": "macroscopic >>> material",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "get",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                1,
-                0,
-                0
-            ],
-            "equations": [
-                "E_90"
-            ]
-        },
-        "V_115": {
-            "aliases": {
-                "global_ID": " V_115",
-                "python": "elResist",
-                "cpp": "elResist",
-                "matlab": "elResist",
-                "latex": "{R^e}",
-                "internal_code": "elResist"
-            },
-            "doc": "electrical resistant",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "elResist",
-            "network": "material",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "property",
-            "units": [
-                -3,
-                2,
-                0,
-                1,
-                0,
-                -2,
-                0,
-                0
-            ],
-            "equations": [
-                "E_91",
-                "E_92"
-            ]
-        },
-        "V_116": {
-            "aliases": {
-                "global_ID": " V_116",
-                "python": "elConductC",
-                "cpp": "elConductC",
-                "matlab": "elConductC",
-                "latex": "{k^{e,\\xi}}",
-                "internal_code": "elConductC"
-            },
-            "doc": "simple model for the electrical conductivity as a function of the additive",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "elConductC",
-            "network": "material",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "property",
-            "units": [
-                3,
-                -2,
-                0,
-                -1,
-                0,
-                2,
-                0,
-                0
-            ],
-            "equations": [
-                "E_93"
-            ]
-        },
-        "V_117": {
-            "aliases": {
-                "global_ID": " V_117",
-                "python": "_elConductC",
-                "cpp": "_elConductC",
-                "matlab": "_elConductC",
-                "latex": "{R^e}",
-                "internal_code": "_elConductC"
-            },
-            "doc": "link variable elConductC to interface material >>> macroscopic",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "_elConductC",
-            "network": "material >>> macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "get",
-            "units": [
-                3,
-                -2,
-                0,
-                -1,
-                0,
-                2,
-                0,
-                0
-            ],
-            "equations": [
-                "E_94"
-            ]
-        },
-        "V_118": {
-            "aliases": {
-                "global_ID": " V_118",
-                "python": "dUedt",
-                "cpp": "dUedt",
-                "matlab": "dUedt",
-                "latex": "{\\dot{U}^e}",
-                "internal_code": "dUedt"
-            },
-            "doc": "Kirkhoff first law",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "dUedt",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "diffState",
-            "units": [
-                -3,
-                2,
-                0,
-                1,
-                0,
-                -1,
-                0,
-                0
-            ],
-            "equations": [
-                "E_96",
-                "E_97",
-                "E_98"
-            ]
-        },
-        "V_119": {
-            "aliases": {
-                "global_ID": " V_119",
-                "python": "_i",
-                "cpp": "_i",
-                "matlab": "_i",
-                "latex": "I",
-                "internal_code": "_i"
-            },
-            "doc": "link variable i to interface macroscopic >>> control",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "_i",
-            "network": "macroscopic >>> control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "get",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                1,
-                0,
-                0
-            ],
-            "equations": [
-                "E_99"
-            ]
-        },
-        "V_124": {
-            "aliases": {
-                "global_ID": " V_124",
-                "python": "_additive",
-                "cpp": "_additive",
-                "matlab": "_additive",
-                "latex": "\\mapsto \\xi",
-                "internal_code": "_additive"
-            },
-            "doc": "link variable additive to interface material >>> control",
-            "index_structures": [],
-            "label": "_additive",
-            "network": "material >>> control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "get",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_104"
-            ]
-        },
-        "V_125": {
-            "aliases": {
-                "global_ID": " V_125",
-                "python": "_T",
-                "cpp": "_T",
-                "matlab": "_T",
-                "latex": "T",
-                "internal_code": "_T"
-            },
-            "doc": "link variable T to interface macroscopic >>> control",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "_T",
-            "network": "macroscopic >>> control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "get",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_105"
-            ]
-        },
-        "V_126": {
-            "aliases": {
-                "global_ID": " V_126",
-                "python": "intensities",
-                "cpp": "intensities",
-                "matlab": "intensities",
-                "latex": "\\phi",
-                "internal_code": "intensities"
-            },
-            "doc": "collected intensities",
-            "index_structures": [],
-            "label": "intensities",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "secondaryState",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_106"
-            ]
-        },
-        "V_127": {
-            "aliases": {
-                "global_ID": " V_127",
-                "python": "one_S",
-                "cpp": "one_S",
-                "matlab": "one_S",
-                "latex": "{1}",
-                "internal_code": "one_S"
-            },
-            "doc": "a vector of ones with the length of the ordinal number of S",
-            "index_structures": [
-                "I_3"
-            ],
-            "label": "one_S",
-            "network": "macroscopic",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_128": {
-            "aliases": {
-                "global_ID": " V_128",
-                "python": "nTotal",
-                "cpp": "nTotal",
-                "matlab": "nTotal",
-                "latex": "{n^t}",
-                "internal_code": "nTotal"
-            },
-            "doc": "total number of moles",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "nTotal",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "secondaryState",
-            "units": [
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_107"
-            ]
-        },
-        "V_129": {
-            "aliases": {
-                "global_ID": " V_129",
-                "python": "A",
-                "cpp": "A",
-                "matlab": "A",
-                "latex": "A",
-                "internal_code": "A"
-            },
-            "doc": "dynamic matrix",
-            "index_structures": [
-                "I_1",
-                "I_9"
-            ],
-            "label": "A",
-            "network": "control",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                -1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_130": {
-            "aliases": {
-                "global_ID": " V_130",
-                "python": "B",
-                "cpp": "B",
-                "matlab": "B",
-                "latex": "B",
-                "internal_code": "B"
-            },
-            "doc": "input matrix",
-            "index_structures": [
-                "I_2",
-                "I_9"
-            ],
-            "label": "B",
-            "network": "control",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                -1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_131": {
-            "aliases": {
-                "global_ID": " V_131",
-                "python": "C",
-                "cpp": "C",
-                "matlab": "C",
-                "latex": "C",
-                "internal_code": "C"
-            },
-            "doc": "measurement matrix",
-            "index_structures": [
-                "I_1",
-                "I_2"
-            ],
-            "label": "C",
-            "network": "control",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_132": {
-            "aliases": {
-                "global_ID": " V_132",
-                "python": "D",
-                "cpp": "D",
-                "matlab": "D",
-                "latex": "D",
-                "internal_code": "D"
-            },
-            "doc": "diagonal event matrix (no dimensional problems)",
-            "index_structures": [
-                "I_2"
-            ],
-            "label": "D",
-            "network": "control",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_133": {
-            "aliases": {
-                "global_ID": " V_133",
-                "python": "setPoint",
-                "cpp": "setPoint",
-                "matlab": "setPoint",
-                "latex": "{y^o}",
-                "internal_code": "setPoint"
-            },
-            "doc": "set point",
-            "index_structures": [
-                "I_2"
-            ],
-            "label": "setPoint",
-            "network": "control",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_119"
-            ]
-        },
-        "V_134": {
-            "aliases": {
-                "global_ID": " V_134",
-                "python": "meas",
-                "cpp": "meas",
-                "matlab": "meas",
-                "latex": "m",
-                "internal_code": "meas"
-            },
-            "doc": "measurements",
-            "index_structures": [
-                "I_2"
-            ],
-            "label": "meas",
-            "network": "control",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_135": {
-            "aliases": {
-                "global_ID": " V_135",
-                "python": "e",
-                "cpp": "e",
-                "matlab": "e",
-                "latex": "e",
-                "internal_code": "e"
-            },
-            "doc": "control error",
-            "index_structures": [
-                "I_2"
-            ],
-            "label": "e",
-            "network": "control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_108"
-            ]
-        },
-        "V_136": {
-            "aliases": {
-                "global_ID": " V_136",
-                "python": "x",
-                "cpp": "x",
-                "matlab": "x",
-                "latex": "x",
-                "internal_code": "x"
-            },
-            "doc": "state",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "x",
-            "network": "control",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "state",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_111"
-            ]
-        },
-        "V_137": {
-            "aliases": {
-                "global_ID": " V_137",
-                "python": "xo",
-                "cpp": "xo",
-                "matlab": "xo",
-                "latex": "x_o",
-                "internal_code": "xo"
-            },
-            "doc": "initial state",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "xo",
-            "network": "control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "state",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_109"
-            ]
-        },
-        "V_138": {
-            "aliases": {
-                "global_ID": " V_138",
-                "python": "dxdt",
-                "cpp": "dxdt",
-                "matlab": "dxdt",
-                "latex": "{\\dot{x}}",
-                "internal_code": "dxdt"
-            },
-            "doc": "differential state (ABCD) model",
-            "index_structures": [
-                "I_9"
-            ],
-            "label": "dxdt",
-            "network": "control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "diffState",
-            "units": [
-                -1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_110"
-            ]
-        },
-        "V_139": {
-            "aliases": {
-                "global_ID": " V_139",
-                "python": "I_N_D",
-                "cpp": "I_N_D",
-                "matlab": "I_N_D",
-                "latex": "1",
-                "internal_code": "I_N_D"
-            },
-            "doc": "space transformation D to N",
-            "index_structures": [
-                "I_1",
-                "I_9"
-            ],
-            "label": "I_N_D",
-            "network": "control",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_140": {
-            "aliases": {
-                "global_ID": " V_140",
-                "python": "_additive",
-                "cpp": "_additive",
-                "matlab": "_additive",
-                "latex": "\\xi",
-                "internal_code": "_additive"
-            },
-            "doc": "link variable additive to interface material >>> macroscopic",
-            "index_structures": [],
-            "label": "_additive",
-            "network": "material >>> macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "get",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_112"
-            ]
-        },
-        "V_141": {
-            "aliases": {
-                "global_ID": " V_141",
-                "python": "Imeasured",
-                "cpp": "Imeasured",
-                "matlab": "Imeasured",
-                "latex": "{\\check{I}}",
-                "internal_code": "Imeasured"
-            },
-            "doc": "measured current",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "Imeasured",
-            "network": "control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "algebraic",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                1,
-                0,
-                0
-            ],
-            "equations": [
-                "E_113"
-            ]
-        },
-        "V_142": {
-            "aliases": {
-                "global_ID": " V_142",
-                "python": "_Ue",
-                "cpp": "_Ue",
-                "matlab": "_Ue",
-                "latex": "Ue",
-                "internal_code": "_Ue"
-            },
-            "doc": "link variable Ue to interface macroscopic >>> control",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "_Ue",
-            "network": "macroscopic >>> control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "get",
-            "units": [
-                -3,
-                2,
-                0,
-                1,
-                0,
-                -1,
-                0,
-                0
-            ],
-            "equations": [
-                "E_114"
-            ]
-        },
-        "V_143": {
-            "aliases": {
-                "global_ID": " V_143",
-                "python": "UeMeasured",
-                "cpp": "UeMeasured",
-                "matlab": "UeMeasured",
-                "latex": "{\\check{U}^e}",
-                "internal_code": "UeMeasured"
-            },
-            "doc": "measured electrical potential",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "UeMeasured",
-            "network": "control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "algebraic",
-            "units": [
-                -3,
-                2,
-                0,
-                1,
-                0,
-                -1,
-                0,
-                0
-            ],
-            "equations": [
-                "E_115"
-            ]
-        },
-        "V_144": {
-            "aliases": {
-                "global_ID": " V_144",
-                "python": "addMeasured",
-                "cpp": "addMeasured",
-                "matlab": "addMeasured",
-                "latex": "{\\check{\\xi}}",
-                "internal_code": "addMeasured"
-            },
-            "doc": "measured additive fraction",
-            "index_structures": [],
-            "label": "addMeasured",
-            "network": "control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "algebraic",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_116"
-            ]
-        },
-        "V_145": {
-            "aliases": {
-                "global_ID": " V_145",
-                "python": "RComputed",
-                "cpp": "RComputed",
-                "matlab": "RComputed",
-                "latex": "R",
-                "internal_code": "RComputed"
-            },
-            "doc": "measured resistance ",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "RComputed",
-            "network": "control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "algebraic",
-            "units": [
-                -3,
-                2,
-                0,
-                1,
-                0,
-                -2,
-                0,
-                0
-            ],
-            "equations": [
-                "E_117"
-            ]
-        },
-        "V_146": {
-            "aliases": {
-                "global_ID": " V_146",
-                "python": "store",
-                "cpp": "store",
-                "matlab": "store",
-                "latex": "S",
-                "internal_code": "store"
-            },
-            "doc": "quantities to be stored",
-            "index_structures": [],
-            "label": "store",
-            "network": "control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "algebraic",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_118"
-            ]
-        },
-        "V_147": {
-            "aliases": {
-                "global_ID": " V_147",
-                "python": "P_NK",
-                "cpp": "P_NK",
-                "matlab": "P_NK",
-                "latex": "P",
-                "internal_code": "P_NK"
-            },
-            "doc": "reactions per node",
-            "index_structures": [
-                "I_7"
-            ],
-            "label": "P_NK",
-            "network": "reactions",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "projection",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_151": {
-            "aliases": {
-                "global_ID": " V_151",
-                "python": "c",
-                "cpp": "c",
-                "matlab": "c",
-                "latex": "c",
-                "internal_code": "c"
-            },
-            "doc": "concentration matrix reaction per node and species per reaction",
-            "index_structures": [
-                "I_7",
-                "I_8"
-            ],
-            "label": "c",
-            "network": "reactions",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "secondaryState",
-            "units": [
-                0,
-                -3,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_123"
-            ]
-        },
-        "V_152": {
-            "aliases": {
-                "global_ID": " V_152",
-                "python": "co",
-                "cpp": "co",
-                "matlab": "co",
-                "latex": "{c^o}",
-                "internal_code": "co"
-            },
-            "doc": "norming concentration",
-            "index_structures": [
-                "I_7",
-                "I_8"
-            ],
-            "label": "co",
-            "network": "reactions",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "secondaryState",
-            "units": [
-                0,
-                -3,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_124"
-            ]
-        },
-        "V_153": {
-            "aliases": {
-                "global_ID": " V_153",
-                "python": "x",
-                "cpp": "x",
-                "matlab": "x",
-                "latex": "x",
-                "internal_code": "x"
-            },
-            "doc": "matrix of normed, dimensionless mole fractions ",
-            "index_structures": [
-                "I_7",
-                "I_8"
-            ],
-            "label": "x",
-            "network": "reactions",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "secondaryState",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_125"
-            ]
-        },
-        "V_154": {
-            "aliases": {
-                "global_ID": " V_154",
-                "python": "y",
-                "cpp": "y",
-                "matlab": "y",
-                "latex": "y",
-                "internal_code": "y"
-            },
-            "doc": "output equation",
-            "index_structures": [
-                "I_2"
-            ],
-            "label": "y",
-            "network": "control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "algebraic",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_126"
-            ]
-        },
-        "V_155": {
-            "aliases": {
-                "global_ID": " V_155",
-                "python": "Boltzmann",
-                "cpp": "Boltzmann",
-                "matlab": "Boltzmann",
-                "latex": "B",
-                "internal_code": "Boltzmann"
-            },
-            "doc": "Boltzmann constant",
-            "index_structures": [],
-            "label": "Boltzmann",
-            "network": "reactions",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                -2,
-                2,
-                0,
-                1,
-                -1,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_157": {
-            "aliases": {
-                "global_ID": " V_157",
-                "python": "GasConstant",
-                "cpp": "GasConstant",
-                "matlab": "GasConstant",
-                "latex": "R",
-                "internal_code": "GasConstant"
-            },
-            "doc": "gas constant",
-            "index_structures": [],
-            "label": "GasConstant",
-            "network": "reactions",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                -2,
-                2,
-                -1,
-                1,
-                -1,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_127"
-            ]
-        },
-        "V_158": {
-            "aliases": {
-                "global_ID": " V_158",
-                "python": "N_K_KS",
-                "cpp": "N_K_KS",
-                "matlab": "N_K_KS",
-                "latex": "N",
-                "internal_code": "N_K_KS"
-            },
-            "doc": "stoichiometry",
-            "index_structures": [
-                "I_4",
-                "I_8"
-            ],
-            "label": "N_K_KS",
-            "network": "reactions",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_159": {
-            "aliases": {
-                "global_ID": " V_159",
-                "python": "N_NK_KS",
-                "cpp": "N_NK_KS",
-                "matlab": "N_NK_KS",
-                "latex": "N",
-                "internal_code": "N_NK_KS"
-            },
-            "doc": "extended stoichiometrix matrix",
-            "index_structures": [
-                "I_7",
-                "I_8"
-            ],
-            "label": "N_NK_KS",
-            "network": "reactions",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_128"
-            ]
-        },
-        "V_160": {
-            "aliases": {
-                "global_ID": " V_160",
-                "python": "phi",
-                "cpp": "phi",
-                "matlab": "phi",
-                "latex": "\\phi",
-                "internal_code": "phi"
-            },
-            "doc": "probability function for reactions",
-            "index_structures": [
-                "I_7"
-            ],
-            "label": "phi",
-            "network": "reactions",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "secondaryState",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_129"
-            ]
-        },
-        "V_162": {
-            "aliases": {
-                "global_ID": " V_162",
-                "python": "P_N_NS",
-                "cpp": "P_N_NS",
-                "matlab": "P_N_NS",
-                "latex": "P",
-                "internal_code": "P_N_NS"
-            },
-            "doc": "projection of nodes onto the node species",
-            "index_structures": [
-                "I_1",
-                "I_5"
-            ],
-            "label": "P_N_NS",
-            "network": "physical",
-            "port_variable": "True",
-            "tokens": [],
-            "type": "projection",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": []
-        },
-        "V_163": {
-            "aliases": {
-                "global_ID": " V_163",
-                "python": "nProd",
-                "cpp": "nProd",
-                "matlab": "nProd",
-                "latex": "\\tilde{n}",
-                "internal_code": "nProd"
-            },
-            "doc": "the species production term",
-            "index_structures": [
-                "I_5"
-            ],
-            "label": "nProd",
-            "network": "reactions",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "secondaryState",
-            "units": [
-                -1,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_130"
-            ]
-        },
-        "V_164": {
-            "aliases": {
-                "global_ID": " V_164",
-                "python": "_nProd",
-                "cpp": "_nProd",
-                "matlab": "_nProd",
-                "latex": "\\tilde{n}",
-                "internal_code": "_nProd"
-            },
-            "doc": "link variable nProd to interface reactions >>> macroscopic",
-            "index_structures": [
-                "I_5"
-            ],
-            "label": "_nProd",
-            "network": "reactions >>> macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "get",
-            "units": [
-                -1,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_131"
-            ]
-        },
-        "V_165": {
-            "aliases": {
-                "global_ID": " V_165",
-                "python": "Bo",
-                "cpp": "Bo",
-                "matlab": "Bo",
-                "latex": "Bo",
-                "internal_code": "Bo"
-            },
-            "doc": "Boltzmann constant",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "Bo",
-            "network": "physical",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                -2,
-                2,
-                0,
-                1,
-                -1,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_132"
-            ]
-        },
-        "V_166": {
-            "aliases": {
-                "global_ID": " V_166",
-                "python": "R",
-                "cpp": "R",
-                "matlab": "R",
-                "latex": "R",
-                "internal_code": "R"
-            },
-            "doc": "gas constant",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "R",
-            "network": "physical",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "constant",
-            "units": [
-                -2,
-                2,
-                -1,
-                1,
-                -1,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_133"
-            ]
-        },
-        "V_168": {
-            "aliases": {
-                "global_ID": " V_168",
-                "python": "nt",
-                "cpp": "nt",
-                "matlab": "nt",
-                "latex": "n_t",
-                "internal_code": "nt"
-            },
-            "doc": "total number of species in a node",
-            "index_structures": [
-                "I_1"
-            ],
-            "label": "nt",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "secondaryState",
-            "units": [
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_134"
-            ]
-        },
-        "V_169": {
-            "aliases": {
-                "global_ID": " V_169",
-                "python": "xi",
-                "cpp": "xi",
-                "matlab": "xi",
-                "latex": "\\xi",
-                "internal_code": "xi"
-            },
-            "doc": "mole fraction",
-            "index_structures": [
-                "I_5"
-            ],
-            "label": "xi",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "secondaryState",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_135"
-            ]
-        },
-        "V_170": {
-            "aliases": {
-                "global_ID": " V_170",
-                "python": "nProd",
-                "cpp": "nProd",
-                "matlab": "nProd",
-                "latex": "{\\tilde n}",
-                "internal_code": "nProd"
-            },
-            "doc": "production term",
-            "index_structures": [
-                "I_5"
-            ],
-            "label": "nProd",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "conversion",
-            "units": [
-                -1,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_137"
-            ]
-        },
-        "V_171": {
-            "aliases": {
-                "global_ID": " V_171",
-                "python": "switch",
-                "cpp": "switch",
-                "matlab": "switch",
-                "latex": "s",
-                "internal_code": "switch"
-            },
-            "doc": "switches at to",
-            "index_structures": [],
-            "label": "switch",
-            "network": "control",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "algebraic",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_138"
-            ]
-        },
-        "V_172": {
-            "aliases": {
-                "global_ID": " V_172",
-                "python": "_switch",
-                "cpp": "_switch",
-                "matlab": "_switch",
-                "latex": "s",
-                "internal_code": "_switch"
-            },
-            "doc": "switches at to",
-            "index_structures": [],
-            "label": "_switch",
-            "network": "control >>> macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "get",
-            "units": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_139"
-            ]
-        },
-        "V_173": {
-            "aliases": {
-                "global_ID": " V_173",
-                "python": "fnc_AS_controlled",
-                "cpp": "fnc_AS_controlled",
-                "matlab": "fnc_AS_controlled",
-                "latex": "\\hat{n}^{c,controlled}",
-                "internal_code": "fnc_AS_controlled"
-            },
-            "doc": "switched flow",
-            "index_structures": [
-                "I_6"
-            ],
-            "label": "fnc_AS_controlled",
-            "network": "macroscopic",
-            "port_variable": "False",
-            "tokens": [],
-            "type": "transport",
-            "units": [
-                -1,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "equations": [
-                "E_141"
+                "E_E_74"
             ]
         }
     },
@@ -5170,7 +5200,7 @@
     },
     "version": "8",
     "Ontology_global_IDs": {
-        "variable": 174,
-        "equation": 143
+        "variable": 175,
+        "equation": 144
     }
 }

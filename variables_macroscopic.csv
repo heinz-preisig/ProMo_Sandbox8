@@ -1,20 +1,4 @@
 label,type,network,doc,units,IRI
-m,secondaryState,macroscopic,total mass,"[0, 0, 0, 1, 0, 0, 0, 0]",qudt:Mass
-c,secondaryState,macroscopic,molar composition,"[0, -3, 1, 0, 0, 0, 0, 0]",qudt:Concentration
-F_NS_AS,network,macroscopic,species related incidence matrix,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:F_NS_AS
-Ayz,geometry,macroscopic,cross sectional area yz,"[0, 2, 0, 0, 0, 0, 0, 0]",promo:Ayz
-Axz,geometry,macroscopic,cross sectional area xz,"[0, 2, 0, 0, 0, 0, 0, 0]",promo:Axz
-Axy,geometry,macroscopic,cross sectional area xy,"[0, 2, 0, 0, 0, 0, 0, 0]",promo:Axy
-D,differenceOperator,macroscopic,difference operator,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:D
-D_NS_AS,differenceOperator,macroscopic,difference operator for species topology,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:D_NS_AS
-fV,transport,macroscopic,volumetric flow,"[-1, 3, 0, 0, 0, 0, 0, 0]",qudt:VolumeFlowRate
-fnd_AS,transport,macroscopic,diffusional mass flow in a given stream,"[-1, 0, 1, 0, 0, 0, 0, 0]",promo:fnd_AS
-fnd,transport,macroscopic,net diffusional mass flow,"[-1, 0, 1, 0, 0, 0, 0, 0]",promo:fnd
-fHd_A,transport,macroscopic,enthalpy flow per diffusional mass stream,"[-3, 2, 0, 1, 0, 0, 0, 0]",promo:fHd_A
-fHd,transport,macroscopic,net enthalpy stream due to diffusion,"[-3, 2, 0, 1, 0, 0, 0, 0]",promo:fHd
-d,transport,macroscopic,flow direction of convectional flow,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:d
-c_AS,secondaryState,macroscopic,concentration in convectional flow,"[0, -3, 1, 0, 0, 0, 0, 0]",promo:c_AS
-fnc_AS,transport,macroscopic,molar convectional mass flow in the given stream,"[-1, 0, 1, 0, 0, 0, 0, 0]",qudt:MolarFlowRate
 fnc,transport,macroscopic,net molar convectional mass flow,"[-1, 0, 1, 0, 0, 0, 0, 0]",promo:fnc
 dndt,diffState,macroscopic,differential species balance,"[-1, 0, 1, 0, 0, 0, 0, 0]",promo:dndt
 fHc_A,transport,macroscopic,convective enthalpy flow for given stream,"[-3, 2, 0, 1, 0, 0, 0, 0]",promo:fHc_A
@@ -35,3 +19,20 @@ nt,secondaryState,macroscopic,total number of species in a node,"[0, 0, 1, 0, 0,
 xi,secondaryState,macroscopic,mole fraction,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:xi
 nProd,conversion,macroscopic,production term,"[-1, 0, 1, 0, 0, 0, 0, 0]",promo:nProd
 fnc_AS_controlled,transport,macroscopic,switched flow,"[-1, 0, 1, 0, 0, 0, 0, 0]",promo:fnc_AS_controlled
+gugus,secondaryState,macroscopic,,"[0, 0, 1, 0, 0, 0, 0, 0]",promo:gugus
+m,secondaryState,macroscopic,total mass,"[0, 0, 0, 1, 0, 0, 0, 0]",qudt:Mass
+c,secondaryState,macroscopic,molar composition,"[0, -3, 1, 0, 0, 0, 0, 0]",qudt:Concentration
+F_NS_AS,network,macroscopic,species related incidence matrix,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:F_NS_AS
+Ayz,geometry,macroscopic,cross sectional area yz,"[0, 2, 0, 0, 0, 0, 0, 0]",promo:Ayz
+Axz,geometry,macroscopic,cross sectional area xz,"[0, 2, 0, 0, 0, 0, 0, 0]",promo:Axz
+Axy,geometry,macroscopic,cross sectional area xy,"[0, 2, 0, 0, 0, 0, 0, 0]",promo:Axy
+D,differenceOperator,macroscopic,difference operator,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:D
+D_NS_AS,differenceOperator,macroscopic,difference operator for species topology,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:D_NS_AS
+fV,transport,macroscopic,volumetric flow,"[-1, 3, 0, 0, 0, 0, 0, 0]",qudt:VolumeFlowRate
+fnd_AS,transport,macroscopic,diffusional mass flow in a given stream,"[-1, 0, 1, 0, 0, 0, 0, 0]",promo:fnd_AS
+fnd,transport,macroscopic,net diffusional mass flow,"[-1, 0, 1, 0, 0, 0, 0, 0]",promo:fnd
+fHd_A,transport,macroscopic,enthalpy flow per diffusional mass stream,"[-3, 2, 0, 1, 0, 0, 0, 0]",promo:fHd_A
+fHd,transport,macroscopic,net enthalpy stream due to diffusion,"[-3, 2, 0, 1, 0, 0, 0, 0]",promo:fHd
+d,transport,macroscopic,flow direction of convectional flow,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:d
+c_AS,secondaryState,macroscopic,concentration in convectional flow,"[0, -3, 1, 0, 0, 0, 0, 0]",promo:c_AS
+fnc_AS,transport,macroscopic,molar convectional mass flow in the given stream,"[-1, 0, 1, 0, 0, 0, 0, 0]",qudt:MolarFlowRate

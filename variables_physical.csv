@@ -1,5 +1,4 @@
 label,type,network,doc,units,IRI
-P_N_A,projection,physical,projection from node to arc for arc properties,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:P_N_A
 r_x,frame,physical,x-coordinate,"[0, 1, 0, 0, 0, 0, 0, 0]",promo:r_x
 r_y,frame,physical,y-coordinate,"[0, 1, 0, 0, 0, 0, 0, 0]",promo:r_y
 r_z,frame,physical,z_coordinate,"[0, 1, 0, 0, 0, 0, 0, 0]",promo:r_z
@@ -7,6 +6,9 @@ U,state,physical,fundamental state -- internal energy,"[-2, 2, 0, 1, 0, 0, 0, 0]
 S,state,physical,fundamental state -- entropy,"[-2, 2, 0, 1, -1, 0, 0, 0]",qudt:Entropy
 V,state,physical,fundamental state -- volume,"[0, 3, 0, 0, 0, 0, 0, 0]",qudt:Volume
 n,state,physical,fundamental state -- molar mass,"[0, 0, 1, 0, 0, 0, 0, 0]",qudt:AmountOfSubstance
+P_N_NS,projection,physical,projection of nodes onto the node species,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:P_N_NS
+boz,constant,physical,Boltzmann constant,"[-2, 2, 0, 1, -1, 0, 0, 0]",promo:boz
+R,constant,physical,gas constant,"[-2, 2, -1, 1, -1, 0, 0, 0]",promo:R
 p,effort,physical,thermodynamic pressure,"[-2, -1, 0, 1, 0, 0, 0, 0]",qudt:Pressure
 T,effort,physical,temperature,"[0, 0, 0, 0, 1, 0, 0, 0]",qudt:Temperature
 chemPot,effort,physical,chemical potential,"[-2, 2, -1, 1, 0, 0, 0, 0]",qudt:ChemicalPotential
@@ -26,6 +28,4 @@ P_N_NK,projection,physical,projection node to node conversion,"[0, 0, 0, 0, 0, 0
 P_NS_KS,projection,physical,projection node species to conversion species,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:P_NS_KS
 P_A_NS,projection,physical,projection arc to node species for conductivity,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:P_A_NS
 P_NK_KS,projection,physical,projection node conversion to conversion species,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:P_NK_KS
-P_N_NS,projection,physical,projection of nodes onto the node species,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:P_N_NS
-Bo,constant,physical,Boltzmann constant,"[-2, 2, 0, 1, -1, 0, 0, 0]",promo:Bo
-R,constant,physical,gas constant,"[-2, 2, -1, 1, -1, 0, 0, 0]",promo:R
+P_N_A,projection,physical,projection from node to arc for arc properties,"[0, 0, 0, 0, 0, 0, 0, 0]",promo:P_N_A

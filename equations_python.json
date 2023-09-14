@@ -697,7 +697,7 @@
   },
   "132": {
     "variable_ID": 165,
-    "lhs": "Bo",
+    "lhs": "boz",
     "network": "physical",
     "rhs": "np.ones(np.shape(S)), value"
   },
@@ -705,7 +705,7 @@
     "variable_ID": 166,
     "lhs": "R",
     "network": "physical",
-    "rhs": "np.multiply(Avogadro, Bo)"
+    "rhs": "np.multiply(Avogadro, boz)"
   },
   "134": {
     "variable_ID": 168,
