@@ -11,9 +11,6 @@
         "latex": "\\#",
         "internal_code": "value"
       },
-      "compiled_lhs": {
-        "latex": "{\\#}{_{}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "numerical value",
       "equations": {},
@@ -44,9 +41,6 @@
         "matlab": "r_x",
         "latex": "{r_x}",
         "internal_code": "r_x"
-      },
-      "compiled_lhs": {
-        "latex": "{{r_x}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "x-coordinate",
@@ -80,11 +74,6 @@
         "matlab": "fnc",
         "latex": "{\\hat{n}^c}",
         "internal_code": "fnc"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_100",
-        "matlab": "fnc(N)",
-        "latex": "{{\\hat{n}^c}}{_{{N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "net molar convectional mass flow",
@@ -140,11 +129,6 @@
         "matlab": "dndt",
         "latex": "\\dot{n}",
         "internal_code": "dndt"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_101",
-        "matlab": "dndt(N)",
-        "latex": "{\\dot{n}}{_{{N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "differential species balance",
@@ -224,11 +208,6 @@
         "latex": "{\\hat{H}^c}",
         "internal_code": "fHc_A"
       },
-      "compiled_lhs": {
-        "global_ID": "V_102",
-        "matlab": "fHc_A(A)",
-        "latex": "{{\\hat{H}^c}}{_{A}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "convective enthalpy flow for given stream",
       "equations": {
@@ -285,11 +264,6 @@
         "latex": "{\\hat{H}^c}",
         "internal_code": "fHc"
       },
-      "compiled_lhs": {
-        "global_ID": "V_103",
-        "matlab": "fHc(N)",
-        "latex": "{{\\hat{H}^c}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "net convectional enthalpy stream",
       "equations": {
@@ -344,11 +318,6 @@
         "matlab": "fw_A",
         "latex": "{\\hat{w}}",
         "internal_code": "fw_A"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_104",
-        "matlab": "fw_A(A)",
-        "latex": "{{\\hat{w}}}{_{A}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "sample work stream",
@@ -405,11 +374,6 @@
         "latex": "{\\hat{w}}",
         "internal_code": "fw"
       },
-      "compiled_lhs": {
-        "global_ID": "V_105",
-        "matlab": "fw(N)",
-        "latex": "{{\\hat{w}}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "net work stream",
       "equations": {
@@ -464,11 +428,6 @@
         "matlab": "fq_A_x",
         "latex": "{\\hat{q}_{x}}",
         "internal_code": "fq_A_x"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_106",
-        "matlab": "fq_A_x(A)",
-        "latex": "{{\\hat{q}_{x}}}{_{A}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "heat flow in x-direction for given stream",
@@ -527,11 +486,6 @@
         "latex": "{\\hat{q}}",
         "internal_code": "fq"
       },
-      "compiled_lhs": {
-        "global_ID": "V_107",
-        "matlab": "fq(N)",
-        "latex": "{{\\hat{q}}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "net heat flow",
       "equations": {
@@ -586,11 +540,6 @@
         "matlab": "dHdt",
         "latex": "{\\dot{H}}",
         "internal_code": "dHdt"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_108",
-        "matlab": "dHdt(N)",
-        "latex": "{{\\dot{H}}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "differential enthalpy balance",
@@ -649,11 +598,6 @@
         "latex": "{H^o}",
         "internal_code": "Ho"
       },
-      "compiled_lhs": {
-        "global_ID": "V_109",
-        "matlab": "Ho(N)",
-        "latex": "{{H^o}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "initial enthalpy",
       "equations": {
@@ -709,9 +653,6 @@
         "latex": "{r_y}",
         "internal_code": "r_y"
       },
-      "compiled_lhs": {
-        "latex": "{{r_y}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "y-coordinate",
       "equations": {},
@@ -744,11 +685,6 @@
         "matlab": "no",
         "latex": "{n^o}",
         "internal_code": "no"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_110",
-        "matlab": "no(N)",
-        "latex": "{{n^o}}{_{{N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "initial species",
@@ -805,11 +741,6 @@
         "latex": "\\xi",
         "internal_code": "additive"
       },
-      "compiled_lhs": {
-        "global_ID": "V_112",
-        "matlab": "additive",
-        "latex": "{\\xi}{_{}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "fraction of additives",
       "equations": {
@@ -862,11 +793,6 @@
         "matlab": "i",
         "latex": "I",
         "internal_code": "i"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_113",
-        "matlab": "i(N)",
-        "latex": "{I}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "electrical current definition",
@@ -923,11 +849,6 @@
         "latex": "I",
         "internal_code": "_i"
       },
-      "compiled_lhs": {
-        "global_ID": "V_114",
-        "matlab": "_i(N)",
-        "latex": "{I}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable i to interface macroscopic >>> material",
       "equations": {
@@ -981,11 +902,6 @@
         "matlab": "elResist",
         "latex": "{R^e}",
         "internal_code": "elResist"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_115",
-        "matlab": "elResist(N)",
-        "latex": "{{R^e}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "electrical resistant",
@@ -1063,11 +979,6 @@
         "latex": "{k^{e,\\xi}}",
         "internal_code": "elConductC"
       },
-      "compiled_lhs": {
-        "global_ID": "V_116",
-        "matlab": "elConductC(N)",
-        "latex": "{{k^{e,\\xi}}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "simple model for the electrical conductivity as a function of the additive",
       "equations": {
@@ -1123,11 +1034,6 @@
         "latex": "{R^e}",
         "internal_code": "_elConductC"
       },
-      "compiled_lhs": {
-        "global_ID": "V_117",
-        "matlab": "_elConductC(N)",
-        "latex": "{{R^e}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable elConductC to interface material >>> macroscopic",
       "equations": {
@@ -1181,11 +1087,6 @@
         "matlab": "dUedt",
         "latex": "{\\dot{U}^e}",
         "internal_code": "dUedt"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_118",
-        "matlab": "dUedt(N)",
-        "latex": "{{\\dot{U}^e}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "Kirkhoffs first law",
@@ -1283,11 +1184,6 @@
         "latex": "I",
         "internal_code": "_i"
       },
-      "compiled_lhs": {
-        "global_ID": "V_119",
-        "matlab": "_i(N)",
-        "latex": "{I}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable i to interface macroscopic >>> control",
       "equations": {
@@ -1342,9 +1238,6 @@
         "latex": "{r_z}",
         "internal_code": "r_z"
       },
-      "compiled_lhs": {
-        "latex": "{{r_z}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "z_coordinate",
       "equations": {},
@@ -1377,11 +1270,6 @@
         "matlab": "_additive",
         "latex": "\\mapsto \\xi",
         "internal_code": "_additive"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_124",
-        "matlab": "_additive",
-        "latex": "{\\mapsto \\xi}{_{}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable additive to interface material >>> control",
@@ -1434,11 +1322,6 @@
         "matlab": "_T",
         "latex": "T",
         "internal_code": "_T"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_125",
-        "matlab": "_T(N)",
-        "latex": "{T}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable T to interface macroscopic >>> control",
@@ -1493,11 +1376,6 @@
         "matlab": "intensities",
         "latex": "\\phi",
         "internal_code": "intensities"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_126",
-        "matlab": "intensities",
-        "latex": "{\\phi}{_{}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "collected intensities",
@@ -1555,9 +1433,6 @@
         "latex": "{1}",
         "internal_code": "one_S"
       },
-      "compiled_lhs": {
-        "latex": "{{1}}{_{S}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "a vector of ones with the length of the ordinal number of S",
       "equations": {},
@@ -1590,11 +1465,6 @@
         "matlab": "nTotal",
         "latex": "{n^t}",
         "internal_code": "nTotal"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_128",
-        "matlab": "nTotal(N)",
-        "latex": "{{n^t}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "total number of moles",
@@ -1651,9 +1521,6 @@
         "latex": "A",
         "internal_code": "A"
       },
-      "compiled_lhs": {
-        "latex": "{A}{_{N, D}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "dynamic matrix",
       "equations": {},
@@ -1688,9 +1555,6 @@
         "latex": "U",
         "internal_code": "U"
       },
-      "compiled_lhs": {
-        "latex": "{U}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "fundamental state -- internal energy",
       "equations": {},
@@ -1723,9 +1587,6 @@
         "matlab": "B",
         "latex": "B",
         "internal_code": "B"
-      },
-      "compiled_lhs": {
-        "latex": "{B}{_{A, D}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "input matrix",
@@ -1761,9 +1622,6 @@
         "latex": "C",
         "internal_code": "C"
       },
-      "compiled_lhs": {
-        "latex": "{C}{_{N, A}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "measurement matrix",
       "equations": {},
@@ -1798,9 +1656,6 @@
         "latex": "D",
         "internal_code": "D"
       },
-      "compiled_lhs": {
-        "latex": "{D}{_{A}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "diagonal event matrix (no dimensional problems)",
       "equations": {},
@@ -1833,11 +1688,6 @@
         "matlab": "setPoint",
         "latex": "{y^o}",
         "internal_code": "setPoint"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_133",
-        "matlab": "setPoint(A)",
-        "latex": "{{y^o}}{_{A}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "set point",
@@ -1894,9 +1744,6 @@
         "latex": "m",
         "internal_code": "meas"
       },
-      "compiled_lhs": {
-        "latex": "{m}{_{A}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "measurements",
       "equations": {},
@@ -1929,11 +1776,6 @@
         "matlab": "e",
         "latex": "e",
         "internal_code": "e"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_135",
-        "matlab": "e(A)",
-        "latex": "{e}{_{A}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "control error",
@@ -1989,11 +1831,6 @@
         "matlab": "x",
         "latex": "x",
         "internal_code": "x"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_136",
-        "matlab": "x(N)",
-        "latex": "{x}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "state",
@@ -2053,11 +1890,6 @@
         "latex": "x_o",
         "internal_code": "xo"
       },
-      "compiled_lhs": {
-        "global_ID": "V_137",
-        "matlab": "xo(N)",
-        "latex": "{x_o}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "initial state",
       "equations": {
@@ -2112,11 +1944,6 @@
         "matlab": "dxdt",
         "latex": "{\\dot{x}}",
         "internal_code": "dxdt"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_138",
-        "matlab": "dxdt(D)",
-        "latex": "{{\\dot{x}}}{_{D}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "differential state (ABCD) model",
@@ -2175,9 +2002,6 @@
         "latex": "1",
         "internal_code": "I_N_D"
       },
-      "compiled_lhs": {
-        "latex": "{1}{_{N, D}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "space transformation D to N",
       "equations": {},
@@ -2212,9 +2036,6 @@
         "latex": "S",
         "internal_code": "S"
       },
-      "compiled_lhs": {
-        "latex": "{S}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "fundamental state -- entropy",
       "equations": {},
@@ -2247,11 +2068,6 @@
         "matlab": "_additive",
         "latex": "\\xi",
         "internal_code": "_additive"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_140",
-        "matlab": "_additive",
-        "latex": "{\\xi}{_{}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable additive to interface material >>> macroscopic",
@@ -2304,11 +2120,6 @@
         "matlab": "Imeasured",
         "latex": "{\\check{I}}",
         "internal_code": "Imeasured"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_141",
-        "matlab": "Imeasured(N)",
-        "latex": "{{\\check{I}}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "measured current",
@@ -2364,11 +2175,6 @@
         "latex": "Ue",
         "internal_code": "_Ue"
       },
-      "compiled_lhs": {
-        "global_ID": "V_142",
-        "matlab": "_Ue(N)",
-        "latex": "{Ue}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable Ue to interface macroscopic >>> control",
       "equations": {
@@ -2422,11 +2228,6 @@
         "matlab": "UeMeasured",
         "latex": "{\\check{U}^e}",
         "internal_code": "UeMeasured"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_143",
-        "matlab": "UeMeasured(N)",
-        "latex": "{{\\check{U}^e}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "measured electrical potential",
@@ -2482,11 +2283,6 @@
         "latex": "{\\check{\\xi}}",
         "internal_code": "addMeasured"
       },
-      "compiled_lhs": {
-        "global_ID": "V_144",
-        "matlab": "addMeasured",
-        "latex": "{{\\check{\\xi}}}{_{}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "measured additive fraction",
       "equations": {
@@ -2538,11 +2334,6 @@
         "matlab": "RComputed",
         "latex": "R",
         "internal_code": "RComputed"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_145",
-        "matlab": "RComputed(N)",
-        "latex": "{R}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "measured resistance ",
@@ -2599,11 +2390,6 @@
         "latex": "S",
         "internal_code": "store"
       },
-      "compiled_lhs": {
-        "global_ID": "V_146",
-        "matlab": "store",
-        "latex": "{S}{_{}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "quantities to be stored",
       "equations": {
@@ -2659,9 +2445,6 @@
         "latex": "P",
         "internal_code": "P_NK"
       },
-      "compiled_lhs": {
-        "latex": "{P}{_{{N K}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "reactions per node",
       "equations": {},
@@ -2695,9 +2478,6 @@
         "latex": "V",
         "internal_code": "V"
       },
-      "compiled_lhs": {
-        "latex": "{V}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "fundamental state -- volume",
       "equations": {},
@@ -2730,11 +2510,6 @@
         "matlab": "c",
         "latex": "c",
         "internal_code": "c"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_151",
-        "matlab": "c(N, K)",
-        "latex": "{c}{_{{N K}, {K S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "concentration matrix reaction per node and species per reaction",
@@ -2793,11 +2568,6 @@
         "latex": "{c^o}",
         "internal_code": "co"
       },
-      "compiled_lhs": {
-        "global_ID": "V_152",
-        "matlab": "co(N, K)",
-        "latex": "{{c^o}}{_{{N K}, {K S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "norming concentration",
       "equations": {
@@ -2854,11 +2624,6 @@
         "latex": "x",
         "internal_code": "x"
       },
-      "compiled_lhs": {
-        "global_ID": "V_153",
-        "matlab": "x(N, K)",
-        "latex": "{x}{_{{N K}, {K S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "matrix of normed, dimensionless mole fractions ",
       "equations": {
@@ -2914,11 +2679,6 @@
         "matlab": "y",
         "latex": "y",
         "internal_code": "y"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_154",
-        "matlab": "y(A)",
-        "latex": "{y}{_{A}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "output equation",
@@ -2977,9 +2737,6 @@
         "latex": "B",
         "internal_code": "Boltzmann"
       },
-      "compiled_lhs": {
-        "latex": "{B}{_{}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "Boltzmann constant",
       "equations": {},
@@ -3010,11 +2767,6 @@
         "matlab": "GasConstant",
         "latex": "R",
         "internal_code": "GasConstant"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_157",
-        "matlab": "GasConstant",
-        "latex": "{R}{_{}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "gas constant",
@@ -3069,9 +2821,6 @@
         "latex": "N",
         "internal_code": "N_K_KS"
       },
-      "compiled_lhs": {
-        "latex": "{N}{_{K, {K S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "stoichiometry",
       "equations": {},
@@ -3105,11 +2854,6 @@
         "matlab": "N_NK_KS",
         "latex": "N",
         "internal_code": "N_NK_KS"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_159",
-        "matlab": "N_NK_KS(N, K)",
-        "latex": "{N}{_{{N K}, {K S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "extended stoichiometric matrix",
@@ -3166,11 +2910,6 @@
         "matlab": "n",
         "latex": "n",
         "internal_code": "n"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_16",
-        "matlab": "n(N)",
-        "latex": "{n}{_{{N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "fundamental state -- molar mass",
@@ -3230,11 +2969,6 @@
         "latex": "\\phi",
         "internal_code": "phi"
       },
-      "compiled_lhs": {
-        "global_ID": "V_160",
-        "matlab": "phi(N)",
-        "latex": "{\\phi}{_{{N K}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "probability function for reactions",
       "equations": {
@@ -3290,9 +3024,6 @@
         "latex": "P",
         "internal_code": "P_N_NS"
       },
-      "compiled_lhs": {
-        "latex": "{P}{_{N, {N S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "projection of nodes onto the node species",
       "equations": {},
@@ -3326,11 +3057,6 @@
         "matlab": "nProd",
         "latex": "\\tilde{n}",
         "internal_code": "nProd"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_163",
-        "matlab": "nProd(N)",
-        "latex": "{\\tilde{n}}{_{{N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "the species production term",
@@ -3391,11 +3117,6 @@
         "latex": "\\tilde{n}",
         "internal_code": "_nProd"
       },
-      "compiled_lhs": {
-        "global_ID": "V_164",
-        "matlab": "_nProd(N)",
-        "latex": "{\\tilde{n}}{_{{N S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable nProd to interface reactions >>> macroscopic",
       "equations": {
@@ -3449,11 +3170,6 @@
         "matlab": "boz",
         "latex": "boz",
         "internal_code": "boz"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_165",
-        "matlab": "boz(N)",
-        "latex": "{boz}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "Boltzmann constant",
@@ -3510,11 +3226,6 @@
         "latex": "R",
         "internal_code": "R"
       },
-      "compiled_lhs": {
-        "global_ID": "V_166",
-        "matlab": "R(N)",
-        "latex": "{R}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "gas constant",
       "equations": {
@@ -3569,11 +3280,6 @@
         "matlab": "nt",
         "latex": "n_t",
         "internal_code": "nt"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_168",
-        "matlab": "nt(N)",
-        "latex": "{n_t}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "total number of species in a node",
@@ -3630,11 +3336,6 @@
         "latex": "\\xi",
         "internal_code": "xi"
       },
-      "compiled_lhs": {
-        "global_ID": "V_169",
-        "matlab": "xi(N)",
-        "latex": "{\\xi}{_{{N S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "mole fraction",
       "equations": {
@@ -3689,11 +3390,6 @@
         "matlab": "p",
         "latex": "p",
         "internal_code": "p"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_17",
-        "matlab": "p(N)",
-        "latex": "{p}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "thermodynamic pressure",
@@ -3750,11 +3446,6 @@
         "latex": "{\\tilde n}",
         "internal_code": "nProd"
       },
-      "compiled_lhs": {
-        "global_ID": "V_170",
-        "matlab": "nProd(N)",
-        "latex": "{{\\tilde n}}{_{{N S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "production term",
       "equations": {
@@ -3808,11 +3499,6 @@
         "matlab": "switch",
         "latex": "s",
         "internal_code": "switch"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_171",
-        "matlab": "switch",
-        "latex": "{s}{_{}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "switches at to",
@@ -3868,11 +3554,6 @@
         "latex": "s",
         "internal_code": "_switch"
       },
-      "compiled_lhs": {
-        "global_ID": "V_172",
-        "matlab": "_switch",
-        "latex": "{s}{_{}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "switches at to",
       "equations": {
@@ -3925,11 +3606,6 @@
         "latex": "\\hat{n}^{c,controlled}",
         "internal_code": "fnc_AS_controlled"
       },
-      "compiled_lhs": {
-        "global_ID": "V_173",
-        "matlab": "fnc_AS_controlled(A)",
-        "latex": "{\\hat{n}^{c,controlled}}{_{{A S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "switched flow",
       "equations": {
@@ -3975,6 +3651,58 @@
         0
       ]
     },
+    "V_175": {
+      "IRI": "promo:gugus",
+      "aliases": {
+        "matlab": "gugus",
+        "latex": "gugus",
+        "internal_code": "gugus",
+        "global_ID": "V_175"
+      },
+      "created": "2023-09-14 11:35:59",
+      "doc": "",
+      "equations": {
+        "E_144": {
+          "rhs": {
+            "global_ID": "V_16 O_0 V_16",
+            "latex": "{n}{_{{N S}}}  + {n}{_{{N S}}}",
+            "matlab": "n + n"
+          },
+          "type": "generic",
+          "doc": "",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_16"
+          ],
+          "created": "2023-09-09 12:16:39",
+          "modified": "2023-09-09 12:16:39",
+          "lhs": {
+            "global_ID": "V_175",
+            "latex": "{gugus}{_{{N S}}}",
+            "matlab": "gugus"
+          }
+        }
+      },
+      "index_structures": [
+        "I_5"
+      ],
+      "label": "gugus",
+      "modified": "2023-09-14 11:35:59",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
     "V_176": {
       "IRI": "promo:g",
       "aliases": {
@@ -3983,19 +3711,17 @@
         "internal_code": "g",
         "global_ID": "V_176"
       },
-      "compiled_lhs": {
-        "global_ID": "V_176",
-        "latex": "{g}{_{{N S}}}",
-        "matlab": " g"
-      },
       "created": "2023-09-19 16:19:24",
       "doc": "",
       "equations": {
         "E_145": {
+          "lhs": {
+            "global_ID": "V_176",
+            "latex": "{g}{_{{N S}}}"
+          },
           "rhs": {
             "global_ID": "V_16 O_0 V_16",
-            "latex": "{n}{_{{N S}}}  + {n}{_{{N S}}}",
-            "matlab": " n +  n"
+            "latex": "{n}{_{{N S}}}  + {n}{_{{N S}}}"
           },
           "type": "generic",
           "doc": "",
@@ -4004,12 +3730,7 @@
             "V_16"
           ],
           "created": "2023-09-19 16:18:42",
-          "modified": "2023-09-19 16:18:42",
-          "lhs": {
-            "global_ID": "V_176",
-            "latex": "{g}{_{{N S}}}",
-            "matlab": " g"
-          }
+          "modified": "2023-09-19 16:18:42"
         }
       },
       "index_structures": [
@@ -4017,6 +3738,54 @@
       ],
       "label": "g",
       "modified": "2023-09-19 16:19:24",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_178": {
+      "IRI": "promo:gugu",
+      "aliases": {
+        "matlab": "gugu",
+        "latex": "gugu",
+        "internal_code": "gugu",
+        "global_ID": "V_178"
+      },
+      "created": "2023-09-20 10:11:53",
+      "doc": "",
+      "equations": {
+        "E_147": {
+          "lhs": {
+            "global_ID": "V_178"
+          },
+          "rhs": {
+            "global_ID": " V_16 O_0 V_16"
+          },
+          "type": "generic",
+          "doc": "",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_16"
+          ],
+          "created": "2023-09-20 10:11:53",
+          "modified": "2023-09-20 10:11:53"
+        }
+      },
+      "index_structures": [
+        "I_5"
+      ],
+      "label": "gugu",
+      "modified": "2023-09-20 10:11:53",
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
@@ -4041,11 +3810,6 @@
         "matlab": "T",
         "latex": "T",
         "internal_code": "T"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_18",
-        "matlab": "T(N)",
-        "latex": "{T}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "temperature",
@@ -4101,11 +3865,6 @@
         "matlab": "chemPot",
         "latex": "\\mu",
         "internal_code": "chemPot"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_19",
-        "matlab": "chemPot(N)",
-        "latex": "{\\mu}{_{{N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "chemical potential",
@@ -4184,11 +3943,6 @@
         "latex": "1",
         "internal_code": "one"
       },
-      "compiled_lhs": {
-        "global_ID": "V_2",
-        "matlab": "one",
-        "latex": "{1}{_{}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "numerical value one",
       "equations": {
@@ -4240,11 +3994,6 @@
         "matlab": "H",
         "latex": "H",
         "internal_code": "H"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_20",
-        "matlab": "H(N)",
-        "latex": "{H}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "enthalpy",
@@ -4325,11 +4074,6 @@
         "latex": "A",
         "internal_code": "A"
       },
-      "compiled_lhs": {
-        "global_ID": "V_21",
-        "matlab": "A(N)",
-        "latex": "{A}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "Helmholtz energy",
       "equations": {
@@ -4385,11 +4129,6 @@
         "matlab": "G",
         "latex": "G",
         "internal_code": "G"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_22",
-        "matlab": "G(N)",
-        "latex": "{G}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "Gibbs free energy",
@@ -4449,9 +4188,6 @@
         "latex": "C",
         "internal_code": "charge"
       },
-      "compiled_lhs": {
-        "latex": "{C}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "fundamental state -- charge",
       "equations": {},
@@ -4485,9 +4221,6 @@
         "latex": "{A^v}",
         "internal_code": "Avogadro"
       },
-      "compiled_lhs": {
-        "latex": "{{A^v}}{_{}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "Avogadro number",
       "equations": {},
@@ -4518,11 +4251,6 @@
         "matlab": "Ue",
         "latex": "Ue",
         "internal_code": "Ue"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_27",
-        "matlab": "Ue(N)",
-        "latex": "{Ue}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "electrical potential -- voltage",
@@ -4600,11 +4328,6 @@
         "latex": "{v_x}",
         "internal_code": "v_x"
       },
-      "compiled_lhs": {
-        "global_ID": "V_28",
-        "matlab": "v_x(N)",
-        "latex": "{{v_x}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "velocity in x-direction",
       "equations": {
@@ -4659,11 +4382,6 @@
         "matlab": "v_y",
         "latex": "{v_y}",
         "internal_code": "v_y"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_29",
-        "matlab": "v_y(N)",
-        "latex": "{{v_y}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "velocity in y-direction",
@@ -4720,11 +4438,6 @@
         "latex": "0",
         "internal_code": "zero"
       },
-      "compiled_lhs": {
-        "global_ID": "V_3",
-        "matlab": "zero",
-        "latex": "{0}{_{}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "numerical value zero",
       "equations": {
@@ -4777,15 +4490,15 @@
         "latex": "{v_z}",
         "internal_code": "v_z"
       },
-      "compiled_lhs": {
-        "global_ID": "V_30",
-        "matlab": "v_z(N)",
-        "latex": "{{v_z}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "velocity in z-direction",
       "equations": {
         "E_17": {
+          "lhs": {
+            "global_ID": "V_30",
+            "matlab": "v_z(N)",
+            "latex": "{{v_z}}{_{N}}"
+          },
           "rhs": {
             "global_ID": " O_7 D_0 V_12 D_7 V_5 D_1",
             "matlab": null,
@@ -4799,12 +4512,7 @@
             "V_5"
           ],
           "created": "2023-09-06 09:59:12",
-          "modified": "2023-09-20 09:57:11",
-          "lhs": {
-            "global_ID": "V_30",
-            "matlab": "v_z(N)",
-            "latex": "{{v_z}}{_{N}}"
-          }
+          "modified": "2023-09-20 09:57:11"
         }
       },
       "index_structures": [
@@ -4836,9 +4544,6 @@
         "matlab": "P_NS_AS",
         "latex": "P",
         "internal_code": "P_NS_AS"
-      },
-      "compiled_lhs": {
-        "latex": "{P}{_{{N S}, {A S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "projection node species to arc species",
@@ -4874,9 +4579,6 @@
         "latex": "P",
         "internal_code": "P_K_NK"
       },
-      "compiled_lhs": {
-        "latex": "{P}{_{K, {N K}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "projection of conversion to node conversion",
       "equations": {},
@@ -4910,9 +4612,6 @@
         "matlab": "P_S_NS",
         "latex": "P",
         "internal_code": "P_S_NS"
-      },
-      "compiled_lhs": {
-        "latex": "{P}{_{S, {N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "projection species to node species",
@@ -4948,9 +4647,6 @@
         "latex": "P",
         "internal_code": "P_N_NK"
       },
-      "compiled_lhs": {
-        "latex": "{P}{_{N, {N K}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "projection node to node conversion",
       "equations": {},
@@ -4984,9 +4680,6 @@
         "matlab": "P_NS_KS",
         "latex": "P",
         "internal_code": "P_NS_KS"
-      },
-      "compiled_lhs": {
-        "latex": "{P}{_{{N S}, {K S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "projection node species to conversion species",
@@ -5022,9 +4715,6 @@
         "latex": "P",
         "internal_code": "P_A_NS"
       },
-      "compiled_lhs": {
-        "latex": "{P}{_{A, {N S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "projection arc to node species for conductivity",
       "equations": {},
@@ -5059,9 +4749,6 @@
         "latex": "{K^o}",
         "internal_code": "Ko"
       },
-      "compiled_lhs": {
-        "latex": "{{K^o}}{_{K}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "Arrhenius frequency factor",
       "equations": {},
@@ -5094,11 +4781,6 @@
         "matlab": "onehalf",
         "latex": "0.5",
         "internal_code": "onehalf"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_4",
-        "matlab": "onehalf",
-        "latex": "{0.5}{_{}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "numerical value one half",
@@ -5152,9 +4834,6 @@
         "latex": "\\lambda",
         "internal_code": "Mm"
       },
-      "compiled_lhs": {
-        "latex": "{\\lambda}{_{S}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "species molecular mass",
       "equations": {},
@@ -5187,11 +4866,6 @@
         "matlab": "_Mm",
         "latex": "\\lambda",
         "internal_code": "_Mm"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_41",
-        "matlab": "_Mm(S)",
-        "latex": "{\\lambda}{_{S}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable Mm to interface material >>> macroscopic",
@@ -5246,11 +4920,6 @@
         "matlab": "Cp",
         "latex": "{C_p}",
         "internal_code": "Cp"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_42",
-        "matlab": "Cp(N)",
-        "latex": "{{C_p}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "total heat capacity at constant pressure",
@@ -5307,11 +4976,6 @@
         "latex": "{C_V}",
         "internal_code": "Cv"
       },
-      "compiled_lhs": {
-        "global_ID": "V_43",
-        "matlab": "Cv(N)",
-        "latex": "{{C_V}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "total heat capacity at constant volume",
       "equations": {
@@ -5366,11 +5030,6 @@
         "matlab": "kq_x",
         "latex": "{k^q_x}",
         "internal_code": "kq_x"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_44",
-        "matlab": "kq_x(N)",
-        "latex": "{{k^q_x}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "thermal conductivity in x-direction",
@@ -5429,11 +5088,6 @@
         "latex": "{k^q_y}",
         "internal_code": "kq_y"
       },
-      "compiled_lhs": {
-        "global_ID": "V_45",
-        "matlab": "kq_y(N)",
-        "latex": "{{k^q_y}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "thermal conductivity in y-direction",
       "equations": {
@@ -5490,11 +5144,6 @@
         "matlab": "kq_z",
         "latex": "{k^q_z}",
         "internal_code": "kq_z"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_46",
-        "matlab": "kq_z(N)",
-        "latex": "{{k^q_z}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "thermal conductivity in z-direction'",
@@ -5553,11 +5202,6 @@
         "latex": "{k^q}",
         "internal_code": "kq"
       },
-      "compiled_lhs": {
-        "global_ID": "V_47",
-        "matlab": "kq(N)",
-        "latex": "{{k^q}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "thermal conductivity",
       "equations": {
@@ -5613,11 +5257,6 @@
         "matlab": "kc_x",
         "latex": "{k^c_x}",
         "internal_code": "kc_x"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_48",
-        "matlab": "kc_x(N)",
-        "latex": "{{k^c_x}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "convective mass conductivity in x-direction",
@@ -5678,11 +5317,6 @@
         "latex": "{k^c_y}",
         "internal_code": "kc_y"
       },
-      "compiled_lhs": {
-        "global_ID": "V_49",
-        "matlab": "kc_y(N)",
-        "latex": "{{k^c_y}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "convective mass conductivity in y-direction",
       "equations": {
@@ -5742,9 +5376,6 @@
         "latex": "t",
         "internal_code": "t"
       },
-      "compiled_lhs": {
-        "latex": "{t}{_{}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "time",
       "equations": {},
@@ -5775,11 +5406,6 @@
         "matlab": "kc_z",
         "latex": "{k^c_z}",
         "internal_code": "kc_z"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_50",
-        "matlab": "kc_z(N)",
-        "latex": "{{k^c_z}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "convective mass conductivity in z-direction",
@@ -5840,11 +5466,6 @@
         "latex": "{k^c}",
         "internal_code": "kc"
       },
-      "compiled_lhs": {
-        "global_ID": "V_51",
-        "matlab": "kc(N)",
-        "latex": "{{k^c}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "convective mass conductivity",
       "equations": {
@@ -5900,11 +5521,6 @@
         "matlab": "kd_x",
         "latex": "{k^d_x}",
         "internal_code": "kd_x"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_52",
-        "matlab": "kd_x(N)",
-        "latex": "{{k^d_x}}{_{{N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "diffusional mass conductivity in x-direction",
@@ -5963,11 +5579,6 @@
         "latex": "{k^d_y}",
         "internal_code": "kd_y"
       },
-      "compiled_lhs": {
-        "global_ID": "V_53",
-        "matlab": "kd_y(N)",
-        "latex": "{{k^d_y}}{_{{N S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "diffusional mass conductivity in y-direction",
       "equations": {
@@ -6024,11 +5635,6 @@
         "matlab": "kd_z",
         "latex": "{k^d_z}",
         "internal_code": "kd_z"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_54",
-        "matlab": "kd_z(N)",
-        "latex": "{{k^d_z}}{_{{N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "diffusional mass conductivity in z-direction",
@@ -6087,11 +5693,6 @@
         "latex": "{k^d}",
         "internal_code": "kd"
       },
-      "compiled_lhs": {
-        "global_ID": "V_55",
-        "matlab": "kd(N)",
-        "latex": "{{k^d}}{_{{N S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "diffusional mass conductivity",
       "equations": {
@@ -6148,11 +5749,6 @@
         "latex": "h",
         "internal_code": "h"
       },
-      "compiled_lhs": {
-        "global_ID": "V_56",
-        "matlab": "h(N)",
-        "latex": "{h}{_{{N S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "partial molar enthalpies",
       "equations": {
@@ -6207,11 +5803,6 @@
         "matlab": "m",
         "latex": "m",
         "internal_code": "m"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_57",
-        "matlab": "m(N)",
-        "latex": "{m}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "total mass",
@@ -6268,11 +5859,6 @@
         "latex": "m",
         "internal_code": "_m"
       },
-      "compiled_lhs": {
-        "global_ID": "V_58",
-        "matlab": "_m(N)",
-        "latex": "{m}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable m to interface macroscopic >>> material",
       "equations": {
@@ -6326,11 +5912,6 @@
         "matlab": "density",
         "latex": "\\rho",
         "internal_code": "density"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_59",
-        "matlab": "density(N)",
-        "latex": "{\\rho}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "density",
@@ -6387,11 +5968,6 @@
         "latex": "{t^o}",
         "internal_code": "to"
       },
-      "compiled_lhs": {
-        "global_ID": "V_6",
-        "matlab": "to",
-        "latex": "{{t^o}}{_{}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "starting time",
       "equations": {
@@ -6444,11 +6020,6 @@
         "matlab": "T_NK",
         "latex": "T",
         "internal_code": "T_NK"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_60",
-        "matlab": "T_NK(N)",
-        "latex": "{T}{_{{N K}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "temperature of the reactive system",
@@ -6505,11 +6076,6 @@
         "latex": "{E^a}",
         "internal_code": "Ea"
       },
-      "compiled_lhs": {
-        "global_ID": "V_62",
-        "matlab": "Ea(N)",
-        "latex": "{{E^a}}{_{{N K}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "Arrhenius activation energy",
       "equations": {
@@ -6565,11 +6131,6 @@
         "matlab": "K_NK",
         "latex": "K",
         "internal_code": "K_NK"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_63",
-        "matlab": "K_NK(N)",
-        "latex": "{K}{_{{N K}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "Arrhenius reaction 'constant'",
@@ -6628,9 +6189,6 @@
         "latex": "P",
         "internal_code": "P_NK_KS"
       },
-      "compiled_lhs": {
-        "latex": "{P}{_{{N K}, {K S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "projection node conversion to conversion species",
       "equations": {},
@@ -6664,11 +6222,6 @@
         "matlab": "c",
         "latex": "c",
         "internal_code": "c"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_66",
-        "matlab": "c(N)",
-        "latex": "{c}{_{{N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "molar composition",
@@ -6725,11 +6278,6 @@
         "latex": "c",
         "internal_code": "_c"
       },
-      "compiled_lhs": {
-        "global_ID": "V_67",
-        "matlab": "_c(N)",
-        "latex": "{c}{_{{N S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable c to interface macroscopic >>> reactions",
       "equations": {
@@ -6784,11 +6332,6 @@
         "latex": "{t^e}",
         "internal_code": "te"
       },
-      "compiled_lhs": {
-        "global_ID": "V_7",
-        "matlab": "te",
-        "latex": "{{t^e}}{_{}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "end time",
       "equations": {
@@ -6842,9 +6385,6 @@
         "latex": "F",
         "internal_code": "F_NS_AS"
       },
-      "compiled_lhs": {
-        "latex": "{F}{_{{N S}, {A S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "species related incidence matrix",
       "equations": {},
@@ -6878,11 +6418,6 @@
         "matlab": "Ayz",
         "latex": "{A_{yz}}",
         "internal_code": "Ayz"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_71",
-        "matlab": "Ayz(N)",
-        "latex": "{{A_{yz}}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "cross sectional area yz",
@@ -6939,11 +6474,6 @@
         "latex": "{A_{xz}}",
         "internal_code": "Axz"
       },
-      "compiled_lhs": {
-        "global_ID": "V_72",
-        "matlab": "Axz(N)",
-        "latex": "{{A_{xz}}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "cross sectional area xz",
       "equations": {
@@ -6998,11 +6528,6 @@
         "matlab": "Axy",
         "latex": "{A_{xy}}",
         "internal_code": "Axy"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_73",
-        "matlab": "Axy(N)",
-        "latex": "{{A_{xy}}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "cross sectional area xy",
@@ -7059,11 +6584,6 @@
         "latex": "\\rho",
         "internal_code": "_density"
       },
-      "compiled_lhs": {
-        "global_ID": "V_74",
-        "matlab": "_density(N)",
-        "latex": "{\\rho}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable density to interface material >>> macroscopic",
       "equations": {
@@ -7117,11 +6637,6 @@
         "matlab": "_h",
         "latex": "_h",
         "internal_code": "_h"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_75",
-        "matlab": "_h(N)",
-        "latex": "{_h}{_{{N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable h to interface material >>> macroscopic",
@@ -7177,11 +6692,6 @@
         "latex": "{k^q_x}",
         "internal_code": "_kq_x"
       },
-      "compiled_lhs": {
-        "global_ID": "V_76",
-        "matlab": "_kq_x(N)",
-        "latex": "{{k^q_x}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable kq_x to interface material >>> macroscopic",
       "equations": {
@@ -7235,11 +6745,6 @@
         "matlab": "_Cv",
         "latex": "_Cv",
         "internal_code": "_Cv"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_77",
-        "matlab": "_Cv(N)",
-        "latex": "{_Cv}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable Cv to interface material >>> macroscopic",
@@ -7295,11 +6800,6 @@
         "latex": "{k^q_y}",
         "internal_code": "_kq_y"
       },
-      "compiled_lhs": {
-        "global_ID": "V_78",
-        "matlab": "_kq_y(N)",
-        "latex": "{{k^q_y}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable kq_y to interface material >>> macroscopic",
       "equations": {
@@ -7353,11 +6853,6 @@
         "matlab": "_kq_z",
         "latex": "{k^q_z}",
         "internal_code": "_kq_z"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_79",
-        "matlab": "_kq_z(N)",
-        "latex": "{{k^q_z}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable kq_z to interface material >>> macroscopic",
@@ -7413,9 +6908,6 @@
         "latex": "F",
         "internal_code": "F_N_A"
       },
-      "compiled_lhs": {
-        "latex": "{F}{_{N, A}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "fundamental incidence matrix",
       "equations": {},
@@ -7449,11 +6941,6 @@
         "matlab": "_kq",
         "latex": "{k^q}",
         "internal_code": "_kq"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_80",
-        "matlab": "_kq(N)",
-        "latex": "{{k^q}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable kq to interface material >>> macroscopic",
@@ -7509,11 +6996,6 @@
         "latex": "{k^c_x}",
         "internal_code": "_kc_x"
       },
-      "compiled_lhs": {
-        "global_ID": "V_81",
-        "matlab": "_kc_x(N)",
-        "latex": "{{k^c_x}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable kc_x to interface material >>> macroscopic",
       "equations": {
@@ -7567,11 +7049,6 @@
         "matlab": "_Cp",
         "latex": "_Cp",
         "internal_code": "_Cp"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_82",
-        "matlab": "_Cp(N)",
-        "latex": "{_Cp}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable Cp to interface material >>> macroscopic",
@@ -7627,11 +7104,6 @@
         "latex": "{k^c_y}",
         "internal_code": "_kc_y"
       },
-      "compiled_lhs": {
-        "global_ID": "V_83",
-        "matlab": "_kc_y(N)",
-        "latex": "{{k^c_y}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable kc_y to interface material >>> macroscopic",
       "equations": {
@@ -7685,11 +7157,6 @@
         "matlab": "_kc_z",
         "latex": "{k^c_z}",
         "internal_code": "_kc_z"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_84",
-        "matlab": "_kc_z(N)",
-        "latex": "{{k^c_z}}{_{N}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable kc_z to interface material >>> macroscopic",
@@ -7745,11 +7212,6 @@
         "latex": "{k^c}",
         "internal_code": "_kc"
       },
-      "compiled_lhs": {
-        "global_ID": "V_85",
-        "matlab": "_kc(N)",
-        "latex": "{{k^c}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable kc to interface material >>> macroscopic",
       "equations": {
@@ -7803,11 +7265,6 @@
         "matlab": "_kd_x",
         "latex": "{k^d_x}",
         "internal_code": "_kd_x"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_86",
-        "matlab": "_kd_x(N)",
-        "latex": "{{k^d_x}}{_{{N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable kd_x to interface material >>> macroscopic",
@@ -7863,11 +7320,6 @@
         "latex": "{k^d_y}",
         "internal_code": "_kd_y"
       },
-      "compiled_lhs": {
-        "global_ID": "V_87",
-        "matlab": "_kd_y(N)",
-        "latex": "{{k^d_y}}{_{{N S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable kd_y to interface material >>> macroscopic",
       "equations": {
@@ -7921,11 +7373,6 @@
         "matlab": "_kd_z",
         "latex": "{k^d_z}",
         "internal_code": "_kd_z"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_88",
-        "matlab": "_kd_z(N)",
-        "latex": "{{k^d_z}}{_{{N S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable kd_z to interface material >>> macroscopic",
@@ -7981,11 +7428,6 @@
         "latex": "{k^d}",
         "internal_code": "_kd"
       },
-      "compiled_lhs": {
-        "global_ID": "V_89",
-        "matlab": "_kd(N)",
-        "latex": "{{k^d}}{_{{N S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "link variable kd to interface material >>> macroscopic",
       "equations": {
@@ -8040,9 +7482,6 @@
         "latex": "P",
         "internal_code": "P_N_A"
       },
-      "compiled_lhs": {
-        "latex": "{P}{_{N, A}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "projection from node to arc for arc properties",
       "equations": {},
@@ -8076,9 +7515,6 @@
         "matlab": "D",
         "latex": "D",
         "internal_code": "D"
-      },
-      "compiled_lhs": {
-        "latex": "{D}{_{N, A}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "difference operator",
@@ -8114,9 +7550,6 @@
         "latex": "D",
         "internal_code": "D_NS_AS"
       },
-      "compiled_lhs": {
-        "latex": "{D}{_{{N S}, {A S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "difference operator for species topology",
       "equations": {},
@@ -8150,11 +7583,6 @@
         "matlab": "fV",
         "latex": "\\hat{V}",
         "internal_code": "fV"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_92",
-        "matlab": "fV(A)",
-        "latex": "{\\hat{V}}{_{A}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "volumetric flow",
@@ -8235,11 +7663,6 @@
         "latex": "{\\hat{n}^{d}}",
         "internal_code": "fnd_AS"
       },
-      "compiled_lhs": {
-        "global_ID": "V_93",
-        "matlab": "fnd_AS(A)",
-        "latex": "{{\\hat{n}^{d}}}{_{{A S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "diffusional mass flow in a given stream",
       "equations": {
@@ -8297,11 +7720,6 @@
         "latex": "{\\hat{n}^{d}}",
         "internal_code": "fnd"
       },
-      "compiled_lhs": {
-        "global_ID": "V_94",
-        "matlab": "fnd(N)",
-        "latex": "{{\\hat{n}^{d}}}{_{{N S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "net diffusional mass flow",
       "equations": {
@@ -8356,11 +7774,6 @@
         "matlab": "fHd_A",
         "latex": "{\\hat{H}^d}",
         "internal_code": "fHd_A"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_95",
-        "matlab": "fHd_A(A)",
-        "latex": "{{\\hat{H}^d}}{_{A}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "enthalpy flow per diffusional mass stream",
@@ -8418,11 +7831,6 @@
         "latex": "{\\hat{H}^d}",
         "internal_code": "fHd"
       },
-      "compiled_lhs": {
-        "global_ID": "V_96",
-        "matlab": "fHd(N)",
-        "latex": "{{\\hat{H}^d}}{_{N}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "net enthalpy stream due to diffusion",
       "equations": {
@@ -8477,11 +7885,6 @@
         "matlab": "d",
         "latex": "d",
         "internal_code": "d"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_97",
-        "matlab": "d(A)",
-        "latex": "{d}{_{A}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "flow direction of convectional flow",
@@ -8538,15 +7941,15 @@
         "latex": "c",
         "internal_code": "c_AS"
       },
-      "compiled_lhs": {
-        "global_ID": "V_98",
-        "matlab": "c_AS(A)",
-        "latex": "{c}{_{{A S}}}"
-      },
       "created": "2023-09-06 09:59:12",
       "doc": "concentration in convectional flow",
       "equations": {
         "E_73": {
+          "lhs": {
+            "global_ID": "V_98",
+            "matlab": "c_AS(A)",
+            "latex": "{c}{_{{A S}}}"
+          },
           "rhs": {
             "global_ID": " D_0 V_4 O_4 D_0 V_70 O_1 V_97 O_3 F_10 D_0 V_70 D_1 D_1 D_1  O_5 I_5 O_5 V_66",
             "matlab": "reduceproduct((onehalf .* (F_NS_AS(N, A) - khatrirao(d(A), abs(F_NS_AS(N, A))))), \"N_x_S\", c(N))",
@@ -8562,12 +7965,7 @@
             "V_97"
           ],
           "created": "2023-09-06 09:59:12",
-          "modified": "2023-09-20 09:56:38",
-          "lhs": {
-            "global_ID": "V_98",
-            "matlab": "c_AS(A)",
-            "latex": "{c}{_{{A S}}}"
-          }
+          "modified": "2023-09-20 09:56:38"
         }
       },
       "index_structures": [
@@ -8599,11 +7997,6 @@
         "matlab": "fnc_AS",
         "latex": "{\\hat{n}^c}",
         "internal_code": "fnc_AS"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_99",
-        "matlab": "fnc_AS(A)",
-        "latex": "{{\\hat{n}^c}}{_{{A S}}}"
       },
       "created": "2023-09-06 09:59:12",
       "doc": "molar convectional mass flow in the given stream",
@@ -8967,7 +8360,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 181,
-    "equation": 150
+    "variable": 178,
+    "equation": 147
   }
 }

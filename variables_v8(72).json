@@ -4032,6 +4032,53 @@
         0
       ]
     },
+    "V_179": {
+      "IRI": "promo:gugus",
+      "aliases": {
+        "matlab": "gugus",
+        "latex": "gugus",
+        "internal_code": "gugus",
+        "global_ID": "V_179"
+      },
+      "compiled_lhs": {},
+      "created": "2023-09-20 15:14:20",
+      "doc": "",
+      "equations": {
+        "E_148": {
+          "lhs": {},
+          "rhs": {
+            "global_ID": " V_16 O_0 V_16"
+          },
+          "type": "generic",
+          "doc": "",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_16"
+          ],
+          "created": "2023-09-20 15:14:20",
+          "modified": "2023-09-20 15:14:20"
+        }
+      },
+      "index_structures": [
+        "I_5"
+      ],
+      "label": "gugus",
+      "modified": "2023-09-20 15:14:20",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
     "V_18": {
       "IRI": "qudt:Temperature",
       "aliases": {
@@ -8967,7 +9014,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 181,
-    "equation": 150
+    "variable": 179,
+    "equation": 148
   }
 }
