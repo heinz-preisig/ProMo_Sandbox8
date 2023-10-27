@@ -3,7 +3,7 @@ cd $1
 pdflatex -interaction=nonstopmode main.tex;
 pdflatex -interaction=nonstopmode main.tex;
 
-okular main.pdf &
+gio open main.pdf &
 
 
 if [ $? -eq 0 ]

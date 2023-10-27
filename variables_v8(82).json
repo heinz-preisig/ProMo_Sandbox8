@@ -860,7 +860,7 @@
         "python": "i",
         "cpp": "i",
         "matlab": "i",
-        "latex": "II",
+        "latex": "I",
         "internal_code": "i"
       },
       "compiled_lhs": {
@@ -897,7 +897,7 @@
         "I_1"
       ],
       "label": "i",
-      "modified": "2023-10-11 17:19:31",
+      "modified": "2023-09-06 09:59:12",
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
@@ -6656,14 +6656,14 @@
       ]
     },
     "V_66": {
-      "IRI": "qudt:c_m",
+      "IRI": "qudt:Concentration",
       "aliases": {
         "global_ID": "V_66",
         "python": "c",
         "cpp": "c",
-        "matlab": "c_m",
-        "latex": "c_m",
-        "internal_code": "c_m"
+        "matlab": "c",
+        "latex": "c",
+        "internal_code": "c"
       },
       "compiled_lhs": {
         "global_ID": "V_66",
@@ -6698,8 +6698,8 @@
       "index_structures": [
         "I_5"
       ],
-      "label": "c_m",
-      "modified": "2023-10-06 12:21:34",
+      "label": "c",
+      "modified": "2023-09-06 09:59:12",
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],

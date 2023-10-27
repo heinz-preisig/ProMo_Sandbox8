@@ -22,7 +22,7 @@
   "E_106": {
     "lhs": "intensities",
     "network": "macroscopic",
-    "rhs": " MixedStack ( p , T , chemPot , c , Ue )"
+    "rhs": " MixedStack ( p , T , chemPot , c_m , Ue )"
   },
   "E_107": {
     "lhs": "nTotal",
@@ -345,14 +345,14 @@
     "rhs": " Ko : exp ( neg ( Ea ) . inv ( GasConstant . T_NK ) )"
   },
   "E_44": {
-    "lhs": "c",
+    "lhs": "c_m",
     "network": "macroscopic",
     "rhs": " inv ( V ) : n"
   },
   "E_45": {
     "lhs": "_c",
     "network": "macroscopic >>> reactions",
-    "rhs": " c"
+    "rhs": " c_m"
   },
   "E_48": {
     "lhs": "Ayz",
@@ -497,7 +497,7 @@
   "E_73": {
     "lhs": "c_AS",
     "network": "macroscopic",
-    "rhs": " ( onehalf . ( F_NS_AS - d : abs ( F_NS_AS ) ) ) | N & S | c"
+    "rhs": " ( onehalf . ( F_NS_AS - d : abs ( F_NS_AS ) ) ) | N & S | c_m"
   },
   "E_74": {
     "lhs": "fnc_AS",
